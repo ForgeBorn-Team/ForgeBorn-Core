@@ -1,0 +1,17 @@
+#556 minecraft:beach
+#47F minecraft:birch_forest
+#3D6 minecraft:cold_ocean
+#07F the_afterdark:creepy_snowfields
+#73B the_afterdark:deep_afterdark
+#306 the_afterdark:dripstone_deltas
+#56B the_afterdark:dying_drylands
+#010 minecraft:forest
+#6B9 the_afterdark:lush_gardens
+#2D6 minecraft:meadow
+#4F1 minecraft:ocean
+#1DF minecraft:old_growth_birch_forest
+#3DC minecraft:plains
+#2DF the_afterdark:prismarine_peaks
+#689 the_afterdark:prismarine_ponds
+#5FF minecraft:river
+#169 minecraft:taiga

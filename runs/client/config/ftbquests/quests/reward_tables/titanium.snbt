@@ -1,0 +1,23 @@
+{
+	id: "3244D3758F13F73E"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{
+			count: 12
+			id: "5C3AA0468170F047"
+			item: {
+				count: 1
+				id: "gtceu:endstone_bauxite_ore"
+			}
+		}
+		{
+			count: 12
+			id: "21AB2E738DC572DB"
+			item: {
+				count: 1
+				id: "gtceu:endstone_ilmenite_ore"
+			}
+		}
+	]
+}

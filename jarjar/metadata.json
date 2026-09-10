@@ -1,0 +1,76 @@
+{
+    "jars": [
+        {
+            "identifier": {
+                "group": "com.lowdragmc.ldlib",
+                "artifact": "ldlib-neoforge-1.21.1"
+            },
+            "version": {
+                "range": "[1.0.35.a,)",
+                "artifactVersion": "1.0.35.a"
+            },
+            "path": "META-INF/jarjar/ldlib-neoforge-1.21.1-1.0.35.a-ccpatch.jar",
+            "isObfuscated": false
+        },
+        {
+            "identifier": {
+                "group": "createbionics",
+                "artifact": "createbionics"
+            },
+            "version": {
+                "range": "[1.0.5b,)",
+                "artifactVersion": "1.0.5b"
+            },
+            "path": "META-INF/jarjar/createbionics-1.0.5b.jar",
+            "isObfuscated": false
+        },
+        {
+            "identifier": {
+                "group": "com.gregtechceu.gtceu",
+                "artifact": "gtceu-1.21.1"
+            },
+            "version": {
+                "range": "[8.0.0]",
+                "artifactVersion": "8.0.0"
+            },
+            "path": "META-INF/jarjar/gtceu-1.21.1-8.0.0.jar",
+            "isObfuscated": false
+        },
+        {
+            "identifier": {
+                "group": "com.github.bawnorton.mixinsquared",
+                "artifact": "mixinsquared-neoforge"
+            },
+            "version": {
+                "range": "[0.3.7-beta.1,)",
+                "artifactVersion": "0.3.7-beta.1"
+            },
+            "path": "META-INF/jarjar/mixinsquared-neoforge-0.3.7-beta.1.jar",
+            "isObfuscated": false
+        },
+        {
+            "identifier": {
+                "group": "spacegravity",
+                "artifact": "space_gravity"
+            },
+            "version": {
+                "range": "[1.0.3]",
+                "artifactVersion": "1.0.3"
+            },
+            "path": "META-INF/jarjar/space_gravity-1.0.3.jar",
+            "isObfuscated": false
+        },
+        {
+            "identifier": {
+                "group": "com.ghostipedia.nebulaeae2",
+                "artifact": "nebulaeae2"
+            },
+            "version": {
+                "range": "[0.1.0]",
+                "artifactVersion": "0.1.0"
+            },
+            "path": "META-INF/jarjar/nebulaeae2-0.1.0.jar",
+            "isObfuscated": false
+        }
+    ]
+}

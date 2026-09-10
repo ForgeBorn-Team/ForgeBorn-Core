@@ -1,0 +1,179 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "remembering_the_basics"
+	group: "693226878D58638A"
+	icon: {
+		components: {
+			"ftbquests:missing_item": "biomesoplenty:anomaly"
+		}
+		id: "ftbquests:missing_item"
+	}
+	id: "4916AE1F81660911"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "505D2486787E18F5"
+			tasks: [{
+				id: "41A06EF2C14E9B24"
+				type: "custom"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["505D2486787E18F5"]
+			id: "4C1812EEC063F61A"
+			tasks: [
+				{
+					id: "4D2D1C07310F0F91"
+					item: { count: 1, id: "create:track" }
+					type: "item"
+				}
+				{
+					id: "18A4251626D3BABA"
+					item: { count: 1, id: "create:railway_casing" }
+					type: "item"
+				}
+				{
+					id: "16452814F6A15285"
+					item: { count: 1, id: "create:track_station" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4C1812EEC063F61A"]
+			id: "7E8540E4AE46AC6A"
+			tasks: [{
+				id: "11A32060E5715C4A"
+				type: "custom"
+			}]
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["505D2486787E18F5"]
+			id: "1035448909147069"
+			tasks: [{
+				id: "6C41AAC668DE4DE2"
+				item: { count: 1, id: "simulated:honey_glue" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["505D2486787E18F5"]
+			id: "736238824F97BC02"
+			tasks: [{
+				id: "066D3E03716CD702"
+				item: { count: 1, id: "simulated:physics_assembler" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"1035448909147069"
+				"736238824F97BC02"
+			]
+			id: "55BB357F216D840E"
+			tasks: [{
+				id: "604B4ED059C767B0"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["505D2486787E18F5"]
+			id: "50617148B918A738"
+			tasks: [{
+				id: "0035C8D71FDC6930"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7E8540E4AE46AC6A"]
+			id: "66217DE270EF4CF4"
+			tasks: [{
+				id: "536735D959304CA5"
+				item: { count: 1, id: "gtceu:red_alloy_ingot" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7E8540E4AE46AC6A"]
+			id: "60983F82B49866D1"
+			tasks: [{
+				id: "04BA1E118C88DAE6"
+				item: { components: { "ftbquests:missing_item": "ftbfiltersystem:smart_filter" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7E8540E4AE46AC6A"]
+			id: "481B2B2958DF2096"
+			tasks: [{
+				id: "1724D85F8130F90A"
+				type: "custom"
+			}]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["481B2B2958DF2096"]
+			id: "2B36DAE7A7BE02FC"
+			tasks: [
+				{
+					id: "012513624C719E73"
+					item: { count: 1, id: "embers:caminite_blend" }
+					type: "item"
+				}
+				{
+					id: "42C62AACB9A5BFF7"
+					item: { count: 1, id: "embers:caminite_brick" }
+					type: "item"
+				}
+				{
+					id: "1951A7C1931564EF"
+					item: { count: 1, id: "embers:caminite_bricks" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["481B2B2958DF2096"]
+			id: "6891BCF7094C8ECE"
+			tasks: [{
+				id: "4D6C77E562D50D25"
+				type: "custom"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7E8540E4AE46AC6A"]
+			id: "09B546764A19BED5"
+			tasks: [{
+				id: "1B38D42D8109A357"
+				type: "custom"
+			}]
+			x: -2.0d
+			y: -5.5d
+		}
+	]
+}

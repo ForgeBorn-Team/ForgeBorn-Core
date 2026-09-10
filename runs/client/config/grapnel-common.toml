@@ -1,0 +1,41 @@
+#Grapnel -- stationary boarding hook for Create: Aeronautics ships
+[rope]
+	#Maximum flight range of the hook, and the most rope a single shot
+	#pays out. Once attached, the winch obeys Create Simulated's own
+	#rope config (range, stretch), the same as its rope winch.
+	# Default: 160.0
+	# Range: 8.0 ~ 512.0
+	maxRopeLength = 160.0
+	#Extra rope paid out beyond the straight-line distance when the
+	#hook bites, so a fresh catch hangs loose instead of yanking the
+	#ships together. Reel it in with the winch.
+	# Default: 1.5
+	# Range: 0.0 ~ 8.0
+	attachSlackBlocks = 1.5
+
+#Hook projectile
+[hook]
+	#Initial speed of the fired hook, blocks per tick. With the hook's
+	#gravity (0.025/tick, half an arrow) the default lobs a shot to about
+	#130 blocks at a flat angle and 150-160 at 30-45 degrees.
+	# Default: 3.0
+	# Range: 0.5 ~ 10.0
+	launchSpeed = 3.0
+	#Physics impulse kicked into the launcher's own ship when firing,
+	#opposite to the shot. 0 disables recoil.
+	# Default: 4.0
+	# Range: 0.0 ~ 1000.0
+	recoilImpulse = 4.0
+	#Physics impulse tugging the launcher's own ship toward the target
+	#at the moment the hook bites. 0 disables the tug.
+	# Default: 6.0
+	# Range: 0.0 ~ 1000.0
+	catchTugImpulse = 6.0
+
+#Rotation inputs (Create shafts)
+[kinetics]
+	#Aiming speed in degrees per tick per unit of rotation speed on the
+	#yaw shafts (left/right faces) and the pitch shaft (bottom face).
+	# Default: 0.05
+	# Range: 0.001 ~ 1.0
+	aimSpeedPerRpm = 0.05

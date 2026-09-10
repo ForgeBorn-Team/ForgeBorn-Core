@@ -1,0 +1,23 @@
+{
+	id: "3A28954F13F42800"
+	loot_size: 1
+	order_index: 6
+	rewards: [
+		{
+			count: 4
+			id: "1EC3169DD193892B"
+			item: {
+				count: 1
+				id: "gtceu:lv_super_chest"
+			}
+		}
+		{
+			count: 16
+			id: "15F400C8ECB67806"
+			item: {
+				count: 1
+				id: "gtceu:clean_machine_casing"
+			}
+		}
+	]
+}

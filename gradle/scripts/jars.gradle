@@ -1,0 +1,55 @@
+base {
+    archivesName = "${mod_id}-${libs.versions.minecraft.get()}"
+}
+
+java {
+    withSourcesJar()
+}
+
+def nebulaeArtifactFile = file("$rootDir/libs/nebulaeae2-0.1.0.jar")
+project.ext.nebulaeArtifactFile = nebulaeArtifactFile
+
+def verifyNebulaeArtifact = tasks.register('verifyNebulaeArtifact') {
+    doLast {
+        if (!nebulaeArtifactFile.isFile()) {
+            throw new GradleException(
+                    "Missing vendored NebulaeAE2 artifact at ${nebulaeArtifactFile}.")
+        }
+    }
+}
+
+tasks.named('compileJava').configure {
+    dependsOn verifyNebulaeArtifact
+}
+
+afterEvaluate {
+    tasks.withType(org.gradle.jvm.tasks.Jar).configureEach {
+        destinationDirectory = file('build/libs/')
+        manifest.attributes([
+                'Specification-Title'  : mod_name,
+                'Specification-Version': mod_version,
+                'Specification-Vendor' : mod_authors,
+                'Implementation-Title' : base.archivesName.get(),
+                'Implementation-Version': version,
+                'Implementation-Vendor': mod_authors,
+        ])
+    }
+}
+
+// Jar-in-jar CC's PATCHED LDLib so the built mod is SELF-CONTAINED: the pack has no separate ldlib mod, and CC
+// requires one (and must NOT get the stock ldlib - it conflicts with MUI2; see dependencies.gradle / patch-ldlib.py).
+// Added only to the assembled jar (META-INF/jarjar), so the dev runClient - which loads the exploded source set +
+// runtimeOnly(ccpatch), not this jar - is unaffected. NeoForge extracts + loads the nested jar as the "ldlib" mod.
+tasks.named('jar', org.gradle.jvm.tasks.Jar).configure {
+    dependsOn verifyNebulaeArtifact
+    from("$rootDir/libs/ldlib-neoforge-1.21.1-1.0.35.a-ccpatch.jar") { into 'META-INF/jarjar' }
+    from("$rootDir/libs/createbionics-1.0.5b.jar") { into 'META-INF/jarjar' }
+    from("$rootDir/libs/gtceu-1.21.1-8.0.0.jar") { into 'META-INF/jarjar' }
+    from(nebulaeArtifactFile) { into 'META-INF/jarjar' }
+    from(configurations.spaceGravityRuntime) {
+        into 'META-INF/jarjar'
+        rename { 'space_gravity-1.0.3.jar' }
+    }
+    from(configurations.mixinSquaredRuntime) { into 'META-INF/jarjar' }
+    from("$rootDir/jarjar/metadata.json") { into 'META-INF/jarjar' }
+}

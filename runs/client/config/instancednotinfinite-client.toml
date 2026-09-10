@@ -1,0 +1,6 @@
+[tooltips]
+	#Use Jade for dungeon loading and portal information when Jade is installed.
+	#Disable this to use the built-in portal panel instead, when that panel is enabled.
+	jadeIntegration = true
+	#Show Instanced Not Infinite's built-in loading and portal panel when Jade is unavailable or its integration is disabled.
+	builtInPortalTooltips = true

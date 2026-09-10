@@ -1,0 +1,206 @@
+#Lianas — 蔦の生成アルゴリズムの設定(LianaConnector)
+[vine]
+	#蔦の生成を有効にするか。falseにすると、トリガーが木を見つけても一切蔦を張らなくなる。
+	spawnConnectingVines = true
+	#繋げる相手の木が見つかったとき、実際に蔦を張る確率。
+	#本数の上限(vineMinPerTree〜vineMaxPerTreeからランダムに決まる)に達するまで、
+	#候補の木ごとにこの確率を毎回抽選する。
+	# Default: 0.08
+	# Range: 0.0 ~ 1.0
+	vineChance = 0.08
+	#蔦の終点候補が見つかるたびに、木の原木の代わりに近くの既存の蔦
+	#(別の主アンカー)の曲線上のランダムな1点を終点候補として差し替える確率。
+	#これにより、蔦が木同士だけでなく既存の蔦とも繋がるようになる。
+	#0 にすると従来通り木同士のみを繋ぐ。
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	vineExistingVineTargetChance = 0.25
+	#蔦の最小の長さ(始点〜終点の直線距離、ブロック数)。
+	#これより近い(隣接しているような)木同士は蔦で繋がらない。
+	# Default: 3
+	# Range: 0 ~ 64
+	vineMinLength = 3
+	#蔦の最大の長さ(始点〜終点の直線距離、ブロック数)。
+	#これより離れた木同士は蔦で繋がらない。
+	#vineStackLengthThreshold を超える長さの場合は、複数本重ねて生成される。
+	# Default: 30
+	# Range: 1 ~ 64
+	vineMaxLength = 30
+	#蔦の始点・終点の Y 座標の差の最大値(ブロック数)。
+	#これより高低差のある組み合わせは蔦で繋がらない(急な斜めの蔦を防ぐ)。
+	# Default: 5
+	# Range: 0 ~ 64
+	vineMaxHeightDiff = 5
+	#蔦の始点・終点それぞれの真下を調べ、実際の地面(に類する何か)までの距離が
+	#この数未満なら、その候補は「地面に近すぎる」として使わない。
+	#地面すれすれに蔦が張られるのを防ぐための設定。
+	# Default: 4
+	# Range: 0 ~ 32
+	vineMinGroundClearance = 4
+	#蔦の始点・終点それぞれの真下を調べ、実際の地面(に類する何か)までの距離が
+	#この数を超えるなら、その候補は「地面から高すぎる」として使わない。
+	# Default: 40
+	# Range: 1 ~ 64
+	vineMaxGroundClearance = 40
+	#蔦の生える高さ(地面からの距離)を3段階に分けて偏りを持たせる際の、
+	#「低」帯の上限。vineMinGroundClearance 〜 この値までが「低」帯。
+	# Default: 8
+	# Range: 0 ~ 64
+	vineHeightBandLowMax = 8
+	#高さ帯「中」の上限。vineHeightBandLowMax の次の値 〜 この値までが「中」帯、
+	#この値を超え vineMaxGroundClearance までが「高」帯。
+	# Default: 20
+	# Range: 0 ~ 64
+	vineHeightBandMidMax = 20
+	#高さ帯「低」に蔦が生える相対的な重み。低・中・高の3つの比で決まる
+	#(既定では 50 : 30 : 20 = 低が選ばれやすい)。
+	# Default: 50.0
+	# Range: 0.0 ~ 1000.0
+	vineHeightWeightLow = 50.0
+	#高さ帯「中」に蔦が生える相対的な重み。
+	# Default: 30.0
+	# Range: 0.0 ~ 1000.0
+	vineHeightWeightMid = 30.0
+	#高さ帯「高」に蔦が生える相対的な重み。
+	# Default: 20.0
+	# Range: 0.0 ~ 1000.0
+	vineHeightWeightHigh = 20.0
+	#始点・終点の直線距離がこの値を超える場合、1本だけでは頼りなく見えるため、
+	#同じ組み合わせに対して蔦を vineStackMinCount〜vineStackMaxCount 本
+	#重ねて生成する(垂れ具合は必ず互いに異なる値になる)。
+	# Default: 20
+	# Range: 1 ~ 64
+	vineStackLengthThreshold = 20
+	#長距離接続(vineStackLengthThreshold 超)で重ねて生成する蔦の最小本数。
+	# Default: 2
+	# Range: 1 ~ 16
+	vineStackMinCount = 2
+	#長距離接続(vineStackLengthThreshold 超)で重ねて生成する蔦の最大本数。
+	#垂れ具合の段階数(SAG_TIERS、既定6)を超えて重複しない値を割り当てられ
+	#ないため、この値を超えて指定しても実際にはSAG_TIERS本までになる。
+	# Default: 6
+	# Range: 1 ~ 16
+	vineStackMaxCount = 6
+	#重ねる本数が vineStackMinCount(既定2本)になる相対的な重み。
+	#vineStackCountWeight3〜6 と合わせて 2本:3本:4本:5本:6本 の比で
+	#本数を抽選する(既定 80:15:5:2:1 = 本数が多いほど生成されにくい)。
+	# Default: 80.0
+	# Range: 0.0 ~ 1000.0
+	vineStackCountWeight2 = 80.0
+	#重ねる本数が3本になる相対的な重み。
+	# Default: 15.0
+	# Range: 0.0 ~ 1000.0
+	vineStackCountWeight3 = 15.0
+	#重ねる本数が4本になる相対的な重み。
+	# Default: 5.0
+	# Range: 0.0 ~ 1000.0
+	vineStackCountWeight4 = 5.0
+	#重ねる本数が5本になる相対的な重み。
+	# Default: 2.0
+	# Range: 0.0 ~ 1000.0
+	vineStackCountWeight5 = 2.0
+	#重ねる本数が6本(以上)になる相対的な重み。
+	#vineStackMaxCount を6より大きくした場合、7本目以降もこの重みを使い回す。
+	# Default: 1.0
+	# Range: 0.0 ~ 1000.0
+	vineStackCountWeight6 = 1.0
+	#重複蔦(ぶら下がり蔦)を生成する際、両端を1つの親の曲線上に乗せる代わりに、
+	#既に生成済みの別の重複蔦(または主線)をまたぐように、両端をそれぞれ
+	#別の曲線上から選んで生成する確率。同じ組み合わせに対して重複蔦が
+	#2本以上生成済みの場合にのみ判定される(1本目は必ず通常通り親の曲線上に生成される)。
+	#「またぐ」に該当しなかった場合は vineSecondTierShareStartWeight 等の4択で決まる。
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	vineNestedCrossChance = 0.3
+	#重複蔦のうち、始点を第一の蔦(主線)の実際の始点と共有する
+	#「第二の蔦」になる相対的な重み。vineSecondTierShareEndWeight/
+	#vineSecondTierFloatingWeight/vineThirdTierWeight と合わせて
+	#4択の比率を決める(既定 15:15:60:10)。
+	# Default: 15.0
+	# Range: 0.0 ~ 1000.0
+	vineSecondTierShareStartWeight = 15.0
+	#終点を第一の蔦の実際の終点と共有する「第二の蔦」になる相対的な重み。
+	# Default: 15.0
+	# Range: 0.0 ~ 1000.0
+	vineSecondTierShareEndWeight = 15.0
+	#始点・終点のどちらも第一の蔦の曲線上の点になる「第二の蔦」になる
+	#相対的な重み(従来からの既定の垂れ下がり方)。
+	# Default: 60.0
+	# Range: 0.0 ~ 1000.0
+	vineSecondTierFloatingWeight = 60.0
+	#第一の蔦(主線)からではなく、既に配置済みの「第二の蔦」の曲線上から
+	#生える「第三の蔦」になる相対的な重み。vineThirdTierMinDuplicateCount
+	#未満、またはまだ第二の蔦が1本も無い場合はこの選択肢自体が候補から除外される
+	#(残り3つの重みだけで抽選)。第三の蔦からさらに孫が生えることはない。
+	# Default: 10.0
+	# Range: 0.0 ~ 1000.0
+	vineThirdTierWeight = 10.0
+	#第三の蔦が生成候補になるために必要な、この組み合わせにおける重複蔦の
+	#総本数(主線を除く)の最小値。既定4は「重複蔦が3本以下では第三の蔦は
+	#生成されない」ことを意味する。vineStackMaxCount が既定の6(=重複蔦最大5本)
+	#であれば、5本重ねられた束(重複蔦4本)以上でこの条件を満たしうる。
+	# Default: 4
+	# Range: 1 ~ 16
+	vineThirdTierMinDuplicateCount = 4
+	#木が1本見つかるたびに実際に張る蔦の本数の下限。
+	#vineMaxPerTree との間から毎回ランダムに本数が決まる(常に同じ本数にならない)。
+	#vineMaxPerTree より大きい値を指定した場合は vineMaxPerTree と同じ扱いになる。
+	# Default: 1
+	# Range: 0 ~ 16
+	vineMinPerTree = 1
+	#木が1本見つかるたびに実際に張る蔦の本数の上限。
+	#vineMinPerTree との間から毎回ランダムに本数が決まる。
+	#0 にすると spawnConnectingVines を false にしたのと同じく蔦が一切生えなくなる。
+	# Default: 3
+	# Range: 0 ~ 16
+	vineMaxPerTree = 3
+	#蔦の垂れ下がりの「一番少ない段階(段階1)」の量(ブロック数)。
+	# Default: 1
+	# Range: 0 ~ 64
+	vineSagMin = 1
+	#蔦の垂れ下がりの「一番多い段階(最終段階)」の量(ブロック数)。
+	#実際の垂れ具合は蔦ごとに、vineSagMin 〜 vineSagMax の範囲を均等分割した
+	#段階数(SAG_TIERS、既定6)のどれかがランダムに選ばれる。
+	# Default: 3
+	# Range: 0 ~ 64
+	vineSagMax = 3
+	#蔦の経路上に垂れ蔦(droop)が生成されるたびに、通常の見た目の代わりに
+	#発光する見た目(liana_droop_light)になる確率。
+	#発光する垂れ蔦は見た目だけでなく実際に vineDroopLightLevel の明るさの
+	#光源として機能する(見えない光源ブロックを裏側に置く)。
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	vineDroopLightChance = 0.3
+	#発光する垂れ蔦(liana_droop_light)が放つ光レベル。
+	#バニラの光源ブロックと同じ0〜15の尺度(15が最も明るい)。
+	# Default: 8
+	# Range: 0 ~ 15
+	vineDroopLightLevel = 8
+
+#Lianas — 暫定トリガーの設定(LianaGrowthTicker / LianaChunkListener)。
+#「何から蔦が生えるか」が正式に決まるまでの仮の仕組み。チャンクが
+#読み込まれる(=新規生成された、またはディスクから読み込まれた)たびに
+#そのチャンクをジャングルの木がないか調べ、見つけたら蔦を張らせる。
+#ワールド生成時から既にある木・新しく生成された木のどちらも等しく対象になる。
+[trigger]
+	#1サーバーティックにつき、キューに溜まったチャンクを最大何個スキャンするか。
+	#チャンクの読み込みイベント自体はチャンク生成の途中(FULL状態になる前)に
+	#発火することがあり、その場でブロックを読み書きするとチャンク生成が
+	#デッドロックしうるため、座標だけキューに積んでおいて、安全な通常の
+	#サーバーティックでここから少しずつ取り出して処理する方式にしてある。
+	#値を大きくするほど反応は早くなるが、ワールド参加直後など大量のチャンクが
+	#一気に読み込まれる場面でのティック負荷も増える。
+	# Default: 4
+	# Range: 1 ~ 64
+	triggerChunksPerTick = 4
+	#チャンク内の1列を調べる際、ハイトマップ(葉を無視した地表)から下へ
+	#何ブロック分スキャンするか。バニラのジャングルの木(巨大な2x2の木を
+	#含む)の高さに余裕を持たせた値。
+	# Default: 48
+	# Range: 8 ~ 384
+	triggerScanColumnDepth = 48
+	#1本の木とみなす原木ブロックの連結を辿る際の最大探索ブロック数
+	#(巨大な2x2ジャングルの木にも対応できるよう余裕を持たせてある)。
+	# Default: 512
+	# Range: 16 ~ 4096
+	triggerMaxTreeLogScan = 512

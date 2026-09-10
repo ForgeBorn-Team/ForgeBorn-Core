@@ -1,0 +1,29 @@
+{
+	id: "2B161EF5FCC80019"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ id: "719948EA2A2602F7", item: { count: 1, id: "minecraft:pumpkin_pie" } }
+		{ id: "2E72B7221F742DB6", item: { count: 1, id: "minecraft:bread" } }
+		{ id: "03E87A2580294AB8", item: { count: 1, id: "minecraft:cooked_salmon" } }
+		{ id: "702011F431140C5A", item: { count: 1, id: "minecraft:cooked_cod" } }
+		{ id: "57EB23F906FDBDD6", item: { count: 1, id: "minecraft:cooked_rabbit" } }
+		{ id: "79AF5AAC7998C4A9", item: { count: 1, id: "minecraft:cooked_chicken" } }
+		{ id: "6E938DB13CA992FA", item: { count: 1, id: "minecraft:apple" } }
+		{ id: "30273AD56978D9CD", item: { components: { "ftbquests:missing_item": "vintagedelight:ghostly_chili" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "5D3E421C64AF0EB4", item: { components: { "ftbquests:missing_item": "vintagedelight:pad_thai" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "24965A1FF6EFFAF1", item: { components: { "ftbquests:missing_item": "vintagedelight:cheese_pasta" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "754C15E5620899E1", item: { components: { "ftbquests:missing_item": "vintagedelight:cucumber_salad" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "391354558B0FDC4A", item: { components: { "ftbquests:missing_item": "vintagedelight:cucumber_salad" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "5C8245F4F8D98ADC", item: { components: { "ftbquests:missing_item": "vintagedelight:pb_j" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "66EC284F0F01C328", item: { components: { "ftbquests:missing_item": "vintagedelight:meat_pizza_slice" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "44555D9634A6FD51", item: { components: { "ftbquests:missing_item": "vintagedelight:cheese_slice" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "050A5C68AF496FD1", item: { components: { "ftbquests:missing_item": "vintagedelight:stuffed_burrito" }, count: 1, id: "ftbquests:missing_item" } }
+		{ id: "2F49EB7D6B526B92", item: { count: 1, id: "minecraft:golden_apple" } }
+		{ id: "66C94C67CA3D6318", item: { count: 1, id: "minecraft:baked_potato" } }
+		{ id: "63BAA1549186303A", item: { count: 1, id: "minecraft:sweet_berries" } }
+		{ id: "3CC12D204733E98D", item: { count: 1, id: "minecraft:glow_berries" } }
+		{ id: "4FA808C6AFC0760A", item: { count: 1, id: "minecraft:carrot" } }
+		{ id: "510E1173E4E82D35", item: { count: 1, id: "minecraft:cooked_beef" } }
+	]
+}

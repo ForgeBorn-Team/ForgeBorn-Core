@@ -1,0 +1,267 @@
+[catalogue]
+	#Worldgen structure IDs automatically exposed as dungeon options.
+	#The automatic dungeon ID is the same as the structure ID. No structures are enabled by default.
+	structures = []
+	#Structure registry tags expanded once when the catalogue is rebuilt.
+	#Each listed tag also receives a named structure-pool manifestation catalyst.
+	#Write tag IDs without a leading #.
+	structureTags = []
+	#Structure tags whose members are available only through the generated pool catalyst.
+	#A member still receives an exact catalyst when it is also listed explicitly in structures.
+	#Tags listed here are included even when omitted from structureTags; a leading # is optional.
+	poolItemOnlyStructureTags = []
+	#Structure IDs removed after direct IDs and tags are combined.
+	excludedStructures = []
+	#Partial automatic-definition overrides. Use semicolon-separated key=value fields.
+	#Example: minecraft:ancient_city;environment=CAVE;horizontal_padding=96;weight=2
+	#Supported keys: environment, custom_strategy, biomes, horizontal_padding, vertical_padding, maximum_radius,
+	#weight, placement, natural_mob_spawning, reentry, cost_tier, recipe_signature, recipe_theme,
+	#recipe_core, recipe_catalyst. Ingredient overrides accept an item ID or #item_tag.
+	dungeonOverrides = []
+
+[recipes]
+	#Generate a normal shaped recipe for each configured exact-dungeon catalyst that has no datapack recipe.
+	automaticRecipeGeneration = true
+	#Set this to true to discard the matching generated-recipe analysis cache on the next server start,
+	#world load, config reload, or /dungeon reload. It resets itself to false after the cache is rebuilt successfully.
+	#Portable cache files are written below config/instancednotinfinite/generated-recipes for modpack shipping.
+	regenerateRecipeCache = false
+	paletteInference = true
+	biomeInference = true
+	dimensionInference = true
+	nameInference = true
+	rarityInference = true
+	#Blocks that automatic recipes must never use as ingredients.
+	#Entries may be exact block IDs or block tags prefixed with #.
+	excludedRecipeBlocks = []
+	#Dungeon structures and structure pools that must not receive automatic recipes.
+	#Use an exact structure ID, or prefix a structure tag with # to exclude that pool and all of its members.
+	#Ordinary datapack recipes are never removed by this option.
+	excludedAutomaticRecipeTargets = []
+
+[instances]
+	#Seconds a never-entered instance remains open; 0 cleans it immediately and -1 keeps it open indefinitely.
+	# Default: 300
+	# Range: -1 ~ 31536000
+	vacancyTimeoutSeconds = 300
+	#Seconds an instance remains after every player leaves; 0 cleans it immediately and -1 keeps it open indefinitely.
+	# Default: 60
+	# Range: -1 ~ 31536000
+	postVisitVacancyTimeoutSeconds = 60
+	#Absolute seconds from instance readiness until forced collapse, even while occupied.
+	#-1 disables forced collapse. When all three instance timeouts are -1, ordinary vacancy never closes an instance.
+	# Default: -1
+	# Range: -1 ~ 31536000
+	forceCollapseTimeoutSeconds = -1
+	#Delay before completed instances return players and begin cleanup.
+	# Default: 5
+	# Range: 0 ~ 300
+	completedExitDelaySeconds = 5
+	#Maximum non-final dungeon instances on this server.
+	# Default: 32
+	# Range: 1 ~ 1024
+	maximumConcurrentInstances = 32
+
+[terrain]
+	# Default: 48
+	# Range: 0 ~ 512
+	defaultHorizontalPadding = 48
+	# Default: 32
+	# Range: 0 ~ 256
+	defaultVerticalPadding = 32
+	#Hard cap applied even when a definition requests a larger radius.
+	# Default: 256
+	# Range: 16 ~ 1024
+	maximumTerrainRadius = 256
+	allowNaturalMobSpawning = true
+
+[approach]
+	#Distance from the detected front edge to the center of the automatic player platform.
+	# Default: 12
+	# Range: 2 ~ 64
+	distance = 12
+	#Platform radius; 2 creates a 5x5 platform.
+	# Default: 2
+	# Range: 1 ~ 8
+	platformRadius = 2
+	#Width of the path from the platform to the detected entrance; odd values center exactly.
+	# Default: 3
+	# Range: 1 ~ 9
+	pathWidth = 3
+	#Air blocks cleared above every bridge/path floor block.
+	# Default: 3
+	# Range: 2 ~ 16
+	pathClearanceHeight = 3
+	#Air blocks cleared above every arrival-platform floor block.
+	# Default: 4
+	# Range: 2 ~ 16
+	platformClearanceHeight = 4
+	#Block used for the automatic arrival platform.
+	platformBlock = "minecraft:crying_obsidian"
+	#Block used for the automatic path to the entrance.
+	pathBlock = "minecraft:smooth_stone"
+
+[safety]
+	#Minimum interval between retries for locked instance directories.
+	# Default: 30
+	# Range: 1 ~ 3600
+	cleanupRetrySeconds = 30
+	#Fallback dimension used if a stored return dimension is unavailable.
+	fallbackReturnDimension = "minecraft:overworld"
+	debugLogging = false
+
+[manifestation]
+	#Enable manifestation triggers, holograms, and portals.
+	enabled = true
+	# Default: 3.0
+	# Range: 0.5 ~ 32.0
+	hologramMaxWidth = 3.0
+	# Default: 3.0
+	# Range: 0.5 ~ 32.0
+	hologramMaxHeight = 3.0
+	# Default: 3.0
+	# Range: 0.5 ~ 32.0
+	hologramMaxDepth = 3.0
+	#Allowed Values: GROUND_UP, MIDDLE_OUT, OUTSIDE_IN, SINGLE_ORIGIN, MULTI_ORIGIN, CHAOTIC, RANDOM_ORDER, NONE, RANDOM_MODE
+	defaultAnimationMode = "RANDOM_MODE"
+	#Modes eligible when defaultAnimationMode is RANDOM_MODE.
+	allowedRandomModes = ["GROUND_UP", "MIDDLE_OUT", "OUTSIDE_IN", "SINGLE_ORIGIN", "MULTI_ORIGIN", "CHAOTIC"]
+	#Primary global server-thread generation budget per tick.
+	# Default: 4.0
+	# Range: 0.1 ~ 25.0
+	generationTimeBudgetMillis = 4.0
+	#Secondary hard safety cap; time remains the primary limiter.
+	# Default: 5000
+	# Range: 1 ~ 1000000
+	maximumBlockOperationsPerTick = 5000
+	# Default: 100
+	# Range: 1 ~ 72000
+	animationDurationMinimumTicks = 100
+	# Default: 400
+	# Range: 1 ~ 72000
+	animationDurationMaximumTicks = 400
+	# Default: 40
+	# Range: 1 ~ 1200
+	collapseDurationTicks = 40
+	#Ticks for the portal plane to grow from its center to full size.
+	# Default: 30
+	# Range: 1 ~ 1200
+	portalGrowthDurationTicks = 30
+	#Ticks for the portal's final dither dissolve before removal.
+	# Default: 30
+	# Range: 1 ~ 1200
+	portalCloseDurationTicks = 30
+	# Default: 64
+	# Range: 8 ~ 1024
+	renderDistance = 64
+	# Default: 0.35
+	# Range: 0.0 ~ 1.0
+	terrainAlpha = 0.35
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	structureAlpha = 1.0
+	#Immediate cue while terrain and heightmaps are prepared before the hologram begins.
+	#NONE disables it; RING, SPIRAL, and CONVERGING select the motion pattern.
+	#Allowed Values: NONE, RING, SPIRAL, CONVERGING
+	preparationParticleStyle = "SPIRAL"
+	#Preparation particle color in #RRGGBB format.
+	preparationParticleColor = "#2AAAFF"
+	#Preparation particles emitted per client tick; 0 disables emission.
+	# Default: 3
+	# Range: 0 ~ 64
+	preparationParticleRate = 3
+	# Default: 0.7
+	# Range: 0.1 ~ 4.0
+	preparationParticleScale = 0.7
+	#Horizontal radius around the future hologram and portal.
+	# Default: 1.75
+	# Range: 0.25 ~ 16.0
+	preparationParticleRadius = 1.75
+	#Hard structure-shell block cap for one miniature snapshot.
+	# Default: 50000
+	# Range: 256 ~ 500000
+	maximumSnapshotBlocks = 50000
+	#Generated exact-dungeon icon resolution; high values use substantial GPU memory per cache entry.
+	# Default: 256
+	# Range: 16 ~ 2048
+	iconResolution = 256
+	# Default: 128
+	# Range: 1 ~ 4096
+	iconCacheLimit = 128
+	#Seconds between structure-pool catalyst icon changes and between 3D miniature changes.
+	# Default: 5
+	# Range: 1 ~ 3600
+	poolItemSwapIntervalSeconds = 5
+	# Default: 1.5
+	# Range: 0.5 ~ 8.0
+	portalWidth = 1.5
+	# Default: 2.5
+	# Range: 1.0 ~ 8.0
+	portalHeight = 2.5
+	#Rendered portal volume depth; 0 keeps a flat plane.
+	# Default: 0.35
+	# Range: 0.0 ~ 8.0
+	portalDepth = 0.35
+	#Minimum visual portal width in blocks reached as the close timer expires.
+	#Values above portalWidth are clamped to the full portal width.
+	# Default: 1.0
+	# Range: 0.1 ~ 8.0
+	portalMinimumWidth = 1.0
+	#Minimum visual portal height in blocks reached as the close timer expires.
+	#The bottom edge remains fixed; values above portalHeight are clamped to the full portal height.
+	# Default: 2.0
+	# Range: 0.1 ~ 8.0
+	portalMinimumHeight = 2.0
+	#Minimum visual portal depth in blocks reached as the close timer expires.
+	#Values above portalDepth are clamped to the full portal depth.
+	# Default: 0.35
+	# Range: 0.0 ~ 8.0
+	portalMinimumDepth = 0.35
+	#Portal interior in #RRGGBBAA format; the final byte is opacity.
+	portalInnerColor = "#010104F5"
+	#Portal glow in #RRGGBBAA format; the final byte is opacity.
+	portalOuterColor = "#2AAAFF73"
+	#When no datapack inner color is present, derive its RGB from the selected dungeon biome's fog color.
+	#The global portalInnerColor remains the fallback when this is false.
+	#This supersedes the old opt-in key so existing installations receive the new default.
+	derivePortalInnerColorFromBiome = true
+	#When no datapack outer color is present, derive its RGB from the selected dungeon biome's fog color.
+	#The global portalOuterColor remains the fallback when this is false.
+	derivePortalOuterColorFromBiomeFog = true
+	#Transparency applied to an automatically sampled inner color: 0 is opaque and 1 is invisible.
+	#Explicit datapack #RRGGBBAA values retain their own alpha.
+	# Default: 0.04
+	# Range: 0.0 ~ 1.0
+	portalInnerTransparency = 0.04
+	#Relative brightness applied to the sampled biome color.
+	#-1 produces black, 0 preserves the biome color, and 1 produces white.
+	# Default: 0.0
+	# Range: -1.0 ~ 1.0
+	portalInnerBiomeBrightness = 0.0
+	#Opacity percentage applied to an automatically sampled outer color; explicit #RRGGBBAA values retain their own alpha.
+	# Default: 45
+	# Range: 0 ~ 100
+	portalOuterOpacityPercent = 45
+	#Distance behind the resolved player arrival point for the instance return portal.
+	# Default: 2
+	# Range: 1 ~ 32
+	destinationPortalBehindEntryBlocks = 2
+	#Distance from the source entrance portal where its return portal sends players.
+	#The side is chosen from the player's original approach so returning cannot immediately re-enter the dungeon.
+	# Default: 4
+	# Range: 1 ~ 32
+	sourcePortalExitOffsetBlocks = 4
+	#Maximum open time; 0 follows instance lifetime only.
+	# Default: 0
+	# Range: 0 ~ 1440
+	portalLifetimeMinutes = 0
+	#Maximum distance in blocks for the dungeon icon, name, and portal-close countdown while aiming at a portal.
+	# Default: 16
+	# Range: 1 ~ 128
+	portalHudDistance = 16
+	#Item ID or #item_tag consumed when thrown into either endpoint of an open portal.
+	#A matching offering marks that portal's exact dungeon instance complete.
+	completionOffering = "minecraft:blaze_powder"
+	#Allowed Values: ON_ACTIVATION, ON_SUCCESS, NEVER
+	catalystConsumptionPolicy = "ON_SUCCESS"
+	refundOnFailure = true

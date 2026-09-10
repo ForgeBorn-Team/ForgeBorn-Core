@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "activated=false": { "model": "forgeborncore:block/totem_unactivated" },
+    "activated=true": { "model": "forgeborncore:block/totem_activated" }
+  }
+}

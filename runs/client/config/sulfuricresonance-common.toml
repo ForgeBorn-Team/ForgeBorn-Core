@@ -1,0 +1,17 @@
+[rubber_padding]
+	#Enable or disable bouncing on Rubber Padding blocks
+	enabled = true
+	#Multiplier for item bounce height (1.0 = normal, 0.0 = no bounce, 2.0 = double bounce)
+	# Default: 1.0
+	# Range: 0.0 ~ 3.0
+	itemBounceMultiplier = 1.0
+	#Multiplier for entity/player bounce height (1.0 = normal, 0.0 = no bounce, 2.0 = double bounce)
+	# Default: 1.0
+	# Range: 0.0 ~ 3.0
+	entityBounceMultiplier = 1.0
+
+[molten_rotor]
+	#Whether rain slows heating and speeds cooling on the Molten Rotor
+	rainAffectsMoltenRotor = true
+	#Allow TNT to explode the Molten Rotor (disable for safe TNT usage)
+	tntCanExplode = true

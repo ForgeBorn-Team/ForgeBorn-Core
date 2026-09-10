@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "es2020",
+        "module": "es2020",
+        "allowJs": true,
+        "checkJs": true,
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "paths": {
+            "*": ["probe/generated/*"]
+        }
+    },
+    "include": [
+        "server_scripts/**/*",
+        "client_scripts/**/*",
+        "startup_scripts/**/*",
+        "probe/generated/**/*"
+    ]
+}

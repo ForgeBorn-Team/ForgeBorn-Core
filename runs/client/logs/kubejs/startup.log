@@ -1,0 +1,14 @@
+[22:45:48] [INIT] KubeJS 2101.7.2-build.368; MC 2101 NeoForge
+[22:45:48] [INIT] Loaded plugins:
+[22:45:48] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSPlugin
+[22:45:48] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSClientPlugin
+[22:45:48] [INIT] - dev.latvian.mods.kubejs.integration.architectury.ArchitecturyIntegration
+[22:45:48] [INIT] - com.lowdragmc.lowdraglib.kjs.LDLibKubeJSPlugin
+[22:45:48] [INIT] - com.gregtechceu.gtceu.integration.kjs.GregTechKubeJSPlugin
+[22:45:48] [INIT] - com.sammy.malum.compat.kubejs.MalumJSPlugin
+[22:45:50] [INFO] startup_scripts:main.js#3: Hello, World! (Loaded startup example script)
+[22:45:50] [INFO] Loaded script startup_scripts:main.js in 0.045 s
+[22:45:50] [INFO] Loaded script startup_scripts:registry/item.js in 0.023 s
+[22:45:50] [INFO] Loaded 2/2 KubeJS startup scripts in 2.383 s with 0 errors and 0 warnings
+[22:45:50] [INFO] Validated 418 files in kubejs/assets/ in 253ms
+[22:45:50] [INFO] Validated 1 files in kubejs/data/ in 4ms

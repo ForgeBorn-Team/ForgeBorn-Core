@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "forgeborncore:item/material_sets/spirit_steel/ingot"
+  }
+}

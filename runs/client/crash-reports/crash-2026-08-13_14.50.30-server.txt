@@ -1,0 +1,196 @@
+---- Minecraft Crash Report ----
+
+// *plays dead*
+Please make sure this issue is not caused by Sable before reporting it to other mod authors.
+If you cannot reproduce it without Sable, file a report on the issue tracker
+https://github.com/ryanhcode/sable/issues
+
+// I bet Cylons wouldn't have this problem.
+
+Time: 2026-08-13 14:50:30
+Description: Exception in server tick loop
+
+java.lang.ExceptionInInitializerError: null
+	at TRANSFORMER/forgeborncore@0.0.1/com.sqvizers.forgeborncore.api.machine.multiblock.primitive.SpiritfireFurnace.buildMainUI(SpiritfireFurnace.java:90) ~[%23191!/:?] {re:classloading}
+	at TRANSFORMER/gtceu@8.0.0/com.gregtechceu.gtceu.api.machine.feature.IMuiMachine.lambda$buildUI$0(IMuiMachine.java:28) ~[gtceu-1.21.1-8.0.0.jar%23192!/:8.0.0] {re:classloading}
+	at TRANSFORMER/gtceu@8.0.0/com.gregtechceu.gtceu.api.machine.mui.MachineUIPanelBuilder.build(MachineUIPanelBuilder.java:111) ~[gtceu-1.21.1-8.0.0.jar%23192!/:8.0.0] {re:classloading}
+	at TRANSFORMER/gtceu@8.0.0/com.gregtechceu.gtceu.api.machine.feature.IMuiMachine.buildUI(IMuiMachine.java:29) ~[gtceu-1.21.1-8.0.0.jar%23192!/:8.0.0] {re:classloading}
+	at TRANSFORMER/gtceu@8.0.0/com.gregtechceu.gtceu.api.machine.feature.IMuiMachine.buildUI(IMuiMachine.java:23) ~[gtceu-1.21.1-8.0.0.jar%23192!/:8.0.0] {re:classloading}
+	at TRANSFORMER/modularui@3.3.1-SNAPSHOT/brachy.modularui.factory.AbstractUIFactory.createPanel(AbstractUIFactory.java:50) ~[modularui-mc1.21.1-3.3.1-SNAPSHOT.jar%23352!/:3.3.1-SNAPSHOT] {re:classloading}
+	at TRANSFORMER/modularui@3.3.1-SNAPSHOT/brachy.modularui.factory.GuiManager.open(GuiManager.java:83) ~[modularui-mc1.21.1-3.3.1-SNAPSHOT.jar%23352!/:3.3.1-SNAPSHOT] {re:classloading}
+	at TRANSFORMER/gtceu@8.0.0/com.gregtechceu.gtceu.api.mui.factory.MachineUIFactory.open(MachineUIFactory.java:49) ~[gtceu-1.21.1-8.0.0.jar%23192!/:8.0.0] {re:classloading}
+	at TRANSFORMER/gtceu@8.0.0/com.gregtechceu.gtceu.api.machine.feature.IMuiMachine.tryToOpenUI(IMuiMachine.java:52) ~[gtceu-1.21.1-8.0.0.jar%23192!/:8.0.0] {re:classloading}
+	at TRANSFORMER/gtceu@8.0.0/com.gregtechceu.gtceu.api.block.MetaMachineBlock.tryOpenUI(MetaMachineBlock.java:324) ~[gtceu-1.21.1-8.0.0.jar%23192!/:8.0.0] {re:mixin,re:classloading,pl:mixin:APP:mixin_configs/gtceu-sable.mixins.json:sable.MetaMachineBlockSubLevelMixin from mod gtceu,pl:mixin:A}
+	at TRANSFORMER/gtceu@8.0.0/com.gregtechceu.gtceu.api.block.MetaMachineBlock.useWithoutItem(MetaMachineBlock.java:313) ~[gtceu-1.21.1-8.0.0.jar%23192!/:8.0.0] {re:mixin,re:classloading,pl:mixin:APP:mixin_configs/gtceu-sable.mixins.json:sable.MetaMachineBlockSubLevelMixin from mod gtceu,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.block.state.BlockBehaviour$BlockStateBase.useWithoutItem(BlockBehaviour.java:838) ~[neoforge-21.1.228.jar%23189!/:?] {re:mixin,re:classloading,pl:mixin:APP:mixins.iris.json:MixinBlockStateBehavior from mod iris,pl:mixin:APP:kubejs.mixins.json:BlockStateBaseMixin from mod kubejs,pl:mixin:APP:gtceu.mixins.json:BlockStateAccessor from mod gtceu,pl:mixin:APP:ars_nouveau.mixins.json:redstone.RedstoneLevelMixin from mod ars_nouveau,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.level.ServerPlayerGameMode.useItemOn(ServerPlayerGameMode.java:373) ~[neoforge-21.1.228.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:ae2wtlib.mixins.json:ServerPlayerGameModeMixin from mod ae2wtlib,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.network.ServerGamePacketListenerImpl.handleUseItemOn(ServerGamePacketListenerImpl.java:1144) ~[neoforge-21.1.228.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:gtceu.mixins.json:ServerGamePacketListenerImplAccessor from mod gtceu,pl:mixin:APP:sable.mixins.json:entity.entities_stick_sublevels.player.ServerGamePacketListenerImplMixin from mod sable,pl:mixin:APP:sable.mixins.json:entity.entity_sublevel_collision.ServerGamePacketListenerImplMixin from mod sable,pl:mixin:APP:ftbquests-common.mixins.json:ServerGamePacketListenerImplMixin from mod ftbquests,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:48) ~[neoforge-21.1.228.jar%23189!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:10) ~[neoforge-21.1.228.jar%23189!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:36) ~[neoforge-21.1.228.jar%23189!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.TickTask.run(TickTask.java:18) ~[neoforge-21.1.228.jar%23189!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:151) ~[neoforge-21.1.228.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[neoforge-21.1.228.jar%23189!/:?] {re:mixin,re:computing_frames,re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:881) ~[neoforge-21.1.228.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:xaeroworldmap.mixins.json:MixinMinecraftServer from mod xaeroworldmap,pl:mixin:APP:veil.network.mixins.json:NetworkMinecraftServerMixin from mod veil,pl:mixin:APP:veil.scheduler.mixins.json:MinecraftServerMixin from mod veil,pl:mixin:APP:kubejs.mixins.json:MinecraftServerMixin from mod kubejs,pl:mixin:APP:ae2.mixins.json:spatial.MinecraftServerMixin from mod ae2,pl:mixin:APP:ponder-common.mixins.json:accessor.MinecraftServerAccessor from mod ponder,pl:mixin:APP:sable.mixins.json:udp.MinecraftServerMixin from mod sable,pl:mixin:APP:xaerohud.mixins.json:MixinMinecraftServer from mod xaerominimap,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:170) ~[neoforge-21.1.228.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:xaeroworldmap.mixins.json:MixinMinecraftServer from mod xaeroworldmap,pl:mixin:APP:veil.network.mixins.json:NetworkMinecraftServerMixin from mod veil,pl:mixin:APP:veil.scheduler.mixins.json:MinecraftServerMixin from mod veil,pl:mixin:APP:kubejs.mixins.json:MinecraftServerMixin from mod kubejs,pl:mixin:APP:ae2.mixins.json:spatial.MinecraftServerMixin from mod ae2,pl:mixin:APP:ponder-common.mixins.json:accessor.MinecraftServerAccessor from mod ponder,pl:mixin:APP:sable.mixins.json:udp.MinecraftServerMixin from mod sable,pl:mixin:APP:xaerohud.mixins.json:MixinMinecraftServer from mod xaerominimap,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:122) ~[neoforge-21.1.228.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:864) ~[neoforge-21.1.228.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:xaeroworldmap.mixins.json:MixinMinecraftServer from mod xaeroworldmap,pl:mixin:APP:veil.network.mixins.json:NetworkMinecraftServerMixin from mod veil,pl:mixin:APP:veil.scheduler.mixins.json:MinecraftServerMixin from mod veil,pl:mixin:APP:kubejs.mixins.json:MinecraftServerMixin from mod kubejs,pl:mixin:APP:ae2.mixins.json:spatial.MinecraftServerMixin from mod ae2,pl:mixin:APP:ponder-common.mixins.json:accessor.MinecraftServerAccessor from mod ponder,pl:mixin:APP:sable.mixins.json:udp.MinecraftServerMixin from mod sable,pl:mixin:APP:xaerohud.mixins.json:MixinMinecraftServer from mod xaerominimap,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:858) ~[neoforge-21.1.228.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:xaeroworldmap.mixins.json:MixinMinecraftServer from mod xaeroworldmap,pl:mixin:APP:veil.network.mixins.json:NetworkMinecraftServerMixin from mod veil,pl:mixin:APP:veil.scheduler.mixins.json:MinecraftServerMixin from mod veil,pl:mixin:APP:kubejs.mixins.json:MinecraftServerMixin from mod kubejs,pl:mixin:APP:ae2.mixins.json:spatial.MinecraftServerMixin from mod ae2,pl:mixin:APP:ponder-common.mixins.json:accessor.MinecraftServerAccessor from mod ponder,pl:mixin:APP:sable.mixins.json:udp.MinecraftServerMixin from mod sable,pl:mixin:APP:xaerohud.mixins.json:MixinMinecraftServer from mod xaerominimap,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:135) ~[neoforge-21.1.228.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.managedBlock(MinecraftServer.java:830) ~[neoforge-21.1.228.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:xaeroworldmap.mixins.json:MixinMinecraftServer from mod xaeroworldmap,pl:mixin:APP:veil.network.mixins.json:NetworkMinecraftServerMixin from mod veil,pl:mixin:APP:veil.scheduler.mixins.json:MinecraftServerMixin from mod veil,pl:mixin:APP:kubejs.mixins.json:MinecraftServerMixin from mod kubejs,pl:mixin:APP:ae2.mixins.json:spatial.MinecraftServerMixin from mod ae2,pl:mixin:APP:ponder-common.mixins.json:accessor.MinecraftServerAccessor from mod ponder,pl:mixin:APP:sable.mixins.json:udp.MinecraftServerMixin from mod sable,pl:mixin:APP:xaerohud.mixins.json:MixinMinecraftServer from mod xaerominimap,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:835) ~[neoforge-21.1.228.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:xaeroworldmap.mixins.json:MixinMinecraftServer from mod xaeroworldmap,pl:mixin:APP:veil.network.mixins.json:NetworkMinecraftServerMixin from mod veil,pl:mixin:APP:veil.scheduler.mixins.json:MinecraftServerMixin from mod veil,pl:mixin:APP:kubejs.mixins.json:MinecraftServerMixin from mod kubejs,pl:mixin:APP:ae2.mixins.json:spatial.MinecraftServerMixin from mod ae2,pl:mixin:APP:ponder-common.mixins.json:accessor.MinecraftServerAccessor from mod ponder,pl:mixin:APP:sable.mixins.json:udp.MinecraftServerMixin from mod sable,pl:mixin:APP:xaerohud.mixins.json:MixinMinecraftServer from mod xaerominimap,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:718) ~[neoforge-21.1.228.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:xaeroworldmap.mixins.json:MixinMinecraftServer from mod xaeroworldmap,pl:mixin:APP:veil.network.mixins.json:NetworkMinecraftServerMixin from mod veil,pl:mixin:APP:veil.scheduler.mixins.json:MinecraftServerMixin from mod veil,pl:mixin:APP:kubejs.mixins.json:MinecraftServerMixin from mod kubejs,pl:mixin:APP:ae2.mixins.json:spatial.MinecraftServerMixin from mod ae2,pl:mixin:APP:ponder-common.mixins.json:accessor.MinecraftServerAccessor from mod ponder,pl:mixin:APP:sable.mixins.json:udp.MinecraftServerMixin from mod sable,pl:mixin:APP:xaerohud.mixins.json:MixinMinecraftServer from mod xaerominimap,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:267) ~[neoforge-21.1.228.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:xaeroworldmap.mixins.json:MixinMinecraftServer from mod xaeroworldmap,pl:mixin:APP:veil.network.mixins.json:NetworkMinecraftServerMixin from mod veil,pl:mixin:APP:veil.scheduler.mixins.json:MinecraftServerMixin from mod veil,pl:mixin:APP:kubejs.mixins.json:MinecraftServerMixin from mod kubejs,pl:mixin:APP:ae2.mixins.json:spatial.MinecraftServerMixin from mod ae2,pl:mixin:APP:ponder-common.mixins.json:accessor.MinecraftServerAccessor from mod ponder,pl:mixin:APP:sable.mixins.json:udp.MinecraftServerMixin from mod sable,pl:mixin:APP:xaerohud.mixins.json:MixinMinecraftServer from mod xaerominimap,pl:mixin:A}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {re:mixin}
+Caused by: net.minecraft.ResourceLocationException: Non [a-z0-9/._-] character in path of location: gtceu:forgeborncore:textures/gui/progress_bar/progress_bar_spirit_fire.png
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.assertValidPath(ResourceLocation.java:311) ~[neoforge-21.1.228.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:ftblibrary-common.mixins.json:ResourceLocationMixin from mod ftblibrary,pl:mixin:APP:kubejs.mixins.json:ResourceLocationMixin from mod kubejs,pl:mixin:APP:mixins.iris.json:texture.MixinResourceLocation from mod iris,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.createUntrusted(ResourceLocation.java:58) ~[neoforge-21.1.228.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:ftblibrary-common.mixins.json:ResourceLocationMixin from mod ftblibrary,pl:mixin:APP:kubejs.mixins.json:ResourceLocationMixin from mod kubejs,pl:mixin:APP:mixins.iris.json:texture.MixinResourceLocation from mod iris,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(ResourceLocation.java:62) ~[neoforge-21.1.228.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:ftblibrary-common.mixins.json:ResourceLocationMixin from mod ftblibrary,pl:mixin:APP:kubejs.mixins.json:ResourceLocationMixin from mod kubejs,pl:mixin:APP:mixins.iris.json:texture.MixinResourceLocation from mod iris,pl:mixin:A}
+	at TRANSFORMER/modularui@3.3.1-SNAPSHOT/brachy.modularui.drawable.UITexture$Builder.location(UITexture.java:305) ~[modularui-mc1.21.1-3.3.1-SNAPSHOT.jar%23352!/:3.3.1-SNAPSHOT] {re:classloading}
+	at TRANSFORMER/forgeborncore@0.0.1/com.sqvizers.forgeborncore.common.mui.FBGuiTextures.progressBar(FBGuiTextures.java:69) ~[?:?] {re:classloading}
+	at TRANSFORMER/forgeborncore@0.0.1/com.sqvizers.forgeborncore.common.mui.FBGuiTextures.progressBar(FBGuiTextures.java:61) ~[?:?] {re:classloading}
+	at TRANSFORMER/forgeborncore@0.0.1/com.sqvizers.forgeborncore.common.mui.FBGuiTextures.<clinit>(FBGuiTextures.java:23) ~[?:?] {re:classloading}
+	... 31 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.4, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 352319488 bytes (335 MiB) / 4097835008 bytes (3908 MiB) up to 4097835008 bytes (3908 MiB)
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 6800H with Radeon Graphics         
+	Identifier: AuthenticAMD Family 25 Model 68 Stepping 1
+	Microarchitecture: Zen 3
+	Frequency (GHz): 3.19
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: AMD Radeon(TM) Graphics
+	Graphics card #0 vendor: Advanced Micro Devices, Inc.
+	Graphics card #0 VRAM (MiB): 512.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.11037.4004
+	Graphics card #1 name: NVIDIA GeForce RTX 3050 Laptop GPU
+	Graphics card #1 vendor: NVIDIA
+	Graphics card #1 VRAM (MiB): 4096.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 32.0.16.1088
+	Memory slot #0 capacity (MiB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 4.80
+	Memory slot #0 type: Unknown
+	Memory slot #1 capacity (MiB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 4.80
+	Memory slot #1 type: Unknown
+	Virtual memory max (MiB): 35084.92
+	Virtual memory used (MiB): 31880.70
+	Swap memory total (MiB): 19456.00
+	Swap memory used (MiB): 2499.14
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 57721.55, total: 464444.31
+	Space in storage for workdir (MiB): available: 57721.55, total: 464444.31
+	JVM Flags: 0 total; 
+	Loaded Shaderpack: (off)
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/79, l='ServerLevel[DevEnviromentWorld]', x=267.80, y=77.00, z=205.88]]
+	Active Data Packs: create:dynamic_data, gtceu:dynamic_data, vanilla, mod_data, mod/sodium, mod/smartbrainlib (incompatible), mod/rhino, mod/fabric_renderer_api_v1, mod/geckolib, mod/jei (incompatible), mod/xaerolib (incompatible), mod/aeronautics (incompatible), mod/xaeroworldmap (incompatible), mod/neoforge, mod/fabric_block_view_api_v2, mod/iris, mod/veil (incompatible), mod/simulated (incompatible), mod/guideme, mod/ldlib, mod/nuggets (incompatible), mod/cloth_config (incompatible), mod/offroad (incompatible), mod/farmersdelight (incompatible), mod/emi (incompatible), mod/kubejs, mod/fabric_api_base, mod/configuration (incompatible), mod/gtceu, mod/jade (incompatible), mod/ae2 (incompatible), mod/nebulaeae2, mod/ae2wtlib (incompatible), mod/ae2wtlib_api, mod/rocketnautics,dimensional_sable (incompatible), mod/flywheel (incompatible), mod/ponder (incompatible), mod/create (incompatible), mod/sable, mod/sablecompanion, mod/patchouli (incompatible), mod/xaerominimap (incompatible), mod/legendarysurvivaloverhaul (incompatible), mod/curios (incompatible), mod/ars_nouveau (incompatible), mod/modularui (incompatible), mod/modonomicon (incompatible), mod/resourcefullib, mod/betteradvancedtooltips, mod/lambdynlights_api, mod/embers, mod/architectury (incompatible), mod/ftblibrary (incompatible), mod/ftbteams (incompatible), mod/ftbchunks (incompatible), mod/ftbquests (incompatible), mod/worldstripper (incompatible), mod/occultism, mod/fabric_rendering_data_attachment_v1, mod/undergarden, mod/lodestone (incompatible), mod/malum (incompatible), mod/infiniverse, mod/journeymap_api (incompatible), mod/effortlessbuilding (incompatible), mod/vanillin (incompatible), mod/space_gravity (incompatible), mod/forgeborncore
+	Available Data Packs: bundle, trade_rebalance, vanilla, mod/ae2 (incompatible), mod/ae2wtlib (incompatible), mod/ae2wtlib_api, mod/aeronautics (incompatible), mod/architectury (incompatible), mod/ars_nouveau (incompatible), mod/betteradvancedtooltips, mod/cloth_config (incompatible), mod/configuration (incompatible), mod/create (incompatible), mod/curios (incompatible), mod/effortlessbuilding (incompatible), mod/embers, mod/emi (incompatible), mod/fabric_api_base, mod/fabric_block_view_api_v2, mod/fabric_renderer_api_v1, mod/fabric_rendering_data_attachment_v1, mod/farmersdelight (incompatible), mod/flywheel (incompatible), mod/forgeborncore, mod/ftbchunks (incompatible), mod/ftblibrary (incompatible), mod/ftbquests (incompatible), mod/ftbteams (incompatible), mod/geckolib, mod/gtceu, mod/guideme, mod/infiniverse, mod/iris, mod/jade (incompatible), mod/jei (incompatible), mod/journeymap_api (incompatible), mod/kubejs, mod/lambdynlights_api, mod/ldlib, mod/legendarysurvivaloverhaul (incompatible), mod/lodestone (incompatible), mod/malum (incompatible), mod/modonomicon (incompatible), mod/modularui (incompatible), mod/nebulaeae2, mod/neoforge, mod/nuggets (incompatible), mod/occultism, mod/offroad (incompatible), mod/patchouli (incompatible), mod/ponder (incompatible), mod/resourcefullib, mod/rhino, mod/rocketnautics,dimensional_sable (incompatible), mod/sable, mod/sablecompanion, mod/simulated (incompatible), mod/smartbrainlib (incompatible), mod/sodium, mod/space_gravity (incompatible), mod/undergarden, mod/vanillin (incompatible), mod/veil (incompatible), mod/worldstripper (incompatible), mod/xaerolib (incompatible), mod/xaerominimap (incompatible), mod/xaeroworldmap (incompatible), mod_data, gtceu:dynamic_data, create:dynamic_data
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Experimental
+	World Seed: -5879855320070710510
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'neoforge'; Server brand changed to 'neoforge'
+	Launched Version: 21.1.228
+	ModLauncher: 11.0.5+main.901c6ea8
+	ModLauncher launch target: forgeclientdev
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.42.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.42.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.42.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.5.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.5.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		ae2wtlib-19.5.0.jar                               |AE2WTLib                      |ae2wtlib                      |19.5.0              |Manifest: NOSIGNATURE
+		ae2wtlib_api-19.5.0.jar                           |AE2WTLib API                  |ae2wtlib_api                  |19.5.0              |Manifest: NOSIGNATURE
+		appliedenergistics2-19.2.17.jar                   |Applied Energistics 2         |ae2                           |19.2.17             |Manifest: NOSIGNATURE
+		architectury-neoforge-13.0.8.jar                  |Architectury                  |architectury                  |13.0.8              |Manifest: NOSIGNATURE
+		ars-nouveau-5.12.0.jar                            |Ars Nouveau                   |ars_nouveau                   |5.12.0              |Manifest: NOSIGNATURE
+		better-advanced-tooltips-2101.1.0-build.1.jar     |Better Advanced Tooltips      |betteradvancedtooltips        |2101.1.0-build.1    |Manifest: NOSIGNATURE
+		cloth-config-neoforge-15.0.140-neoforge.jar       |Cloth Config v15 API          |cloth_config                  |15.0.140            |Manifest: NOSIGNATURE
+		configuration-1.21.1-3.1.1-neoforge.jar           |Configuration                 |configuration                 |3.1.1               |Manifest: NOSIGNATURE
+		create-1.21.1-6.0.10-281.jar                      |Create                        |create                        |6.0.10              |Manifest: NOSIGNATURE
+		aeronautics-neoforge-1.21.1-1.3.0.jar             |Create Aeronautics            |aeronautics                   |1.3.0               |Manifest: NOSIGNATURE
+		offroad-neoforge-1.21.1-1.3.0.jar                 |Create Offroad                |offroad                       |1.3.0               |Manifest: NOSIGNATURE
+		simulated-neoforge-1.21.1-1.3.0.jar               |Create Simulated              |simulated                     |1.3.0               |Manifest: NOSIGNATURE
+		create-cosmonautics-1595491-8358740.jar           |Create: Cosmonautics          |rocketnautics                 |1.4.0rc1            |Manifest: NOSIGNATURE
+		curios-neoforge-9.5.1+1.21.1.jar                  |Curios API                    |curios                        |9.5.1+1.21.1        |Manifest: NOSIGNATURE
+		effortless-building-4.1.jar                       |Effortless Building           |effortlessbuilding            |4.1                 |Manifest: NOSIGNATURE
+		embers-re-ignited-1579725-8295861.jar             |Embers Re-Ignited             |embers                        |1.21.1-1.5.4        |Manifest: NOSIGNATURE
+		emi-1.1.24+1.21.1+neoforge.jar                    |EMI                           |emi                           |1.1.24+1.21.1+neofor|Manifest: NOSIGNATURE
+		farmers-delight-1.21.1-1.2.9.jar                  |Farmer's Delight              |farmersdelight                |1.2.9               |Manifest: NOSIGNATURE
+		flywheel-neoforge-1.21.1-1.0.6-44.jar             |Flywheel                      |flywheel                      |1.0.6-44            |Manifest: NOSIGNATURE
+		main                                              |ForgeBorn: Core               |forgeborncore                 |0.0.1               |Manifest: NOSIGNATURE
+		fabric-api-base-0.4.42+d1308ded19.jar             |Forgified Fabric API Base     |fabric_api_base               |0.4.42+d1308ded19   |Manifest: NOSIGNATURE
+		fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar    |Forgified Fabric BlockView API|fabric_block_view_api_v2      |1.0.10+9afaaf8c19   |Manifest: NOSIGNATURE
+		fabric-renderer-api-v1-3.4.1+9125b6dc19.jar       |Forgified Fabric Renderer API |fabric_renderer_api_v1        |3.4.1+9125b6dc19    |Manifest: NOSIGNATURE
+		fabric-rendering-data-attachment-v1-0.3.48+73761d2|Forgified Fabric Rendering Dat|fabric_rendering_data_attachme|0.3.48+73761d2e19   |Manifest: NOSIGNATURE
+		ftb-chunks-neoforge-2101.1.1.jar                  |FTB Chunks                    |ftbchunks                     |2101.1.1            |Manifest: NOSIGNATURE
+		ftb-library-neoforge-2101.1.32.jar                |FTB Library                   |ftblibrary                    |2101.1.32           |Manifest: NOSIGNATURE
+		ftb-quests-neoforge-2101.1.27.jar                 |FTB Quests                    |ftbquests                     |2101.1.27           |Manifest: NOSIGNATURE
+		ftb-teams-neoforge-2101.1.10.jar                  |FTB Teams                     |ftbteams                      |2101.1.10           |Manifest: NOSIGNATURE
+		geckolib-neoforge-1.21.1-4.8.4.jar                |GeckoLib 4                    |geckolib                      |4.8.4               |Manifest: NOSIGNATURE
+		gtceu-1.21.1-8.0.0.jar                            |GregTech                      |gtceu                         |8.0.0               |Manifest: NOSIGNATURE
+		guideme-21.1.16.jar                               |GuideME                       |guideme                       |21.1.16             |Manifest: NOSIGNATURE
+		infiniverse-568341-5486311.jar                    |Infiniverse                   |infiniverse                   |2.0.1.0             |Manifest: NOSIGNATURE
+		irisshaders-455508-8242804.jar                    |Iris                          |iris                          |1.8.14-beta.1+mc1.21|Manifest: NOSIGNATURE
+		jade-15.10.5+neoforge.jar                         |Jade                          |jade                          |15.10.5+neoforge    |Manifest: NOSIGNATURE
+		journeymap-api-neoforge-2.0.0-1.21.1-20260205.2002|JourneyMap API                |journeymap_api                |2.0.0               |Manifest: NOSIGNATURE
+		jei-1.21.1-neoforge-19.25.1.328.jar               |Just Enough Items             |jei                           |19.25.1.328         |Manifest: NOSIGNATURE
+		kubejs-neoforge-2101.7.2-build.368.jar            |KubeJS                        |kubejs                        |2101.7.2-build.368  |Manifest: NOSIGNATURE
+		lambdynamiclights-api-4.5.1+1.21.1-mojmap.jar     |LambDynamicLights (API)       |lambdynlights_api             |4.5.1+1.21.1        |Manifest: NOSIGNATURE
+		legendary-survival-overhaul-1.21.1-2.4.2.jar      |Legendary Survival Overhaul   |legendarysurvivaloverhaul     |2.4.2               |Manifest: NOSIGNATURE
+		lodestonelib-1.8.2.jar                            |Lodestone                     |lodestone                     |1.8.2               |Manifest: NOSIGNATURE
+		ldlib-neoforge-1.21.1-1.0.35.a-ccpatch.jar        |LowDragLib                    |ldlib                         |1.0.35.a            |Manifest: NOSIGNATURE
+		malum-1.8.2.jar                                   |Malum                         |malum                         |1.8.2               |Manifest: NOSIGNATURE
+		neoforge-21.1.228.jar                             |Minecraft                     |minecraft                     |1.21.1              |Manifest: NOSIGNATURE
+		modonomicon-1.21.1-neoforge-1.120.1.jar           |Modonomicon                   |modonomicon                   |1.120.1             |Manifest: NOSIGNATURE
+		modularui-mc1.21.1-3.3.1-SNAPSHOT.jar             |ModularUI                     |modularui                     |3.3.1-SNAPSHOT      |Manifest: NOSIGNATURE
+		nebulaeae2-0.1.0.jar                              |Nebulae AE2                   |nebulaeae2                    |0.1.0               |Manifest: NOSIGNATURE
+		neoforge-21.1.228.jar                             |NeoForge                      |neoforge                      |21.1.228            |Manifest: NOSIGNATURE
+		nuggets-neoforge-1.21.1-1.1.0.48.jar              |Nuggets                       |nuggets                       |1.1.0.48            |Manifest: NOSIGNATURE
+		occultism-1.21.1-neoforge-1.221.0.jar             |Occultism                     |occultism                     |1.221.0             |Manifest: NOSIGNATURE
+		Patchouli-1.21.1-93-NEOFORGE.jar                  |Patchouli                     |patchouli                     |1.21.1-93-NEOFORGE  |Manifest: NOSIGNATURE
+		ponder-neoforge-1.0.87+mc1.21.1.jar               |Ponder                        |ponder                        |1.0.87+mc1.21.1     |Manifest: NOSIGNATURE
+		resourcefullib-neoforge-1.21-3.0.12.jar           |Resourceful Lib               |resourcefullib                |3.0.12              |Manifest: NOSIGNATURE
+		rhino-2101.2.7-build.85.jar                       |Rhino                         |rhino                         |2101.2.7-build.85   |Manifest: NOSIGNATURE
+		sable-neoforge-1.21.1-2.0.3.jar                   |Sable                         |sable                         |2.0.3               |Manifest: NOSIGNATURE
+		sable-companion-common-1.21.1-1.6.0.jar           |Sable Companion               |sablecompanion                |1.6.0               |Manifest: NOSIGNATURE
+		smartbrainlib-O5EpeqI3.jar                        |SmartBrainLib                 |smartbrainlib                 |1.16.11             |Manifest: NOSIGNATURE
+		sodium-neoforge-mod-0.8.12-beta.1+mc1.21.1.jar    |Sodium                        |sodium                        |0.8.12-beta.1+mc1.21|Manifest: NOSIGNATURE
+		XMlHoHNU-dcHZSOWO.jar                             |Space Gravity                 |space_gravity                 |1.0.3               |Manifest: NOSIGNATURE
+		the-undergarden-379849-7862546.jar                |The Undergarden               |undergarden                   |0.9.6               |Manifest: NOSIGNATURE
+		vanillin-neoforge-1.21.1-1.1.3-41.jar             |Vanillin                      |vanillin                      |1.1.3-41            |Manifest: NOSIGNATURE
+		veil-lib-1517006-8236124.jar                      |Veil                          |veil                          |4.1.4               |Manifest: NOSIGNATURE
+		world-stripper-250603-5592921.jar                 |World Stripper                |worldstripper                 |5.0.0               |Manifest: NOSIGNATURE
+		xaerominimap-neoforge-1.21.1-25.3.10.jar          |Xaero's Minimap               |xaerominimap                  |25.3.10             |Manifest: NOSIGNATURE
+		xaeroworldmap-neoforge-1.21.1-1.40.11.jar         |Xaero's World Map             |xaeroworldmap                 |1.40.11             |Manifest: NOSIGNATURE
+		xaerolib-neoforge-1.21.1-1.1.0.jar                |XaeroLib                      |xaerolib                      |1.1.0               |Manifest: NOSIGNATURE
+	Crash Report UUID: b0340dd2-7515-4f4a-83ff-f40601e55194
+	FML: 4.0.42
+	NeoForge: 21.1.228
+	Flywheel Backend: flywheel:indirect

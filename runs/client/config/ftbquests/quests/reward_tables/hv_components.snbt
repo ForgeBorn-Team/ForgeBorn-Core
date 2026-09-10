@@ -1,0 +1,23 @@
+{
+	id: "3BB438AC415A3956"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{
+			count: 12
+			id: "3EA14034AA4C2471"
+			item: {
+				count: 1
+				id: "gtceu:chromium_rod"
+			}
+		}
+		{
+			count: 32
+			id: "4F6211506BFF2A34"
+			item: {
+				count: 1
+				id: "gtceu:electrum_ingot"
+			}
+		}
+	]
+}

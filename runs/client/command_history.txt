@@ -1,0 +1,16 @@
+/give Dev forgeborncore:death_whistle
+/give Dev minecraft:white_bed
+/effect clear
+/kill
+/summon minecraft:warden
+/summon forgeborncore:brawler_skeleton
+/summon aeronautics:gust
+/summon aeronautics:propeller_bearing_contraption
+/summon create:seat
+/summon malum:pneuma_void
+/summon simulated:honey_glue
+/summon forgeborncore:brawler_skeleton
+/summon forgeborncore:brawler_skeleton ~ ~ ~
+/setworldspawn
+/gamerule keepInventory true
+/kill

@@ -1,0 +1,25 @@
+#Replace leather dropped directly by vanilla animals with Firstworks raw hide, and replace the 4-rabbit-hide leather recipe with raw hide.
+#Disable this when a modpack manages hide acquisition through KubeJS or loot tables.
+replaceAnimalLeatherDrops = true
+#Require fibre bindings in vanilla wooden and stone tools, and rope in vanilla metal and diamond tools.
+#Disable this to retain vanilla tool recipes while keeping the Firstworks cordage materials available.
+#Changing this option requires a datapack reload or game restart.
+bindVanillaToolRecipes = true
+#Replace sheep wool drops with colored fleece, remove String-to-Wool, and require Cloth and Clean Wool for beds.
+#Disable this to restore vanilla sheep, wool, and bed progression while keeping Firstworks textile items available.
+#Changing this option requires a datapack reload or game restart.
+enableTextileProgression = true
+#Require configurable-press unfired brick molding, brick firing, barrel mortar, and mortar-bound brick blocks for masonry.
+#Disable this to retain vanilla brick progression while keeping Firstworks masonry items available.
+#Changing this option requires a datapack reload or game restart.
+enableMasonryProgression = true
+#Allow rain to naturally fill open Barrels whose input store holds no fluid or only water.
+#Disabled by default to avoid changing existing-world behaviour.
+#Rain does not fill Barrels whose input store already contains a non-water fluid.
+#Existing output fluid is never modified. Cover or enclose a Barrel to keep it dry.
+rainFillsBarrels = false
+#Water (in millibuckets) gathered from rain per precipitation event.
+#Only used when rainFillsBarrels is enabled.
+# Default: 100
+# Range: 1 ~ 4000
+rainFillAmount = 100

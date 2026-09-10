@@ -1,0 +1,82 @@
+{
+    "parent": "minecraft:block/block",
+    "loader": "gtceu:machine",
+    "machine": "forgeborncore:spiritfire_furnace",
+    "texture_overrides": {
+        "all": "forgeborncore:block/otherstone_polished"
+    },
+    "variants": {
+        "is_formed=false,recipe_logic_status=idle": {
+            "model": {
+                "parent": "gtceu:block/machine/template/cube_all/sided",
+                "textures": {
+                    "all": "forgeborncore:block/otherstone_polished",
+                    "overlay_front": "forgeborncore:block/multiblock/spiritfire_furnace/overlay_front"
+                }
+            }
+        },
+        "is_formed=false,recipe_logic_status=suspend": {
+            "model": {
+                "parent": "gtceu:block/machine/template/cube_all/sided",
+                "textures": {
+                    "all": "forgeborncore:block/otherstone_polished",
+                    "overlay_front": "forgeborncore:block/multiblock/spiritfire_furnace/overlay_front"
+                }
+            }
+        },
+        "is_formed=false,recipe_logic_status=waiting": {
+            "model": {
+                "parent": "gtceu:block/machine/template/cube_all/sided",
+                "textures": {
+                    "all": "forgeborncore:block/otherstone_polished",
+                    "overlay_front": "forgeborncore:block/multiblock/spiritfire_furnace/overlay_front_active"
+                }
+            }
+        },
+        "is_formed=false,recipe_logic_status=working": {
+            "model": {
+                "parent": "gtceu:block/machine/template/cube_all/sided",
+                "textures": {
+                    "all": "forgeborncore:block/otherstone_polished",
+                    "overlay_front": "forgeborncore:block/multiblock/spiritfire_furnace/overlay_front_active"
+                }
+            }
+        },
+        "is_formed=true,recipe_logic_status=idle": {
+            "model": {
+                "parent": "gtceu:block/machine/template/cube_all/sided",
+                "textures": {
+                    "all": "forgeborncore:block/otherstone_polished",
+                    "overlay_front": "forgeborncore:block/multiblock/spiritfire_furnace/overlay_front"
+                }
+            }
+        },
+        "is_formed=true,recipe_logic_status=suspend": {
+            "model": {
+                "parent": "gtceu:block/machine/template/cube_all/sided",
+                "textures": {
+                    "all": "forgeborncore:block/otherstone_polished",
+                    "overlay_front": "forgeborncore:block/multiblock/spiritfire_furnace/overlay_front"
+                }
+            }
+        },
+        "is_formed=true,recipe_logic_status=waiting": {
+            "model": {
+                "parent": "gtceu:block/machine/template/cube_all/sided",
+                "textures": {
+                    "all": "forgeborncore:block/otherstone_polished",
+                    "overlay_front": "forgeborncore:block/multiblock/spiritfire_furnace/overlay_front_active"
+                }
+            }
+        },
+        "is_formed=true,recipe_logic_status=working": {
+            "model": {
+                "parent": "gtceu:block/machine/template/cube_all/sided",
+                "textures": {
+                    "all": "forgeborncore:block/otherstone_polished",
+                    "overlay_front": "forgeborncore:block/multiblock/spiritfire_furnace/overlay_front_active"
+                }
+            }
+        }
+    }
+}

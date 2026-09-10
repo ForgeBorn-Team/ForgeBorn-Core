@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "forgeborncore:item/rune_1_good_base",
+        "layer1": "forgeborncore:item/runes_symbols/rune_good_air"
+    }
+}

@@ -1,0 +1,154 @@
+StartupEvents.registry('item', (event) => {
+    //Dimensions
+    event.create('kubejs:undergarden_dim');
+
+    ///////////////
+    ///ForgeBorn///
+    ///////////////
+    event.create('ingot_form').maxStackSize(1);
+    event
+        .create('gt_quantum')
+        .texture('assets/item/gt_quantum')
+        .displayName('GT-Quantum Token')
+        .tooltip('§8Right-Click to use this Coin and obtain Bronze Stew.')
+        .maxStackSize(16);
+    event.create('seared_bricks_raw').displayName('Raw Seared Brick');
+    event.create('plant_fiber');
+    event.create('plant_string');
+    event.create('plant_rope');
+    event.create('needle').maxStackSize(1).maxDamage(50);
+    event.create('flint_chisel').maxStackSize(1).maxDamage(12);
+    event.create('wool_clutch');
+    event.create('ancient_key').maxStackSize(1);
+    event.create('contradiction_stone_dust');
+    event.create('tanned_leather');
+    event.create('stabilized_latex');
+    event.create('sulfur_chunk');
+    event.create('coke_brick_dust');
+    event.create('greg_icon');
+    event.create('lurking_soul');
+    event.create('omnipetal');
+    event.create('transmutation_core');
+    event.create('cloth');
+    event.create('coin');
+    event.create('rope');
+    event.create('blank_upgrade');
+
+    event.create('abrasive_paste');
+    event.create('paste_treated_paper').displayName('Paste-Treated Paper');
+
+    event.create('mica_insulator_foil');
+    event.create('mica_based_sheet');
+    event.create('mica_based_pulp');
+
+    event.create('crushed_blue_moss');
+    event.create('blue_moss_cellulose_pulp');
+    event.create('blue_moss_substrate');
+    //Industrial
+    event.create('basic_mechanical_parts');
+
+    event.create('lumicrystalline_seed');
+
+    event.create('manaweave_thread');
+    event.create('manasteel_gear_bundle');
+
+    event.create('managlass_dust');
+    event.create('managlass_tube');
+    event.create('botanical_thermionic_valve');
+    event.create('cursed_cloth');
+    event.create('enchanted_fabric');
+    event.create('basic_nature_catalyst');
+    event.create('obsidian_skull').maxStackSize(1);
+    //AE2
+    /*event.create('logic_processor');
+    event.create('calculation_processor');
+    event.create('engineering_processor');
+    event.create('advanced_processor');
+    event.create('quantum_processor');*/
+
+    event
+        .create('air_bottle')
+        .displayName('Bottle of Air')
+        .tooltip('§8Fresh Air...')
+        .tooltip([
+            '§8Can be obtained by right clicking with empty bottle in main hand on air at 100-Y level.',
+        ]);
+
+    event.create('mana_chip').tooltip('§8Example of Technomancy').tooltip([
+        '§aULV Botanical Circuit',
+    ]);
+    event
+        .create('basic_botanical_circuit')
+        .tooltip('§8Example of Technomancy')
+        .tooltip([
+            '§aLV Botanical Circuit',
+        ]);
+    event
+        .create('good_botanical_circuit')
+        .tooltip('§8Could be used to REFACTOR our planet')
+        .tooltip([
+            '§aMV Botanical Circuit',
+        ]);
+
+    event.create('sulfuric_mushroom');
+    event.create('no_name');
+    event.create('wither_heart').maxStackSize(1);
+    event.create('not_vacuum_tube').displayName('Empty Vacuum Tube');
+
+    ///////////////
+    ////Botania////
+    ///////////////
+    event.create('advanced_mana_core').maxStackSize(64);
+    event.create('manasteel_reinforced_plating').maxStackSize(64);
+    event.create('mana_infused_fibers').maxStackSize(64);
+    event.create('mana_infused_mesh').maxStackSize(64);
+    event.create('mana-filled_idol').maxStackSize(64);
+    event.create('mana_core').maxStackSize(64);
+
+    event.create('livingrock_wafer').maxStackSize(64);
+    event.create('mana_multithreaded_computation_wafer').maxStackSize(64);
+    event.create('mmc_chip').maxStackSize(64);
+    event.create('livingrock_circuit_board').maxStackSize(64);
+    event.create('mana_infused_livingrock_circuit_board').maxStackSize(64);
+
+    event.create('muspelheim_essence').maxStackSize(64);
+    event.create('niflheim_essence').maxStackSize(64);
+
+    event
+        .create('pure_mana_dust')
+        .maxStackSize(64) /*.texture(`kubejs:item/botania/manadiamond_dust`)*/;
+    event.create('chlorophyte_dust');
+    event.create('raw_terrasteel_crystal');
+
+    //------Tablets------
+    event.create('infernal_tablet');
+    //T1 Tablets
+    event.create('earth_tablet');
+    event.create('fire_tablet');
+    event.create('water_tablet');
+    event.create('wind_tablet');
+    //T2 Tablets
+    event.create('revival_tablet');
+    event.create('recovery_tablet');
+    event.create('warmth_tablet');
+    event.create('comfort_tablet');
+    event.create('cosiness_tablet');
+    event.create('rain_tablet');
+    event.create('coldness_tablet');
+    event.create('hunger_tablet');
+
+    //Ars Noveau
+    event.create('magebloom_fiber_cloth').maxStackSize(64);
+    event.create('reinforced_manabloom_plating').maxStackSize(64);
+    event.create('sourcegem_dust').maxStackSize(64);
+
+    //Nature`s Aura
+    event.create('token_of_light').maxStackSize(64);
+    event.create('token_of_darkness').maxStackSize(64);
+
+    //Draconic Evolution (Custom)
+    event.create('awakened_draconic_core').maxStackSize(64);
+    event.create('chaotic_draconic_core').maxStackSize(64);
+    event.create('draconic_core').maxStackSize(64);
+    event.create('wyvern_draconic_core').maxStackSize(64);
+});

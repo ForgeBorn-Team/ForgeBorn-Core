@@ -1,0 +1,55 @@
+{
+	id: "1B5A8130CD13D338"
+	loot_size: 1
+	order_index: 7
+	rewards: [
+		{
+			count: 20
+			id: "7AF59CEEA924AA6E"
+			item: {
+				count: 1
+				id: "gtceu:purified_chalcopyrite_ore"
+			}
+		}
+		{
+			count: 20
+			id: "34A036C34477CAB2"
+			item: {
+				count: 1
+				id: "gtceu:purified_tetrahedrite_ore"
+			}
+		}
+		{
+			count: 20
+			id: "3F8FA0BA24681BD4"
+			item: {
+				count: 1
+				id: "gtceu:purified_chalcocite_ore"
+			}
+		}
+		{
+			count: 20
+			id: "4AF855261DB30DDD"
+			item: {
+				count: 1
+				id: "gtceu:purified_bornite_ore"
+			}
+		}
+		{
+			count: 20
+			id: "56A6F1E90D1B4DAC"
+			item: {
+				count: 1
+				id: "gtceu:purified_pentlandite_ore"
+			}
+		}
+		{
+			count: 10
+			id: "29B8E635F13C32AA"
+			item: {
+				count: 1
+				id: "gtceu:purified_cooperite_ore"
+			}
+		}
+	]
+}

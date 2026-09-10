@@ -1,0 +1,19 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storages"
+	group: "636E307A32BE4F2F"
+	id: "1442278DFF9B041F"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		id: "7D31C0A5C4379794"
+		shape: "circle"
+		tasks: [{
+			id: "35384D94D4F847D9"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+}

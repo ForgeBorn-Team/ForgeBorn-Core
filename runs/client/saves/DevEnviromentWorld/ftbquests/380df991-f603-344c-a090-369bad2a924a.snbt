@@ -1,0 +1,20 @@
+{
+	version: 1
+	uuid: "380df991f603344ca090369bad2a924a"
+	name: "Dev#380df991"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: {
+		574217C8A678C9B4: 1788135858082L
+	}
+	repeatable: { }
+	completion_count: { }
+	claimed_rewards: { }
+	player_data: {
+		380df991f603344ca090369bad2a924a: {
+			can_edit: 1b
+		}
+	}
+}

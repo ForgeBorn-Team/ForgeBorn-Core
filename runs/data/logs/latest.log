@@ -1,0 +1,248 @@
+[31Aug2026 04:29:05.191] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatadev, --assetIndex, 17, --assetsDir, C:\\Users\\sqviz\\.gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.fmlVersion, 4.0.42, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.228, --fml.neoFormVersion, 20240808.144430, --mod, forgeborncore, --all, --output, C:\\McMods\\forgeborncore-1.21.1\\src\\generated\\resources, --existing, C:\\McMods\\forgeborncore-1.21.1\\src\\main\\resources, --existing-mod, gtceu]
+[31Aug2026 04:29:05.199] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.4+7-LTS
+[31Aug2026 04:29:05.202] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.4 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[31Aug2026 04:29:05.346] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatadev
+[31Aug2026 04:29:05.391] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/sqviz/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23138!/ Service=ModLauncher Env=CLIENT
+[31Aug2026 04:29:06.423] [main/WARN] [net.neoforged.jarjar.selection.JarSelector/]: Attempted to select two dependency jars from JarJar which have the same identification: Nested Mod File  in Mod File: C:\Users\sqviz\.gradle\caches\modules-2\files-2.1\dev.engine-room.vanillin\vanillin-neoforge-1.21.1\1.1.3-41\d92ad47c6956ffb76ab73ecc6afe92d7fce36447\vanillin-neoforge-1.21.1-1.1.3-41.jar and Nested Mod File  in Mod File: C:\Users\sqviz\.gradle\caches\modules-2\files-2.1\com.simibubi.create\create-1.21.1\6.0.10-281\79f11cca15c31cf0e6730fa343a443bf686ee39e\create-1.21.1-6.0.10-281.jar. Using Nested Mod File  in Mod File: C:\Users\sqviz\.gradle\caches\modules-2\files-2.1\dev.engine-room.vanillin\vanillin-neoforge-1.21.1\1.1.3-41\d92ad47c6956ffb76ab73ecc6afe92d7fce36447\vanillin-neoforge-1.21.1-1.1.3-41.jar
+[31Aug2026 04:29:06.423] [main/WARN] [net.neoforged.jarjar.selection.JarSelector/]: Attempted to select two dependency jars from JarJar which have the same identification: Nested Mod File  in Mod File: C:\Users\sqviz\.gradle\caches\modules-2\files-2.1\curse.maven\phoenixs-chromatic-colors-1483210\8388618\fc8d3dc626339399a90f98fa93ca396f18d8f043\phoenixs-chromatic-colors-1483210-8388618.jar and Nested Mod File  in Mod File: C:\McMods\forgeborncore-1.21.1\libs\gtceu-1.21.1-8.0.0.jar. Using Nested Mod File  in Mod File: C:\Users\sqviz\.gradle\caches\modules-2\files-2.1\curse.maven\phoenixs-chromatic-colors-1483210\8388618\fc8d3dc626339399a90f98fa93ca396f18d8f043\phoenixs-chromatic-colors-1483210-8388618.jar
+[31Aug2026 04:29:06.423] [main/WARN] [net.neoforged.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: fabric_api_base. Using Mod File: C:\Users\sqviz\.gradle\caches\modules-2\files-2.1\org.sinytra.forgified-fabric-api\fabric-api-base\0.4.42+d1308ded19\53aa20857722d75ce2862a67978b4a10cb907a03\fabric-api-base-0.4.42+d1308ded19.jar
+[31Aug2026 04:29:06.423] [main/WARN] [net.neoforged.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: fabric_renderer_api_v1. Using Mod File: C:\Users\sqviz\.gradle\caches\modules-2\files-2.1\org.sinytra.forgified-fabric-api\fabric-renderer-api-v1\3.4.1+9125b6dc19\29a16658efccf7f58a5c9c2b22a5d4ba43ec31\fabric-renderer-api-v1-3.4.1+9125b6dc19.jar
+[31Aug2026 04:29:06.423] [main/WARN] [net.neoforged.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: library:sable_rapier. Using Mod File: C:\Users\sqviz\.gradle\caches\modules-2\files-2.1\dev.ryanhcode.sable\sable-sable_rapier-1.21.1\2.0.3\a88c0860320890144b6b44c332a2a2db3a61e189\sable-sable_rapier-1.21.1-2.0.3.jar
+[31Aug2026 04:29:06.423] [main/WARN] [net.neoforged.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: ae2wtlib_api. Using Mod File: C:\Users\sqviz\.gradle\caches\modules-2\files-2.1\de.mari_023\ae2wtlib_api\19.5.0\93e3697372d0138ac1aec3d5616ed6c4bf5e03d7\ae2wtlib_api-19.5.0.jar
+[31Aug2026 04:29:06.423] [main/WARN] [net.neoforged.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: ponder. Using Mod File: C:\Users\sqviz\.gradle\caches\modules-2\files-2.1\net.createmod.ponder\ponder-neoforge\1.0.87+mc1.21.1\7783eeff0389f8c6003457133b9dd98e903266c6\ponder-neoforge-1.0.87+mc1.21.1.jar
+[31Aug2026 04:29:06.423] [main/WARN] [net.neoforged.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: flywheel. Using Mod File: C:\Users\sqviz\.gradle\caches\modules-2\files-2.1\dev.engine-room.flywheel\flywheel-neoforge-1.21.1\1.0.6-44\2e859af550aeb7fa7fda017e7edef2c45ef3f988\flywheel-neoforge-1.21.1-1.0.6-44.jar
+[31Aug2026 04:29:06.423] [main/WARN] [net.neoforged.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: sablecompanion. Using Mod File: C:\Users\sqviz\.gradle\caches\modules-2\files-2.1\dev.ryanhcode.sable-companion\sable-companion-common-1.21.1\1.6.0\370be7db705926176e05c0215ed676150c45daae\sable-companion-common-1.21.1-1.6.0.jar
+[31Aug2026 04:29:06.423] [main/WARN] [net.neoforged.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: fabric_block_view_api_v2. Using Mod File: C:\Users\sqviz\.gradle\caches\modules-2\files-2.1\org.sinytra.forgified-fabric-api\fabric-block-view-api-v2\1.0.10+9afaaf8c19\3bfe4bbaf18fc388e471c7b6c6271d06d9ed2ffa\fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar
+[31Aug2026 04:29:06.423] [main/WARN] [net.neoforged.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: veil. Using Mod File: C:\Users\sqviz\.gradle\caches\modules-2\files-2.1\curse.maven\veil-lib-1517006\8236124\642ec0bd02213ee087d86eda553d6d79c6a04d2b\veil-lib-1517006-8236124.jar
+[31Aug2026 04:29:06.423] [main/WARN] [net.neoforged.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: betteradvancedtooltips. Using Mod File: C:\Users\sqviz\.gradle\caches\modules-2\files-2.1\dev.latvian.mods\better-advanced-tooltips\2101.1.0-build.1\4f9175f55758c06edba610cc8a32d317b15e8726\better-advanced-tooltips-2101.1.0-build.1.jar
+[31Aug2026 04:29:06.423] [main/WARN] [net.neoforged.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: fabric_rendering_data_attachment_v1. Using Mod File: C:\Users\sqviz\.gradle\caches\modules-2\files-2.1\org.sinytra.forgified-fabric-api\fabric-rendering-data-attachment-v1\0.3.48+73761d2e19\2dec5cb3ffb4bb3c443d61f25f28e15bb988f2b1\fabric-rendering-data-attachment-v1-0.3.48+73761d2e19.jar
+[31Aug2026 04:29:06.423] [main/WARN] [net.neoforged.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: library:Registrate.MC1._21._67. Using Mod File: C:\Users\sqviz\.gradle\caches\modules-2\files-2.1\com.tterrag.registrate\Registrate\MC1.21-1.3.0+67\66ddc4cd56472fea1ea1a24182901e6c92a51c0a\Registrate-MC1.21-1.3.0+67.jar
+[31Aug2026 04:29:06.423] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 23 dependencies adding them to mods collection
+[31Aug2026 04:29:06.431] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		AE2WTLib 19.5.0 (ae2wtlib)
+		AE2WTLib API 19.5.0 (ae2wtlib_api)
+		Applied Energistics 2 19.2.17 (ae2)
+		Architectury 13.0.8 (architectury)
+		Ars Nouveau 5.12.0 (ars_nouveau)
+		Better Advanced Tooltips 2101.1.0-build.1 (betteradvancedtooltips)
+		Botania 452-SNAPSHOT (botania)
+		Cloth Config v15 API 15.0.140 (cloth_config)
+		Configuration 3.1.1 (configuration)
+		Create 6.0.10 (create)
+		Create Aeronautics 1.3.0 (aeronautics)
+		Create Offroad 1.3.0 (offroad)
+		Create Simulated 1.3.0 (simulated)
+		Create: Cosmonautics 1.4.0rc1 (rocketnautics)
+		Curios API 9.5.1+1.21.1 (curios)
+		Effortless Building 4.1 (effortlessbuilding)
+		Embers Re-Ignited 1.21.1-1.5.4 (embers)
+		EMI 1.1.24+1.21.1+neoforge (emi)
+		Farmer's Delight 1.2.9 (farmersdelight)
+		Flywheel 1.0.6-44 (flywheel)
+		ForgeBorn: Core 0.0.1 (forgeborncore)
+		Forgified Fabric API Base 0.4.42+d1308ded19 (fabric_api_base)
+		Forgified Fabric BlockView API (v2) 1.0.10+9afaaf8c19 (fabric_block_view_api_v2)
+		Forgified Fabric Renderer API (v1) 3.4.1+9125b6dc19 (fabric_renderer_api_v1)
+		Forgified Fabric Rendering Data Attachment (v1) 0.3.48+73761d2e19 (fabric_rendering_data_attachment_v1)
+		FTB Chunks 2101.1.1 (ftbchunks)
+		FTB Library 2101.1.32 (ftblibrary)
+		FTB Quests 2101.1.27 (ftbquests)
+		FTB Teams 2101.1.10 (ftbteams)
+		GeckoLib 4 4.8.4 (geckolib)
+		GregTech 8.0.0 (gtceu)
+		GuideME 21.1.16 (guideme)
+		Infiniverse 2.0.1.0 (infiniverse)
+		Iris 1.8.14-beta.1+mc1.21.1 (iris)
+		Jade 15.10.5+neoforge (jade)
+		JourneyMap API 2.0.0 (journeymap_api)
+		Just Enough Items 19.25.1.328 (jei)
+		KubeJS 2101.7.2-build.368 (kubejs)
+		LambDynamicLights (API) 4.5.1+1.21.1 (lambdynlights_api)
+		Legendary Survival Overhaul 2.4.2 (legendarysurvivaloverhaul)
+		Lodestone 1.8.2 (lodestone)
+		LowDragLib 1.0.35.a (ldlib)
+		Malum 1.8.2 (malum)
+		Minecraft 1.21.1 (minecraft)
+		Modonomicon 1.120.1 (modonomicon)
+		ModularUI 3.3.1-SNAPSHOT (modularui)
+		Nebulae AE2 0.1.0 (nebulaeae2)
+		NeoForge 21.1.228 (neoforge)
+		Nuggets 1.1.0.48 (nuggets)
+		Occultism 1.221.0 (occultism)
+		Patchouli 1.21.1-93-NEOFORGE (patchouli)
+		PhoenixChromaticCodes 1.10 (phoenix_chromatic_codes)
+		Ponder 1.0.87+mc1.21.1 (ponder)
+		Resourceful Lib 3.0.12 (resourcefullib)
+		Rhino 2101.2.7-build.85 (rhino)
+		Sable 2.0.3 (sable)
+		Sable Companion 1.6.0 (sablecompanion)
+		SmartBrainLib 1.16.11 (smartbrainlib)
+		Sodium 0.8.12-beta.1+mc1.21.1 (sodium)
+		Space Gravity 1.0.3 (space_gravity)
+		The Afterdark 1.0.3.1 (the_afterdark)
+		The Undergarden 0.9.6 (undergarden)
+		Vanillin 1.1.3-41 (vanillin)
+		Veil 4.1.4 (veil)
+		World Stripper 5.0.0 (worldstripper)
+		Xaero's Minimap 25.3.10 (xaerominimap)
+		Xaero's World Map 1.40.11 (xaeroworldmap)
+		XaeroLib 1.1.0 (xaerolib)
+[31Aug2026 04:29:06.755] [main/INFO] [net.neoforged.fml.loading.FMLServiceProvider/CORE]: Loading coremod script-engine for [xaeroworldmap, xaerominimap]
+[31Aug2026 04:29:08.062] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[31Aug2026 04:29:08.138] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatadev' with arguments [--gameDir, ., --assetsDir, C:\Users\sqviz\.gradle\caches\neoformruntime\assets, --assetIndex, 17, --mod, forgeborncore, --all, --output, C:\\McMods\\forgeborncore-1.21.1\\src\\generated\\resources, --existing, C:\\McMods\\forgeborncore-1.21.1\\src\\main\\resources, --existing-mod, gtceu]
+[31Aug2026 04:29:08.226] [main/WARN] [mixin/]: Reference map 'geckolib.refmap.json' for geckolib.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.226] [main/WARN] [mixin/]: Reference map 'xaerolib.refmap.json' for xaerolib.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.235] [main/WARN] [mixin/]: Reference map 'aeronautics.refmap.json' for aeronautics.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.235] [main/WARN] [mixin/]: Reference map 'xaeroworldmap.refmap.json' for xaeroworldmap.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.242] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.242] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.fantastic.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.242] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.vertexformat.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.242] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for iris-batched-entity-rendering.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.242] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.compat.sodium.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.263] [main/WARN] [mixin/]: Reference map 'simulated.refmap.json' for simulated.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.270] [main/WARN] [mixin/]: Reference map 'nuggets.refmap.json' for nuggets.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.278] [main/INFO] [Sodium/]: Loaded configuration file for Sodium: 45 options available, 1 override(s) found
+[31Aug2026 04:29:08.282] [main/WARN] [mixin/]: Reference map 'offroad.refmap.json' for offroad.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.284] [main/WARN] [mixin/]: Reference map 'configuration.refmap.json' for configuration.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.297] [main/WARN] [mixin/]: Reference map 'gtceu.refmap.json' for gtceu.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.297] [main/WARN] [mixin/]: Reference map 'gtceu.refmap.json' for mixin_configs/gtceu-neoforge.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.298] [main/WARN] [mixin/]: Reference map 'gtceu.refmap.json' for mixin_configs/gtceu-sodium.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.299] [main/WARN] [mixin/]: Reference map 'gtceu.refmap.json' for mixin_configs/gtceu-iris.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.299] [main/WARN] [mixin/]: Reference map 'gtceu.refmap.json' for mixin_configs/gtceu-emi.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.299] [main/WARN] [mixin/]: Reference map 'gtceu.refmap.json' for mixin_configs/gtceu-jei.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.299] [main/WARN] [mixin/]: Reference map 'gtceu.refmap.json' for mixin_configs/gtceu-ftbchunks.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.299] [main/WARN] [mixin/]: Reference map 'gtceu.refmap.json' for mixin_configs/gtceu-xaerominimap.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.299] [main/WARN] [mixin/]: Reference map 'gtceu.refmap.json' for mixin_configs/gtceu-xaeroworldmap.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.302] [main/WARN] [mixin/]: Reference map 'gtceu.refmap.json' for mixin_configs/gtceu-sable.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.302] [main/WARN] [mixin/]: Reference map 'botania.refmap.json' for botania.xplat.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.302] [main/WARN] [mixin/]: Reference map 'botania.refmap.json' for botania.neoforge.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.311] [main/WARN] [mixin/]: Reference map 'ponder.refmap.json' for ponder-common.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.321] [main/INFO] [dev.ryanhcode.sable.mixin.AbstractSableMixinPlugin/]: Using Sodium renderer mixins
+[31Aug2026 04:29:08.321] [main/INFO] [dev.ryanhcode.sable.mixin.AbstractSableMixinPlugin/]: Using Sodium renderer mixins
+[31Aug2026 04:29:08.321] [main/WARN] [mixin/]: Reference map 'patchouli.refmap.json' for patchouli_xplat.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.325] [main/WARN] [mixin/]: Reference map 'xaerominimap.refmap.json' for xaerohud.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.325] [main/WARN] [mixin/]: Reference map 'xaerominimap.refmap.json' for xaerominimap.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.325] [main/WARN] [mixin/]: Reference map 'curios.refmap.json' for curios.neoforge.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.325] [main/WARN] [mixin/]: Reference map 'curios.refmap.json' for curios.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.408] [main/WARN] [mixin/]: Reference map 'ars_nouveau.refmap.json' for ars_nouveau.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.412] [main/WARN] [mixin/]: Reference map 'modularui.refmap.json' for modularui.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.415] [main/WARN] [mixin/]: Reference map 'lodestone.refmap.json' for lodestone.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.415] [main/WARN] [mixin/]: Reference map 'malum.refmap.json' for malum.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.415] [main/WARN] [mixin/]: Reference map 'effortlessbuilding.refmap.json' for neoforge-effortlessbuilding.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.415] [main/WARN] [mixin/]: Reference map 'phoenix_chromatic_codes.refmap.json' for phoenix_chromatic_codes.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Aug2026 04:29:08.842] [main/WARN] [mixin/]: Error loading class: com/portingdeadmods/cable_facades/events/GameClientEvents$2 (java.lang.ClassNotFoundException: com.portingdeadmods.cable_facades.events.GameClientEvents$2)
+[31Aug2026 04:29:08.842] [main/WARN] [mixin/]: Error loading class: com/direwolf20/justdirethings/client/renderers/OurRenderTypes (java.lang.ClassNotFoundException: com.direwolf20.justdirethings.client.renderers.OurRenderTypes)
+[31Aug2026 04:29:08.842] [main/WARN] [mixin/]: Error loading class: mekanism/client/render/entity/RenderFlame (java.lang.ClassNotFoundException: mekanism.client.render.entity.RenderFlame)
+[31Aug2026 04:29:08.842] [main/WARN] [mixin/]: Error loading class: mekanism/client/render/armor/MekaSuitArmor (java.lang.ClassNotFoundException: mekanism.client.render.armor.MekaSuitArmor)
+[31Aug2026 04:29:08.842] [main/WARN] [mixin/]: Error loading class: mekanism/client/render/lib/effect/BillboardingEffectRenderer (java.lang.ClassNotFoundException: mekanism.client.render.lib.effect.BillboardingEffectRenderer)
+[31Aug2026 04:29:08.842] [main/WARN] [mixin/]: Error loading class: blusunrize/immersiveengineering/client/utils/IEGLShaders (java.lang.ClassNotFoundException: blusunrize.immersiveengineering.client.utils.IEGLShaders)
+[31Aug2026 04:29:09.132] [main/WARN] [Sodium/]: Force-disabling mixin 'features.render.world.sky.ClientLevelMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children
+[31Aug2026 04:29:09.132] [main/WARN] [Sodium/]: Force-disabling mixin 'features.render.world.sky.FogRendererMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children
+[31Aug2026 04:29:09.132] [main/WARN] [Sodium/]: Force-disabling mixin 'features.render.world.sky.LevelRendererMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children
+[31Aug2026 04:29:09.512] [main/WARN] [mixin/]: Error loading class: com/simibubi/create/foundation/ponder/PonderWorld (java.lang.ClassNotFoundException: com.simibubi.create.foundation.ponder.PonderWorld)
+[31Aug2026 04:29:10.407] [main/WARN] [mixin/]: Error loading class: org/jetbrains/annotations/ApiStatus$ScheduledForRemoval (java.lang.ClassNotFoundException: org.jetbrains.annotations.ApiStatus$ScheduledForRemoval)
+[31Aug2026 04:29:10.497] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.3).
+[31Aug2026 04:29:11.013] [main/INFO] [net.neoforged.neoforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [forgeborncore]
+[31Aug2026 04:29:23.021] [modloading-worker-0/WARN] [patchouli/]: Could not locate JEI keybindings, lookups in books may not work
+[31Aug2026 04:29:23.175] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[31Aug2026 04:29:23.181] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 7.090 milliseconds
+[31Aug2026 04:29:23.237] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Registering common data for channel xaerolib:main!
+[31Aug2026 04:29:23.243] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Registering client data for channel xaerolib:main!
+[31Aug2026 04:29:23.262] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Loading primary common config for channel xaerolib:main!
+[31Aug2026 04:29:23.270] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Loading server config profiles for channel xaerolib:main!
+[31Aug2026 04:29:23.274] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Loading primary client config for channel xaerolib:main!
+[31Aug2026 04:29:23.285] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Loading client config profiles for channel xaerolib:main!
+[31Aug2026 04:29:25.919] [modloading-worker-0/INFO] [xaero.map.WorldMap/]: Registering common data for channel xaeroworldmap:main!
+[31Aug2026 04:29:25.933] [modloading-worker-0/INFO] [xaero.map.WorldMap/]: Registering client data for channel xaeroworldmap:main!
+[31Aug2026 04:29:25.941] [modloading-worker-0/INFO] [xaero.map.WorldMap/]: Loading primary common config for channel xaeroworldmap:main!
+[31Aug2026 04:29:25.952] [modloading-worker-0/INFO] [xaero.map.WorldMap/]: Loading server config profiles for channel xaeroworldmap:main!
+[31Aug2026 04:29:25.957] [modloading-worker-0/INFO] [xaero.map.WorldMap/]: Loading primary client config for channel xaeroworldmap:main!
+[31Aug2026 04:29:25.962] [modloading-worker-0/INFO] [xaero.map.WorldMap/]: Loading client config profiles for channel xaeroworldmap:main!
+[31Aug2026 04:29:26.009] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.228, for MC 1.21.1
+[31Aug2026 04:29:26.223] [modloading-worker-0/INFO] [Veil/]: Veil is initializing.
+[31Aug2026 04:29:26.902] [modloading-worker-0/INFO] [LowDragLib/]: LowDragLib is initializing on platform: NeoForge
+[31Aug2026 04:29:27.349] [modloading-worker-0/INFO] [KubeJS/]: Loading vanilla registries...
+[31Aug2026 04:29:27.362] [modloading-worker-0/INFO] [KubeJS/]: Looking for KubeJS plugins...
+[31Aug2026 04:29:27.364] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source kubejs
+[31Aug2026 04:29:27.372] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source ldlib
+[31Aug2026 04:29:27.373] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source gtceu
+[31Aug2026 04:29:27.376] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source malum
+[31Aug2026 04:29:27.376] [modloading-worker-0/INFO] [KubeJS/]: Done in 14.04 ms
+[31Aug2026 04:29:27.391] [modloading-worker-0/INFO] [KubeJS Startup/]: Validated 0 files in kubejs/assets/ in 0ms
+[31Aug2026 04:29:27.403] [modloading-worker-0/INFO] [KubeJS Startup/]: Validated 0 files in kubejs/data/ in 0ms
+[31Aug2026 04:29:27.515] [modloading-worker-0/INFO] [Configuration/FileWatching]: Registered configuration config for auto-sync function
+[31Aug2026 04:29:27.548] [modloading-worker-0/INFO] [Configuration/FileWatching]: Registered gtceu config for auto-sync function
+[31Aug2026 04:29:27.556] [modloading-worker-0/INFO] [GTCEu/]: High-Tier is Enabled.
+[31Aug2026 04:29:27.831] [modloading-worker-0/WARN] [AE2:C/]: Unable to find class com.simibubi.create.foundation.ponder.PonderWorld. Integration with PonderJS disabled.
+[31Aug2026 04:29:28.213] [modloading-worker-0/INFO] [com.ghostipedia.nebulaeae2.NebulaeAE2/]: Nebulae initialised - Beginning AE2 Interception
+[31Aug2026 04:29:28.269] [modloading-worker-0/INFO] [dev.devce.rocketnautics.RocketNautics/]: Initializing Cosmonautics!
+[31Aug2026 04:29:28.348] [modloading-worker-0/INFO] [dev.devce.rocketnautics.registry.NodeDefinitionLoader/]: [NodeDefinitionLoader] Registered 35 data-driven nodes.
+[31Aug2026 04:29:28.541] [modloading-worker-0/INFO] [com.simibubi.create.Create/]: Create 6.0.10 initializing! Commit hash: c308d004788fce2998bf41653f6d39412b6fc8ed
+[31Aug2026 04:29:29.663] [modloading-worker-0/INFO] [dev.ryanhcode.sable.Sable/]: Sable loaded!
+[31Aug2026 04:29:29.686] [modloading-worker-0/WARN] [dev.ryanhcode.sable.Sable/]: NOTE: Sable is loaded with Flywheel. Sable contains extensive shader overrides and a full light-storage replacement. Expect this to cause compatibility issues. If issues arise, please report them to the Sable issue tracker (https://github.com/ryanhcode/sable/issues) instead of the Flywheel issue tracker.
+[31Aug2026 04:29:29.719] [modloading-worker-0/INFO] [xaero.common.HudMod/]: Registering common data for channel xaerominimap:main!
+[31Aug2026 04:29:29.732] [modloading-worker-0/INFO] [xaero.common.HudMod/]: Registering client data for channel xaerominimap:main!
+[31Aug2026 04:29:29.742] [modloading-worker-0/INFO] [xaero.common.HudMod/]: Loading primary common config for channel xaerominimap:main!
+[31Aug2026 04:29:29.747] [modloading-worker-0/INFO] [xaero.common.HudMod/]: Loading server config profiles for channel xaerominimap:main!
+[31Aug2026 04:29:29.755] [modloading-worker-0/INFO] [xaero.common.HudMod/]: Loading primary client config for channel xaerominimap:main!
+[31Aug2026 04:29:29.760] [modloading-worker-0/INFO] [xaero.common.HudMod/]: Loading client config profiles for channel xaerominimap:main!
+[31Aug2026 04:29:30.570] [modloading-worker-0/WARN] [mixin/]: Method overwrite conflict for beforeMove in embers.mixins.json:EmberLinkTargetSubLevelAssemblyMixin from mod embers, previously written by com.rekindled.embers.mixin.EmberLinkSubLevelAssemblyMixin. Skipping method.
+[31Aug2026 04:29:30.570] [modloading-worker-0/WARN] [mixin/]: Method overwrite conflict for afterMove in embers.mixins.json:EmberLinkTargetSubLevelAssemblyMixin from mod embers, previously written by com.rekindled.embers.mixin.EmberLinkSubLevelAssemblyMixin. Skipping method.
+[31Aug2026 04:29:30.707] [modloading-worker-0/INFO] [com.rekindled.embers.Embers/]: Delaying Embers config screen registration because Architectury or OmegaConfig is present
+[31Aug2026 04:29:31.638] [modloading-worker-0/INFO] [worldstripper/]: Creating World Stripper directory
+[31Aug2026 04:29:31.642] [modloading-worker-0/INFO] [worldstripper/]: Reading World Stripper JSON file
+[31Aug2026 04:29:32.261] [modloading-worker-0/INFO] [Configuration/FileWatching]: Registered phoenix_chromatic_codes config for auto-sync function
+[31Aug2026 04:29:32.261] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.api.ChromaticColors/]: Phoenix Colors: Mapping §z to #BF00FF
+[31Aug2026 04:29:32.261] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.api.ChromaticColors/]: Phoenix Colors: Mapping §t to #00FF80
+[31Aug2026 04:29:32.261] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.api.ChromaticColors/]: Phoenix Colors: Mapping §s to #0B585C
+[31Aug2026 04:29:32.272] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.api.ChromaticColors/]: Phoenix Colors: Mapping §[phoenix] to #BF00FF
+[31Aug2026 04:29:32.272] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §w with effect wave on font phoenix_chromatic_codes:code_119
+[31Aug2026 04:29:32.272] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §p with effect pulse on font phoenix_chromatic_codes:code_112
+[31Aug2026 04:29:32.272] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §* with effect static_rainbow on font phoenix_chromatic_codes:code_42
+[31Aug2026 04:29:32.272] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §g with effect glitch on font phoenix_chromatic_codes:code_103
+[31Aug2026 04:29:32.272] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §y with effect none on font phoenix_chromatic_codes:code_121
+[31Aug2026 04:29:32.272] [modloading-worker-0/ERROR] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Could not find movement type: discord. Defaulting to static.
+[31Aug2026 04:29:32.272] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §^ with effect discord on font phoenix_chromatic_codes:code_94
+[31Aug2026 04:29:32.272] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §$ with effect breath on font phoenix_chromatic_codes:code_36
+[31Aug2026 04:29:32.272] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §- with effect stretch on font phoenix_chromatic_codes:code_45
+[31Aug2026 04:29:32.272] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §[rainbow] with effect wave on font phoenix_chromatic_codes:named_973576630
+[31Aug2026 04:29:32.272] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §[matrix] with effect glitch on font phoenix_chromatic_codes:named_1081239615
+[31Aug2026 04:29:32.275] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §[big] with effect size on font phoenix_chromatic_codes:named_97536
+[31Aug2026 04:29:32.275] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §[huge] with effect size on font phoenix_chromatic_codes:named_3213995
+[31Aug2026 04:29:32.275] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §[frozen] with effect none on font phoenix_chromatic_codes:named_1266085216
+[31Aug2026 04:29:32.275] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §[glossy] with effect mirror on font phoenix_chromatic_codes:named_1243003473
+[31Aug2026 04:29:32.275] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §[sunset] with effect vertical on font phoenix_chromatic_codes:named_891172202
+[31Aug2026 04:29:32.275] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §[spaced] with effect spacing on font phoenix_chromatic_codes:named_896192482
+[31Aug2026 04:29:32.275] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §[speed] with effect slant on font phoenix_chromatic_codes:named_109641799
+[31Aug2026 04:29:32.275] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §[neon_ocean] with effect rainbow_wave on font phoenix_chromatic_codes:named_461017771
+[31Aug2026 04:29:32.275] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §[cyber] with effect chroma on font phoenix_chromatic_codes:named_95130713
+[31Aug2026 04:29:32.275] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §[uphill] with effect shear on font phoenix_chromatic_codes:named_838719652
+[31Aug2026 04:29:32.280] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §[rgb_ticker] with effect chroma_wave on font phoenix_chromatic_codes:named_1580687684
+[31Aug2026 04:29:32.280] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §[jelly] with effect wobble on font phoenix_chromatic_codes:named_101009374
+[31Aug2026 04:29:32.280] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §[elastic] with effect compress on font phoenix_chromatic_codes:named_1666338091
+[31Aug2026 04:29:32.280] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §[ghost] with effect fade on font phoenix_chromatic_codes:named_98331279
+[31Aug2026 04:29:32.282] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §[3d_block] with effect 3d on font phoenix_chromatic_codes:named_58670431
+[31Aug2026 04:29:32.282] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §[digital] with effect matrix_rain on font phoenix_chromatic_codes:named_1660481048
+[31Aug2026 04:29:32.282] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §[flip] with effect 3d_spin on font phoenix_chromatic_codes:named_3145837
+[31Aug2026 04:29:32.282] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.PhoenixChromaticCodes/]: Phoenix Chromatic: Registering §[plasma] with effect liquid_plasma on font phoenix_chromatic_codes:named_985758398
+[31Aug2026 04:29:32.282] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.api.ChromaticColors/]: Phoenix Colors: Mapping §z to #BF00FF
+[31Aug2026 04:29:32.282] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.api.ChromaticColors/]: Phoenix Colors: Mapping §t to #00FF80
+[31Aug2026 04:29:32.282] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.api.ChromaticColors/]: Phoenix Colors: Mapping §s to #0B585C
+[31Aug2026 04:29:32.282] [modloading-worker-0/INFO] [net.phoenix.chromatic_codes.api.ChromaticColors/]: Phoenix Colors: Mapping §[phoenix] to #BF00FF
+[31Aug2026 04:29:32.355] [modloading-sync-worker/INFO] [GTCEu/]: Registering GTCEu Materials
+[31Aug2026 04:29:33.894] [modloading-sync-worker/INFO] [GTCEu/]: Firing material register late event
+[31Aug2026 04:29:34.152] [modloading-sync-worker/WARN] [GTCEu/]: FluidStorageKey{gtceu:liquid} already has an associated fluid for material gtceu:water
+[31Aug2026 04:29:34.171] [modloading-sync-worker/WARN] [GTCEu/]: FluidStorageKey{gtceu:liquid} already has an associated fluid for material gtceu:lava
+[31Aug2026 04:29:34.171] [modloading-sync-worker/WARN] [GTCEu/]: FluidStorageKey{gtceu:liquid} already has an associated fluid for material gtceu:milk
+[31Aug2026 04:29:42.765] [modloading-sync-worker/ERROR] [net.minecraft.Util/]: Entity forgeborncore:brawler_skeleton has no attributes
+[31Aug2026 04:29:42.863] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/McMods/forgeborncore-1.21.1/build/moddev/artifacts/neoforge-21.1.228.jar%23189!/assets/.mcassetsroot' uses unexpected schema
+[31Aug2026 04:29:42.865] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/McMods/forgeborncore-1.21.1/build/moddev/artifacts/neoforge-21.1.228.jar%23189!/data/.mcassetsroot' uses unexpected schema
+[31Aug2026 04:29:43.729] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registrate Provider for forgeborncore [Registries, Data Maps, Recipes, Advancements, Loot Tables, Tags (blocks), Tags (enchantments), Tags (items), Tags (fluids), Tags (entity_types), generic_server_provider, Blockstates, Item models, Lang (en_us/en_ud), generic_client_provider]
+[31Aug2026 04:29:43.808] [main/INFO] [net.minecraft.data.DataGenerator/]: Registrate Provider for forgeborncore [Registries, Data Maps, Recipes, Advancements, Loot Tables, Tags (blocks), Tags (enchantments), Tags (items), Tags (fluids), Tags (entity_types), generic_server_provider, Blockstates, Item models, Lang (en_us/en_ud), generic_client_provider] finished after 77 ms
+[31Aug2026 04:29:43.808] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: forgeborncore's Custom Sounds
+[31Aug2026 04:29:43.808] [main/INFO] [net.minecraft.data.DataGenerator/]: forgeborncore's Custom Sounds finished after 0 ms
+[31Aug2026 04:29:43.808] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 79 ms
+[31Aug2026 04:29:43.814] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 28, old count: 23, new count: 29, removed stale: 0, written: 7

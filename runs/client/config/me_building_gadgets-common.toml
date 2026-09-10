@@ -1,0 +1,5 @@
+#Enable verbose diagnostic logging of the whole order & paste chain
+#(audits, AE2 planning/submission, network pulls, paste execution).
+#Intended for troubleshooting - leave off for normal play.
+#Log tag: [GadgetsME/diag]
+debugLog = false

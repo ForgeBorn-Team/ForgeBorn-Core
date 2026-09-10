@@ -1,0 +1,209 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "how_to_play"
+	group: ""
+	id: "18C41535DCAC6BBF"
+	images: [
+		{
+			height: 1.0d
+			image: "ftblibrary:icons/money"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			height: 1.0d
+			image: "legendarysurvivaloverhaul:textures/mob_effect/hot_food.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			height: 1.0d
+			image: "ftblibrary:icons/cancel"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			height: 1.0d
+			image: "ars_nouveau:textures/gui/discord_tab.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/bone"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:item/book"
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			height: 1.5d
+			image: "gui:textures/forgeborn_v2.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			height: 1.0d
+			image: "aether:block/dungeon/exclamation"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			height: 1.0d
+			image: "embers:item/sigil_skull"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: -4.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "75F777073CF44FE1"
+			shape: "gear"
+			size: 3.0d
+			tasks: [{
+				id: "1D0CE04CB1188C70"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["75F777073CF44FE1"]
+			id: "54ACCDA07EA6A5A8"
+			shape: "circle"
+			tasks: [{
+				id: "7FA4F8DC27EBEED3"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["75F777073CF44FE1"]
+			id: "49E78D528CCC4185"
+			shape: "circle"
+			tasks: [{
+				id: "21ADD52C79926F22"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["75F777073CF44FE1"]
+			id: "6C05FB0557D90AA3"
+			shape: "circle"
+			tasks: [{
+				id: "15FC93231195D35D"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["75F777073CF44FE1"]
+			id: "36AE05474CD9A7E3"
+			shape: "circle"
+			tasks: [{
+				id: "6BA6F16B539F019A"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["75F777073CF44FE1"]
+			id: "7CFB5D995F888658"
+			shape: "circle"
+			tasks: [{
+				id: "3D8D7F61943B1DCA"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["75F777073CF44FE1"]
+			id: "796742688E69107E"
+			shape: "circle"
+			tasks: [{
+				id: "29B96E7121198853"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["75F777073CF44FE1"]
+			id: "4FB6296D6B8214C6"
+			shape: "circle"
+			tasks: [{
+				id: "603AE1928A3A5858"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["75F777073CF44FE1"]
+			id: "2821B0EA0E6B28A5"
+			shape: "circle"
+			tasks: [{
+				id: "359896C4161DB8B3"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["75F777073CF44FE1"]
+			hide_dependency_lines: true
+			id: "40F72CE8CE8846D7"
+			shape: "rsquare"
+			tasks: [{
+				id: "7B28B342CF78F053"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["75F777073CF44FE1"]
+			dependency_requirement: "all_started"
+			hide_dependency_lines: true
+			id: "46C8BD544441AC5D"
+			shape: "rsquare"
+			tasks: [{
+				id: "288247F4A6F6BD68"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+	]
+}

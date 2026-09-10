@@ -1,0 +1,65 @@
+#Core behaviour of the Crafting Scheduler.
+[scheduler]
+	#Master switch. When false, Crafting Schedulers stay inert and AE2 job submission is
+	#left completely untouched.
+	enableScheduler = true
+	#When true, a crafting request that AE2 could not place because every CPU is busy is
+	#automatically offered to the Schedulers on that network. When false, Schedulers still
+	#hold and resume jobs but never start a preemption on their own.
+	allowAutomaticPreemption = true
+	#How many jobs a single Scheduler may hold paused at the same time (one per CPU).
+	# Default: 8
+	# Range: 1 ~ 64
+	maxPausedJobsPerScheduler = 8
+
+#Which jobs may jump the queue, and which jobs may be interrupted.
+[preemption]
+	#Upper bound on the estimated operation count of a job that is allowed to preempt.
+	#Operations is the sum of ICraftingPlan.patternTimes(), i.e. how many pattern pushes
+	#the whole crafting tree needs -- not the number of requested items.
+	# Default: 128
+	# Range: > 1
+	maxExpressComplexity = 128
+	#An automatic machine request only pauses a running job when its estimated operation
+	#count is at least this high. Prevents automation from repeatedly interrupting small
+	#jobs. A player explicitly pressing Start may still use a managed CPU below this limit.
+	# Default: 1000
+	# Range: > 1
+	minimumJobComplexityForPreemption = 1000
+
+#Timeouts. All values are in server ticks (20 ticks = 1 second).
+[timeouts]
+	#A paused job keeps accepting results of processing operations that were dispatched
+	#before the pause. If those results have still not arrived after this many ticks the
+	#pause is flagged in the GUI so the player can find the stalled machine.
+	#This is a diagnostic only -- it never cancels or discards anything. 0 disables it.
+	# Default: 1200
+	# Range: > 0
+	pauseProcessingTimeoutTicks = 1200
+	#How long an express job may occupy a CPU that holds a paused job before it is
+	#cancelled and the original job is resumed. This is the guarantee that a stuck express
+	#craft can never hold the main job hostage forever. 0 disables the timeout.
+	# Default: 6000
+	# Range: > 0
+	expressJobTimeoutTicks = 6000
+	#A paused job whose owning Scheduler has not checked in for this long is resumed
+	#automatically. This is the safety net that makes it impossible to lose a CPU to a
+	#Scheduler that was removed, unpowered or cut off by a network split.
+	# Default: 1200
+	# Range: > 100
+	orphanedParkTimeoutTicks = 1200
+	#How often a Scheduler retries a resume that could not be performed yet.
+	# Default: 20
+	# Range: 1 ~ 1200
+	resumeRetryTicks = 20
+
+#Power and diagnostics.
+[misc]
+	#AE consumed per tick by an active Crafting Scheduler.
+	# Default: 1.0
+	# Range: 0.0 ~ 1000.0
+	energyUsagePerTick = 1.0
+	#Log every pause/resume decision and transition. Turn this on when hunting for a
+	#duplication or a deadlock -- the log records every item movement decision the
+	#Scheduler makes.
+	debugLogging = false

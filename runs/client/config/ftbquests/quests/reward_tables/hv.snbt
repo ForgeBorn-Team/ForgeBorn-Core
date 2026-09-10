@@ -1,0 +1,23 @@
+{
+	id: "5A350BB9A793FB35"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{
+			count: 24
+			id: "139D0AF025719016"
+			item: {
+				count: 1
+				id: "gtceu:chromium_dust"
+			}
+		}
+		{
+			count: 24
+			id: "202091F508C3A6D5"
+			item: {
+				count: 1
+				id: "gtceu:manganese_dust"
+			}
+		}
+	]
+}

@@ -1,0 +1,23 @@
+{
+	id: "179F585BD4A7D26E"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			count: 32
+			id: "7BB9B6E623A763D7"
+			item: {
+				count: 1
+				id: "minecraft:copper_ingot"
+			}
+		}
+		{
+			count: 32
+			id: "37CCA5D9E499EA20"
+			item: {
+				count: 1
+				id: "gtceu:tin_ingot"
+			}
+		}
+	]
+}

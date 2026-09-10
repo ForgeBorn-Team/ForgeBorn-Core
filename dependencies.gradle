@@ -1,0 +1,157 @@
+dependencies {
+    //File from Ghostipedia (CosmicFrontiers)
+    //Adapted by sqvizers
+    //Message: there is no examples of nice gradle for this verison of mc, so i took this one from CosmicFrontiers modpack. All credits to it
+
+    compileOnly(libs.jetbrains.annotations)
+    compileOnly annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-common:0.3.7-beta.1")
+    mixinSquaredRuntime("com.github.bawnorton.mixinsquared:mixinsquared-neoforge:0.3.7-beta.1")
+
+    // GTCEu — core dependency. Its jar jar-jars Registrate + Configuration + ModularUI2 at runtime, so those
+    // are compileOnly here. It does NOT bundle LDLib (8.0.0 moved its own UI/sync to MUI2), so LDLib must be
+    // supplied separately: compileOnly against the FULL LDLib API to build...
+    implementation(files("libs/gtceu-1.21.1-8.0.0.jar"))
+    compileOnly(forge.ldlib)
+    // ...but at RUNTIME we ship a PATCHED LDLib. GTCEu 8.0 dropped LDLib for MUI2, so the two were never meant
+    // to coexist: stock LDLib and MUI2 both add @Accessor mixins to the same vanilla GUI classes (Slot,
+    // AbstractContainerScreen/Menu, ServerPlayer) and collide fatally at mixin-apply. The ccpatch jar is the
+    // stock 1.0.35.a jar with ONLY those 4 conflicting accessors stripped from ldlib.mixins.json (all 851
+    // classes + LDLib's other mixins, incl. ItemRendererMixin that dispatches CC's item renderers, untouched).
+    // Regenerate with `python gradle/patch-ldlib.py` if LDLib is bumped. Long-term: cosmiccore-11
+    // (migrate CC off LDLib) removes the need for this entirely.
+    runtimeOnly(files("libs/ldlib-neoforge-1.21.1-1.0.35.a-ccpatch.jar"))
+    // ModularUI2 (brachy.modularui): GTCEu 8.0.0 exposes brachy types in its public machine API (IMuiMachine,
+    // buildMainUI/getMainTextPanel), so it is a mandatory compile dep. GTCEu jarJars it at runtime, hence compileOnly.
+    compileOnly(files("libs/modularui-mc1.21.1-3.3.1.jar"))
+    compileOnly(forge.registrate)
+    compileOnly(forge.configuration)
+    implementation("curse.maven:world-stripper-250603:5592921")
+
+    // KubeJS (real, in-use scripts)
+    implementation(forge.kubejs)
+    implementation(forge.rhino)
+    implementation(forge.architectury)
+
+    //Botania (WIP)
+    implementation (forge.botania)
+
+    // Recipe Viewers — pack runs EMI + TMRV (no JEI at runtime); JEI kept compileOnly for its API.
+    // TMRV is a runtime-only viewer bridge shipped by the pack; CC compiles nothing against it.
+    compileOnly(forge.bundles.jei)
+    implementation(forge.emi)
+
+    // WAILA-likes
+    implementation(forge.jade)
+    compileOnly("maven.modrinth:Ahdn1OE0:Q2Ua4hew")
+
+    // Curios
+    compileOnly(variantOf(forge.curios) { classifier("api") })
+    runtimeOnly(forge.curios)
+
+    // AE2 stack (upstream, matching the pack)
+    implementation(forge.ae2)
+    implementation(forge.guideme)
+    implementation(forge.ae2wtlib)
+    implementation(forge.clothconfig)
+    implementation(files(project.nebulaeArtifactFile))
+
+    // Create
+    compileOnly(variantOf(forge.create) { classifier("slim") })
+    compileOnly(forge.ponder)
+    compileOnly(forge.flywheel.api)
+
+    compileOnly(forge.undergarden) { transitive = false }
+    compileOnly(forge.aeronautics) { transitive = false }
+    compileOnly(forge.simulated) { transitive = false }
+    compileOnly(forge.sable) { transitive = false }
+    compileOnly(forge.sable.companion) { transitive = false }
+    compileOnly(forge.hooked) { transitive = false }
+
+    runtimeOnly(forge.aeronautics) { transitive = false }
+    runtimeOnly(forge.simulated) { transitive = false }
+    runtimeOnly(forge.offroad) { transitive = false }
+    runtimeOnly(forge.sable) { transitive = false }
+    runtimeOnly(forge.sable.companion) { transitive = false }
+    runtimeOnly(forge.sable.rapier)
+    compileOnly(forge.veil) { transitive = false }
+    runtimeOnly(forge.veil) { transitive = false }
+    runtimeOnly(forge.create) {
+        exclude group: 'maven.modrinth', module: 'journeymap'
+    }
+    runtimeOnly(forge.flywheel.impl)
+
+    // Magic / content mods
+    implementation(forge.malum)
+    implementation(forge.lodestone)
+    implementation(forge.occultism) {
+        // Occultism pulls SmartBrainLib under net.tslat.smartbrainlib; the Modrinth jar below provides the same classes.
+        exclude group: 'net.tslat.smartbrainlib'
+    }
+    implementation(forge.modonomicon)
+    implementation(forge.smartbrainlib)
+    implementation(forge.geckolib)
+    implementation(forge.arsnouveau)
+    // Embers Re-Ignited (NeoForge 1.21.1 fork of Embers Rekindled, modId "embers"). Required: the ember
+    // hatch/emitter/receptor content extends its blocks + ember capability. CurseForge project 1579725,
+    // file 8295861 = "1.5.4 Beta 1", the exact build the pack ships.
+    implementation("curse.maven:embers-re-ignited-1579725:8295861")
+
+    // Create Cosmonautics (Create-addon space mod, Frontiers' rocketry + planets layer). Pinned to the
+    // pack's exact build. implementation so the GT integration (thrusters, rocket assembler multiblock,
+    // space location bridging) can compile against it and the dev run loads it.
+    implementation("curse.maven:create-cosmonautics-1595491:8358740")
+
+    runtimeOnly(forge.undergarden) { transitive = false }
+
+    compileOnly("maven.modrinth:XMlHoHNU:dcHZSOWO")
+    runtimeOnly("maven.modrinth:XMlHoHNU:dcHZSOWO")
+    spaceGravityRuntime("maven.modrinth:XMlHoHNU:dcHZSOWO")
+
+    // Patchouli
+    implementation(forge.patchouli)
+
+    // Legendary Survival Overhaul
+    implementation(forge.lso)
+
+    // Teams
+    implementation(forge.ftblibrary)
+    implementation(forge.ftbteams)
+    compileOnly(forge.ftbquests)
+    runtimeOnly(forge.ftbquests)
+
+    // Resourceful Lib
+    implementation(forge.resourcefullib)
+
+    // Xaero's Minimap / World Map — pack ships Xaero's. compileOnly to build our own field-blob overlay
+    // against their (internal) render classes; runtimeOnly so the dev client loads Xaero's to test it.
+    compileOnly(forge.xaeroslib)
+    compileOnly(forge.xaerosminimap)
+    compileOnly(forge.xaerosworldmap)
+    runtimeOnly(forge.xaeroslib)
+    runtimeOnly(forge.xaerosminimap)
+    runtimeOnly(forge.xaerosworldmap)
+
+    // Sodium 0.8.x + Iris — dev runtime only (render compat sanity). Sodium 0.8 is the caffeinemc multi-artifact
+    // set; see build.gradle for the sodiumShell config + stripSodiumShell task and why the shell is repackaged.
+    // compile against the -api/-mod, load the stripped shell as a LIBRARY + the -mod as the real "sodium" mod,
+    // plus Sinytra's Forgified Fabric API shims for the FRAPI paths 0.8 needs. Coords pinned from chloride.
+    compileOnly("net.caffeinemc:sodium-neoforge-api:${sodiumNeoVersion}")
+    compileOnly("net.caffeinemc:sodium-neoforge-mod:${sodiumNeoVersion}")
+    sodiumShell("net.caffeinemc:sodium-neoforge:${sodiumNeoVersion}")
+    runtimeOnly("net.caffeinemc:sodium-neoforge-mod:${sodiumNeoVersion}")
+    runtimeOnly(files(tasks.named('stripSodiumShell')))
+    runtimeOnly("org.sinytra.forgified-fabric-api:fabric-api-base:0.4.42+d1308ded19")
+    runtimeOnly("org.sinytra.forgified-fabric-api:fabric-renderer-api-v1:3.4.1+9125b6dc19")
+    runtimeOnly("org.sinytra.forgified-fabric-api:fabric-rendering-data-attachment-v1:0.3.48+73761d2e19")
+    runtimeOnly("org.sinytra.forgified-fabric-api:fabric-block-view-api-v2:1.0.10+9afaaf8c19")
+    runtimeOnly("curse.maven:irisshaders-455508:8242804")
+
+
+
+    // Dev tooling
+    runtimeOnly(forge.effortless)
+
+    //Misc
+    implementation "curse.maven:phoenixs-chromatic-colors-1483210:8388618"
+    implementation "curse.maven:the-afterdark-1110531:5887176"
+}

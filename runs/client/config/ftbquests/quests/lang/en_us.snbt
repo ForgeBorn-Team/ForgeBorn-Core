@@ -1,0 +1,479 @@
+{
+	chapter.0AA50C6E6152DC4F.title: "Aquaman? Not really..."
+	chapter.0BA5BB702020C44A.title: "Chef`s Delight"
+	chapter.1442278DFF9B041F.title: "Storages"
+	chapter.18C41535DCAC6BBF.title: "Introduction"
+	chapter.2209A36D3327C4BD.title: "Useful Items"
+	chapter.26B0785EDA1F76D8.title: "Mining System (WIP)"
+	chapter.2705C5D2758B2ADE.title: "Greg would be proud..."
+	chapter.3F3FC3473C6552A8.title: "Magical Nonsence"
+	chapter.4916AE1F81660911.title: "Remembering The Basics"
+	chapter.4C97E0365FA7B3BF.title: "Hello, Beautiful New World!"
+	chapter.4CC3E9FB50DD46DC.title: "Base Building"
+	chapter.4EA11ACF4254FB4E.title: "Multiblocks"
+	chapter.53ABDE03846D7EE5.title: "Circuits"
+	chapter.6A809CAE287B97BA.chapter_subtitle: ["Ores galore, and so much more"]
+	chapter.6A809CAE287B97BA.title: "Ore Generation"
+	chapter.753E075A6452A168.title: "Elves would be proud..."
+	chapter_group.0F9F08EAC5B450D0.title: "Challenges"
+	chapter_group.288DA1F92F7C0A7A.title: "Guides + More"
+	chapter_group.636E307A32BE4F2F.title: "Other"
+	chapter_group.693226878D58638A.title: "Main Progression"
+	file.0000000000000001.title: "ForgeBorn"
+	quest.0269FCDE2628904A.quest_desc: [
+		"Your classic Nether Quartz vein."
+		""
+		"Silicon isn't too difficult to come by, but Quartzite isn't a bad source."
+	]
+	quest.0269FCDE2628904A.quest_subtitle: "Source of Nether Quartz, Silicon"
+	quest.0269FCDE2628904A.title: "Quartz"
+	quest.030E299F75640977.quest_desc: [
+		"Your first Nether expedition should be for &eSulfur&r - which is found in this vein! Be careful, as this vein usually spawns from y-levels of 10 to 30. Bring Fire Resistance potions!"
+		""
+		"Sphalerite is extremely valuable, as its ore processing gives Gallium. It also smelts directly into Zinc."
+	]
+	quest.030E299F75640977.quest_subtitle: "Source of Sulfur, Iron, Zinc"
+	quest.030E299F75640977.title: "Sulfur"
+	quest.03FBBA4A693011A8.quest_desc: [
+		"An excellent Iron-Copper hybrid vein."
+		""
+		"Chalcopyrite will play an integral role in the late game, when you're looking to get your hands on some Platinum Group Sludge."
+	]
+	quest.03FBBA4A693011A8.quest_subtitle: "Source of Copper, Iron"
+	quest.03FBBA4A693011A8.title: "Pyrite"
+	quest.0AFADD21454D968E.quest_desc: [
+		"This Nether Limonite vein variant isn't to be slept on."
+		""
+		"Thanks to the &adoubled yield&r of Nether ores, this is an excellent source of Iron and Gold."
+	]
+	quest.0AFADD21454D968E.quest_subtitle: "Source of Iron, Gold"
+	quest.0AFADD21454D968E.title: "Limonite"
+	quest.0B4BA438FE7F3640.quest_desc: [
+		"A source of Bauxite for your first ever Titanium."
+		""
+		"Kyanite and Mica decompose into some desirable products if you electrolyze them, but there are definitely better options, so you shouldn't hunt them down if you want their byproducts."
+		""
+		"&8(This vein probably irks your average GTNH player...)&r"
+	]
+	quest.0B4BA438FE7F3640.quest_subtitle: "Source of Aluminium, Fluorine, Titanium"
+	quest.0B4BA438FE7F3640.title: "Mica"
+	quest.12CA961451272238.title: "Lord of the Temperature Ring!"
+	quest.143B1AE1F3CF53EF.quest_desc: [
+		"Seasoned sci-fi fans might recognise &2Naquadah&r from the series &dStargate&r! You'll find this becomes an essential material from &dLuV&r onwards."
+		""
+		"Naquadah can be processed in &dLuV&r for Titanium, Trinium, Barium, Gallium, Indium, Phosphorus, Enriched Naquadah, and Naquadria. Versatile!"
+		""
+		"Moving the spotlight to the other ore, &cPlutonium&r is used to start the Radon loop, required in &9IV&r."
+	]
+	quest.143B1AE1F3CF53EF.quest_subtitle: "Source of... a lot."
+	quest.143B1AE1F3CF53EF.title: "Naquadah"
+	quest.14587AE142D84E12.quest_desc: ["The most consistent source of Lead and Silver."]
+	quest.14587AE142D84E12.quest_subtitle: "Source of Lead, Silver"
+	quest.14587AE142D84E12.title: "Galena"
+	quest.178285129CEA9F9F.quest_desc: [
+		"It's shiny! That's about it!"
+		""
+		"Yeah, you wish you could make jewelry out of it."
+	]
+	quest.178285129CEA9F9F.quest_subtitle: "Source of Necklaces"
+	quest.178285129CEA9F9F.title: "Garnet"
+	quest.1B45DB5C85B68182.quest_desc: [
+		"Your only source of Diamond!"
+		""
+		"Diamond has &6five times more durability&r than Iron for tools. The catch is that you'll need Diamond Plates for some tools, which is gated behind the Cutting Machine."
+		""
+		"Diamond and Graphite both electrolyze into a ton of Carbon. Hint, hint..?"
+		""
+		"&cNote:&r Avoid macerating Diamonds in the early game. Recovering gem dusts into the actual gem cannot be done for a while - and even then, the process is slow and time-consuming..."
+	]
+	quest.1B45DB5C85B68182.quest_subtitle: "Source of Diamond, Carbon"
+	quest.1B45DB5C85B68182.title: "Graphite"
+	quest.1E27C654E2F6FFF2.quest_desc: [
+		"As an ore, Coal is hardly worth large-scale processing, because there are too many additional steps. required to turn it into usable fuel. It's still good to have some in your back pocket."
+		""
+		"Just run it through a Furnace."
+	]
+	quest.1E27C654E2F6FFF2.quest_subtitle: "Source of pollution"
+	quest.1E27C654E2F6FFF2.title: "Coal"
+	quest.1F572D638AAACA21.quest_desc: [
+		"Electrotine is important for progression in &6HV&r. It centrifuges into Electrum (a source of Gold and Silver), and Redstone."
+		""
+		"Saltpeter is used in a few reactions, and... the other two ores here are pretty average."
+		"{@pagebreak}"
+		"&l&3Lore:&r&o Does the word \"Nikolite\" ring a bell? It's pretty much Electrotine's great-ancestor, hailing from RedPower."
+	]
+	quest.1F572D638AAACA21.quest_subtitle: "Source of Potassium, Electrum"
+	quest.1F572D638AAACA21.title: "Saltpeter"
+	quest.2171AF09E76A5968.quest_desc: [
+		"The de-facto Rare Earth vein for progression in &5EV&r... and onwards."
+		""
+		"&l&3Lore:&r&o This vein was bugged for quite some time. It's never actually contained any Monazite, and nobody realised (well, nobody brought it up!) for many, many months. Did you notice?"
+	]
+	quest.2171AF09E76A5968.quest_subtitle: "Source of Rare Earth, Neodymium, Fluorine"
+	quest.2171AF09E76A5968.title: "Bastnatite"
+	quest.21C86435E7ED3442.title: "Permanent Cure from Thirst"
+	quest.2566650A3BB0757F.title: "Super Drill (MAX Tier??)"
+	quest.260E516A219825A2.quest_desc: [
+		"This vein is namely one of the few direct sources of Gold in the overworld."
+		""
+		"There are many other sources of Gold in GregTech, but you will likely see better yields of Gold if you obtain it by processing other resources."
+	]
+	quest.260E516A219825A2.quest_subtitle: "Source of Iron, Gold, Vanadium"
+	quest.260E516A219825A2.title: "Magnetite"
+	quest.27ED27B72A0EBB50.title: "You did well."
+	quest.2821B0EA0E6B28A5.quest_desc: [
+		"The &6Temperature&r and &bThirst&r systems added by &2Legendary Survival Overhaul&r force you to pay closer attention to your well-being. You must choose your base location wisely, ensuring you have accessible water and resources."
+		""
+		"In the future, you will be able to mitigate thirst, temperature, and hunger."
+	]
+	quest.2821B0EA0E6B28A5.title: "Temperature and Thirst"
+	quest.28C9D7D003D4E4DF.title: "Botanic Additions Challenges"
+	quest.2C75A50B17AA9AF1.quest_desc: [
+		"Pyrolusite is what most people are here for. It smelts directly into Manganese, which you'll be needing in bulk for &6HV&r."
+		""
+		"Tantalite will eventually become extremely valuable, thanks to its Niobium byproducts, and its utility when crafting &bSMD Components&r."
+	]
+	quest.2C75A50B17AA9AF1.quest_subtitle: "Source of Manganese"
+	quest.2C75A50B17AA9AF1.title: "Pyrolusite"
+	quest.2E5A71CED4B01657.quest_desc: [
+		"Your classic Redstone vein."
+		""
+		"Ruby is very important for the Chromium it contains. You'll quickly discover that you can never have too much Chromium!"
+	]
+	quest.2E5A71CED4B01657.quest_subtitle: "Source of Redstone, Ruby, Chromium, Mercury"
+	quest.2E5A71CED4B01657.title: "Redstone"
+	quest.36AE05474CD9A7E3.quest_desc: ["I will try to &bclearly&r explain all mod mechanics and custom changes in the &cquests&r. Please read each &cquest&r carefully, as they contain not only &4lore&r and &5explanations&r, but also vital &etips&r!"]
+	quest.36AE05474CD9A7E3.quest_subtitle: "Also use EMI!"
+	quest.37EC97FB0FC6C56D.quest_desc: [
+		"Both Topaz ores are excellent subjects for eventual electrolysis."
+		""
+		"This makes this vein one of the best Fluorine sources."
+	]
+	quest.37EC97FB0FC6C56D.quest_subtitle: "Source of Copper, Fluorine"
+	quest.37EC97FB0FC6C56D.title: "Topaz"
+	quest.3803538CCA2CAA48.title: "BECOME THE SPONGE-BOB!"
+	quest.38C955F6CBDD95BD.quest_desc: ["Your one and only trusty source for Nickel."]
+	quest.38C955F6CBDD95BD.quest_subtitle: "Source of Nickel, Cobalt"
+	quest.38C955F6CBDD95BD.title: "Nickel"
+	quest.39A58AFE2E0C13EB.quest_desc: [
+		"Did you know Lazurite and Sodalite can be used as substitutes for &9Lapis&r in enchanting?"
+		""
+		"Sodalite is the most valuable Ore here, thanks to its useful electrolysis recipe when you get to &bMV&r."
+	]
+	quest.39A58AFE2E0C13EB.quest_subtitle: "Source of Lapis Lazuli, Aluminium, Sodium, Chlorine"
+	quest.39A58AFE2E0C13EB.title: "Lapis"
+	quest.3B379794A3030C73.quest_desc: ["A pure, very rich Tin vein - excellent for early game. You'll be over the moon to find one of these in the &6Steam Age&r."]
+	quest.3B379794A3030C73.quest_subtitle: "#1 Source of Tin"
+	quest.3B379794A3030C73.title: "Cassiterite"
+	quest.40B40DF0D1295A90.quest_desc: [
+		"The vein to mine for &bAluminium&r and &dTitanium&r if you're a well-adjusted person."
+		""
+		"Ditch those Mica veins - Bauxite is the future!"
+	]
+	quest.40B40DF0D1295A90.quest_subtitle: "Source of Aluminium, Titanium, Gallium"
+	quest.40B40DF0D1295A90.title: "Bauxite"
+	quest.40F72CE8CE8846D7.quest_desc: ["You can also report issues on GitHub. This is very useful, as it ensures all information is properly documented."]
+	quest.40F72CE8CE8846D7.title: "GitHub"
+	quest.41616C31D9C08648.quest_desc: [
+		"A decent alternative to the pure Tin vein if you haven't found one yet."
+		""
+		"The other ores are as good as decoration."
+	]
+	quest.41616C31D9C08648.quest_subtitle: "Source of Tin"
+	quest.41616C31D9C08648.title: "Cassiterite Sand"
+	quest.41730E340B3D8EDA.quest_desc: [
+		"Some of the details are repeated from the introduction quest, but we feel like we needed to expand on the explanation if you want to know all the details!"
+		""
+		"Ready for some \"light\" reading?"
+		"{@pagebreak}"
+		"Each vein can contain up to four different ores."
+		""
+		"Ore veins generate in a &4Grid&r. Every vein is spaced by 3 chunks from one to another in a cardinal direction."
+		""
+		"They spawn at the &4Center&r of the Chunks which have both their X and Z coordinates be at &b1 plus a multiple of 3&r (-8, -5, -2, 1, 4, 7, ...). You will typically find two veins in the selected chunk - one will be in the Stone layer, and the other vein lays deeper in the Deepslate layer."
+		""
+		"However, Ore veins may be deleted by caves, Oil deposits, or from trying to generate above the ground."
+		"{@pagebreak}"
+		"It's a good practice to make &dWaypoints&r to every vein you find, and to label their type. You may want to come back to it several times."
+		""
+		"A typical Ore vein is &d7 blocks&r tall, and ores generate in 4 different patterns:"
+		"- The &9Top Ore&r generates in the higher 4 layers of the vein."
+		"- The &9Bottom Ore&r generates in the lower 3 layers of the vein."
+		"- The &9Between Ore&r generates in the middle 3 layers of the vein."
+		"- The &9Sporadic Ore&r generates anywhere in the vein. There will be the least amount of this ore in a vein."
+		""
+		"The same ore type can be in 2 different generation patterns, such as in Cassiterite veins."
+	]
+	quest.41730E340B3D8EDA.quest_subtitle: "You'll be an expert by the time you finish reading this!"
+	quest.41730E340B3D8EDA.title: "Ore Generation"
+	quest.45B62B35180593EA.quest_desc: [
+		"Almost a pure Copper vein. Damn you, Stibnite, ruining our purity!"
+		""
+		"You can hardly complain about its presence, though - Stibnite smelts directly into Antimony, which you will want in &7LV&r for your Batteries."
+	]
+	quest.45B62B35180593EA.quest_subtitle: "Source of Copper, Antimony"
+	quest.45B62B35180593EA.title: "Tetrahedrite"
+	quest.46C8BD544441AC5D.quest_desc: ["The modpack is in development, so please report any bugs or problems on Discord or GitHub. Thank you."]
+	quest.46C8BD544441AC5D.title: "Bugs and Problems"
+	quest.4826DCD2FC457EA5.quest_desc: [
+		"A great vein for the early game. Copper and Tin to make Bronze, Realgar for your first source of Arsenic, and Zeolite for... nothing much."
+		"{@pagebreak}"
+		"&l&3Lore:&r&o As GregTech used to auto-generate its recipes, Zeolite used to electrolyze in batches of 141 dust at a time. Whoops!"
+	]
+	quest.4826DCD2FC457EA5.quest_subtitle: "Source of Copper, Tin"
+	quest.4826DCD2FC457EA5.title: "Chalcopyrite"
+	quest.49E78D528CCC4185.quest_desc: [
+		"Most &6vanilla mechanics&r are disabled here to prevent bypassing the progression system or using &echeese&r strategies."
+		""
+		"For example, &8Iron Golems&r do not drop iron. This makes &bGregTech Drills&r and other tools much more &auseful&r and necessary."
+	]
+	quest.4D76C334B251EB3A.quest_desc: [
+		"Platinum starts seeing usage in &5EV&r."
+		""
+		"The Platinum Group Sludge chain becomes a requirement in &1IV&r, and Sheldonite is the best ore to kickstart your processing."
+		"{@pagebreak}"
+		"&l&3Lore:&r&o The real-world name for Sheldonite ore is actually Cooperite. GregoriusT thought it was \"haha, funny\" to make it a reference to Sheldon Cooper, despite &lnot&r&o being the person the ore was named after!  We kept the \"haha, funny\" joke going."
+	]
+	quest.4D76C334B251EB3A.quest_subtitle: "Source of a lot, again..."
+	quest.4D76C334B251EB3A.title: "Sheldonite"
+	quest.4FB6296D6B8214C6.quest_desc: ["ForgeBorn is a modpack that I really love, and I have put a lot of effort into it. While this is a passion project, any support is appreciated. If you enjoy the pack and want to support me, here is my Patreon."]
+	quest.4FB6296D6B8214C6.quest_subtitle: "It's my hobby."
+	quest.4FC668EF2BF294ED.quest_desc: [
+		"You may already have boatloads of Iron by the time you make it here, but don't overlook the utility of this vein."
+		""
+		"Chromite is an excellent source of Chromium, and Vanadium is needed in higher quantities in the late game."
+	]
+	quest.4FC668EF2BF294ED.quest_subtitle: "Source of Iron, Vanadium, Gold, Chromium"
+	quest.4FC668EF2BF294ED.title: "Magnetite"
+	quest.50617148B918A738.title: "Looking for answears"
+	quest.517D50E748A129AB.quest_desc: [
+		"Your ticket into &bApplied Energistics 2&r is nestled deep within a Certus Quartz vein."
+		""
+		"Alongside this, note that Barite electrolyses into Barium, which you will eventually need to make some higher tier Superconductors."
+	]
+	quest.517D50E748A129AB.quest_subtitle: "Source of AE2, Barium"
+	quest.517D50E748A129AB.title: "Certus Quartz"
+	quest.5289D5049A236D55.quest_desc: [
+		"Your one-stop-shop for sources of Chlorine."
+		""
+		"If you're pining after Lithium, note that it can be obtained from Lepidolite Ore Processing."
+	]
+	quest.5289D5049A236D55.quest_subtitle: "Source of Salt, Chlorine, Lithium, Fluorine"
+	quest.5289D5049A236D55.title: "Gamer Rage"
+	quest.5295C4AEFA8417F3.quest_desc: [
+		"The worst Iron vein. It's helpful in the early game, but that's about it."
+		""
+		"We love you anyway, Mineral Sand vein!"
+	]
+	quest.5295C4AEFA8417F3.quest_subtitle: "Source of Iron"
+	quest.5295C4AEFA8417F3.title: "Mineral Sand"
+	quest.54ACCDA07EA6A5A8.quest_desc: [
+		"This modpack contains many mods that add to or complicate existing gameplay. This is especially true for mobs."
+		"Every creature here is &4very strong&r and can spawn as a &dmini-boss&r, so be extremely careful."
+		""
+		"It is also important to note that &2Zombies&r and &aCreepers&r are your most &4terrible&r enemies. Zombies can now sprint towards you and track you from greater distances. Creepers, in turn, have a chance to spawn &9Charged&r!"
+	]
+	quest.54ACCDA07EA6A5A8.title: "Difficulty"
+	quest.5569E51EFB884F65.title: "Alf Shatterer"
+	quest.574217C8A678C9B4.quest_desc: ["NOT CURRENTLY IMPLEMENTED"]
+	quest.574217C8A678C9B4.title: "READ ME!"
+	quest.594D84730913698A.quest_desc: ["Emerald is the useful ore here. It's used in small quantities in &bMV&r, and is a part of the Crystal process for Crystal and Wetware circuits much later on."]
+	quest.594D84730913698A.quest_subtitle: "Source of Beryllium, Emerald, Thorium"
+	quest.594D84730913698A.title: "Emerald"
+	quest.5AA98D1298FD90BA.quest_desc: [
+		"Your one and only &9Tungsten&r source! Whilst you could technically get your Tungstate from macerating &eEnd Stone,&r the yield is tiny. Process these ores instead!"
+		""
+		"An extremely important vein, as Tungsten is used in vast amounts in &9IV&r and onwards."
+	]
+	quest.5AA98D1298FD90BA.quest_subtitle: "Source of Tungsten, Lithium"
+	quest.5AA98D1298FD90BA.title: "Scheelite"
+	quest.5ED483A04095EFA3.quest_desc: [
+		"The one and only vein for Uranium!"
+		""
+		"Uranium has a few minor uses in &5EV&r and beyond."
+		""
+		"Did you know that Nuclear Reactors might be making their way to &bGTCEu&r in the future?"
+	]
+	quest.5ED483A04095EFA3.quest_subtitle: "Source of Uranium, Thorium, Lead"
+	quest.5ED483A04095EFA3.title: "Pitchblende"
+	quest.5F1C550EF7C97D02.title: "Chefs Gift"
+	quest.63CB3C9F5A61E0C4.quest_desc: [
+		"This vein is very rare! Congratulations on stumbling upon one."
+		""
+		"&8(Or at least... it should be rare.)&r"
+		""
+		"View the contents of this vein as \"&7&obasically Molybdenum, and some other stuff&r\". Yeah, Molybdenum is what's important here."
+	]
+	quest.63CB3C9F5A61E0C4.quest_subtitle: "Source of Molybdenum"
+	quest.63CB3C9F5A61E0C4.title: "Molybdenum"
+	quest.66FFB5252EEF2A5C.title: "LV"
+	quest.676667089653641C.quest_desc: [
+		"This one's nothing but a meme. It's literally called a Lubricant vein."
+		""
+		"With that being said, Lubricant is always useful for your &eCutting Machines&r to keep your factory running smoothly."
+	]
+	quest.676667089653641C.quest_subtitle: "Source of Lubricant"
+	quest.676667089653641C.title: "Soapstone"
+	quest.692F4312B3F73FAF.quest_desc: ["A standard Iron vein. It's a good target when you need to replenish your supply."]
+	quest.692F4312B3F73FAF.quest_subtitle: "Source of Iron, Copper"
+	quest.692F4312B3F73FAF.title: "Limonite"
+	quest.6C05FB0557D90AA3.quest_desc: [
+		"With the help of &cJEI&r &8(currently &bEMI&r)&r, you can find &erecipes&r, &5processing chains&r, &3mob drops&r, and generally &aabsolutely everything&r about any item!"
+		""
+		"If you have &4difficulties&r with a quest because you do not understand how to craft an item, read the &bquest&r carefully and check the recipe in &cJEI/EMI&r."
+	]
+	quest.6C05FB0557D90AA3.quest_subtitle: "Also read the quests!"
+	quest.6C05FB0557D90AA3.title: "Use EMI!"
+	quest.6EFE154D32A2155E.quest_desc: [
+		"Both Sapphire variants serve as your primary source of Aluminium until you can unlock other electrolysis recipes in &bMV&r."
+		""
+		"The other two gems are mediocre at best."
+	]
+	quest.6EFE154D32A2155E.quest_subtitle: "Source of Aluminium"
+	quest.6EFE154D32A2155E.title: "Sapphire"
+	quest.70252B72F7728EFD.quest_desc: [
+		"Hey, anyone remember Forestry?"
+		""
+		"This is pretty much the one vein you want to tap in for Phosphorus - which requires quite a few steps of processing to obtain."
+		""
+		"Pyrochlore will eventually become extremely valuable, as it's a good source of Niobium."
+	]
+	quest.70252B72F7728EFD.quest_subtitle: "Source of Calcium, Phosphorus, Niobium"
+	quest.70252B72F7728EFD.title: "Apatite"
+	quest.7382FF0843346E5A.title: "Become a DRAGON! (almost)"
+	quest.75F777073CF44FE1.quest_desc: [
+		"This modpack is built around &9GregTech&r and is closely integrated with it. Please read this entire &dchapter&r to prepare for the initial &4difficulties&r. &eGood luck!&r"
+		""
+		"Please do not use cheats to travel or find ores. Build railways to veins and use prospecting tools."
+		""
+		"&4ALPHA!!!&r"
+	]
+	quest.75F777073CF44FE1.title: "Welcome to &#E54612F&#E65B2Do&#E77049r&#E88464g&#E9997Fe&#E9AE9AB&#EAC3B6o&#EBD7D1r&#ECECECn!"
+	quest.796742688E69107E.quest_desc: [
+		"We would be very glad if you joined our &bDiscord&r server. There you can chat with the community, find inspiration, and follow the development of this project."
+		""
+		"&bhttps://discord.gg/EUuEZqu5DV&r"
+	]
+	quest.7C1B5559A03F6E02.quest_desc: [
+		"This vein starts to become notable for its Magnesium output starting in the midgame."
+		""
+		"Olivine also has various uses, as it can substitute &aEmerald&r in a couple of recipes."
+	]
+	quest.7C1B5559A03F6E02.quest_subtitle: "Source of Magnesium"
+	quest.7C1B5559A03F6E02.title: "Olivine"
+	quest.7C35B6B0B4CFFEB2.quest_desc: [
+		"A good source of &6Heavy Oil&r, which is useful for &6Diesel&r setups early on."
+		""
+		"If you don't want to spend time processing Oilsands through your setup, you can always just &bCentrifuge&r it directly to get the Heavy Oil."
+	]
+	quest.7C35B6B0B4CFFEB2.quest_subtitle: "Source of the American Dream"
+	quest.7C35B6B0B4CFFEB2.title: "Oilsands"
+	quest.7CFB5D995F888658.quest_desc: [
+		"&6Croptopia&r, &eFarmer's Delight&r, and its addons add a huge amount of food to the modpack. You might ask: why, if vanilla food is enough?"
+		""
+		"I advise you to set up food production early to avoid problems in the future."
+	]
+	quest.7CFB5D995F888658.title: "A Food Problem"
+	task.00C2BC34DEF993B2.title: "Color Catalyst"
+	task.0174070867145631.title: "ßß"
+	task.031DBC997BD80447.title: "Spiritual Focus"
+	task.096B12DAA33A48B7.title: "fff"
+	task.0A74F9544F3ACDFF.title: "ß0"
+	task.0B9D10A0513CE4A3.title: "124"
+	task.0D4A33E65A624042.title: "Potion Brewing Barrel"
+	task.0D8AD4D225F124F2.title: "Primitive Sequenced Assembler"
+	task.0F28C0F77E7E936F.title: "Steam"
+	task.0F3402C819586D58.title: "5553332"
+	task.0F65D1B93F0AA57B.title: "Botania Additions Challenges"
+	task.10E57272EA598597.title: "141414"
+	task.11A32060E5715C4A.title: "Miner Familiar"
+	task.13C54D407241BE0D.title: "New Steam Multis"
+	task.13CDBDA23FA4E245.title: "44444"
+	task.14DF2B9F972256F3.title: "3124241"
+	task.15FC93231195D35D.title: "Use JEI!"
+	task.1724D85F8130F90A.title: "new multiblock for bricks"
+	task.180D4261AD3CB62A.title: "Chisel"
+	task.190E62F30DB2BA22.title: "MV"
+	task.191EC8A766A9C669.title: "Nature Focus"
+	task.1B38D42D8109A357.title: "crystals"
+	task.1C8D7AA55893745F.title: "All bobers"
+	task.1D0CE04CB1188C70.title: "12"
+	task.1E3642D99AFF019C.title: "Ectoplasm"
+	task.1F037DC9C9C1D834.title: "Steam Wire something"
+	task.2063FA27AE4B61A2.title: "13"
+	task.20F23F4F844F59BD.title: "LV Done!"
+	task.21ADD52C79926F22.title: "Forbidden Things"
+	task.223F94C896B391DB.title: "Steam Grinder"
+	task.2429C2A22EFE2A17.title: "xxxxxx"
+	task.29B96E7121198853.title: "Discord"
+	task.2A18DD3FB3B72BE3.title: "55555"
+	task.2AEC62081061CD59.title: "Soul-Shaper"
+	task.2F40E0FDED2276A5.title: "552452"
+	task.2F89E296728789F6.title: "Mythic Botania Challenges"
+	task.316F3A05744D9E51.title: "mud bricks"
+	task.31D3413B45E16F51.title: "visit earths depths"
+	task.35384D94D4F847D9.title: "1114444"
+	task.356B9D444C8E4E23.title: "115"
+	task.359896C4161DB8B3.title: "Other"
+	task.37F417796D755B8D.title: "12"
+	task.38176DC8C5CCA91B.title: "1111111"
+	task.3A46793D3F822CC9.title: "spiritualem rune"
+	task.3A7540BE434620FF.title: "bbbbbb"
+	task.3AA27BD94750E442.title: "1"
+	task.3B6ABA7D688BCA0F.title: "ComputerCraft"
+	task.3D3C88042F515C30.title: "Memory Screen"
+	task.3D8D7F61943B1DCA.title: "Make a Food Farm"
+	task.3E0A560A695FE257.title: "deepslate"
+	task.3FE0B806DBDEAAC3.title: "1242341"
+	task.4029E82B50ECAFB3.title: "4444321"
+	task.427D0F9C8FE13527.title: "1111333222"
+	task.44494BF2CF7CB041.title: "andesite"
+	task.460F3983DA94434E.title: "Travel Anchorns"
+	task.4657095D01F38020.title: "16"
+	task.49675F1497D6FF84.title: "Steam Press"
+	task.4B65E05840A4CC7E.title: "Spiritual Field"
+	task.4C0F5451B7DDC977.title: "15"
+	task.4C10943FA4848227.title: "666"
+	task.4C372128CFB4BB7C.title: "Bigger Spiritfire Furnace"
+	task.4D0B1281027C14D7.title: "Attuning my soul"
+	task.4D6C77E562D50D25.title: "bricks for upgrading multiblocks and machines"
+	task.4E61E0DB6D927650.title: "Xtones"
+	task.4F99D5E7B408AFE2.title: "Vanilla Botania Challenges"
+	task.53076A0D69921EEB.title: "FramedBlocks"
+	task.553FE363898D6890.title: "41422"
+	task.55D23C74AB9F4A28.title: "Mnemosyne’s Spark"
+	task.57AFCD0B0CDE041A.title: "14214"
+	task.58B8D05C8F3C29D1.title: "Starting with Botania"
+	task.599BCBEAB34E0886.title: "sulfuric mushroom"
+	task.5BD8122B0BCA7550.title: "Big PBF"
+	task.5C78D87F1ABEA79B.title: "14"
+	task.5C819F6783047141.title: "GT Tools"
+	task.601FB4F5373F239D.title: "Primitive Assembler"
+	task.603AE1928A3A5858.title: "Patreon"
+	task.61F8140FBC5AC53C.title: "Arm"
+	task.622221BB03275B19.title: "more runes"
+	task.62591523ECCAD57C.title: "00"
+	task.63305838B731042D.title: "LOS Challenges "
+	task.6368C468B919C2A3.title: "Building Blocks"
+	task.63A4C1E6B96CF2C0.title: "Elevators"
+	task.669CD27D44AFDC98.title: "Factory Blocks and Supplementaries"
+	task.67060132BF2F5C3A.title: "Steam Alternator"
+	task.67E12088B388BC8D.title: "88"
+	task.6828AA0CBB74D067.title: "Spawner"
+	task.6910734FE771D840.title: "Better Steam Alternator"
+	task.6BA6F16B539F019A.title: "Read The Quests"
+	task.6D9FD1A954EE9C1E.title: "All fishes"
+	task.6E07F775C60EE501.title: "Best Equipment"
+	task.6EC5CF3745716DF2.title: "hatred shard"
+	task.6FC7C89CCFF85A73.title: "World Gen. Mods"
+	task.70D7824FF5E353B4.title: "Croptopia Challenges"
+	task.71051C856452D511.title: "Steam Mechanism"
+	task.7294572F94C73D5A.title: "healing water"
+	task.72B08A6BE8A63BD8.title: "Some Casings"
+	task.76BEF39E65D2FD7E.title: "ULV"
+	task.7907DB0EF8C92628.title: "Begin the Challenge"
+	task.7B59136CEF4EC8BC.title: "1111"
+	task.7BC8A1D19E0C9B5D.title: "All Rare Items"
+	task.7D9FAD44F86BADE7.title: "144444444"
+	task.7FA4F8DC27EBEED3.title: "Difficulty "
+}

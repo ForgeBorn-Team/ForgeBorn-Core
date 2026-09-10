@@ -1,0 +1,78 @@
+[*]
+background:          ftblibrary:textures/gui/background_squares.png; color=#222738; tile_size=64
+extra_quest_shapes:  diamond, pentagon, hexagon, octagon, heart, gear, rectangle
+
+text_color:          #E2E8F0
+hover_text_color:    #18EED1
+disabled_text_color: #555F7A
+
+widget_border:       #3B445B
+widget_background:   #141724
+symbol_in:           #18EED1
+symbol_out:          #555F7A
+
+button:                hollow_rectangle:{{widget_border}}
+panel:                 {{container_slot}}
+disabled_button:       hollow_rectangle:{{widget_border}}
+hover_button:          {{button}} + {{widget_border}}; padding=1
+context_menu:          hollow_rectangle:{{widget_border}}; round_edges + {{background}}; color=#141724; padding=1
+scroll_bar_background: {{widget_background}}
+scroll_bar:            {{button}} + {{widget_background}}; padding=1
+container_slot:        {{button}}; padding=-1
+text_box:              part:minecraft:textures/gui/container/enchanting_table.png; pos=0,185,108,19; corner=6
+
+icon:                  none
+check_icon:            builtin
+add_icon:              builtin
+alert_icon:            ftbquests:textures/gui/alert.png
+support_icon:          ftblibrary:textures/icons/support.png
+wiki_icon:             ftbquests:textures/gui/info.png
+wiki_url:              -
+pin_icon_on:           ftbquests:textures/gui/pin.png; color=#18EED1
+pin_icon_off:          ftbquests:textures/gui/pin.png; color=#555F7A
+editor_icon_on:        ftbquests:textures/gui/editor.png; color=#18EED1
+editor_icon_off:       ftbquests:textures/gui/editor.png; color=#555F7A
+hidden_icon:           ftbquests:textures/gui/hidden.png; color=#555F7A
+link_icon:             ftbquests:textures/gui/link.png; color=#848EA5
+save_icon:             ftbquests:textures/gui/save.png
+settings_icon:         ftbquests:textures/gui/settings.png
+prefs_icon:            ftblibrary:icons/player
+close_icon:            ftbquests:textures/gui/close.png
+emergency_items_icon: ftbquests:textures/gui/emergency_items.png; color=#18EED1
+guide_icon:            ftbquests:textures/gui/guide.png; color=#21B39F
+modpack_icon:          ftbquests:textures/item/book.png
+reward_table_icon:     ftblibrary:icons/money_bag
+shop_icon:             ftbquests:textures/gui/shop.png; color=#21B39F
+collect_rewards_icon: ftbquests:textures/gui/collect_rewards.png; color=#18EED1
+delete_icon:           ftblibrary:icons/remove
+reload_icon:           ftblibrary:icons/refresh
+download_icon:         ftblibrary:icons/down
+edit_icon:             ftblibrary:icons/settings
+move_up_icon:          ftblibrary:icons/up
+move_down_icon:        ftblibrary:icons/down
+left_arrow:            ftblibrary:icons/left
+right_arrow:           ftblibrary:icons/right
+
+full_screen_quest:                  0
+tasks_text_color:                   #848EA5
+rewards_text_color:                 #18EED1
+quest_view_background:              {{context_menu}}
+quest_view_border:                  {{widget_border}}
+quest_view_title:                   #18EED1
+quest_completed_color:              #18EED1
+quest_started_color:                #21B39F
+quest_not_started_color:            #555F7A
+quest_locked_color:                 #141724
+dependency_line_texture:            ftbquests:textures/gui/dependency.png
+dependency_line_completed_color:    #18EED1
+dependency_line_uncompleted_color:  #3B445B
+dependency_line_requires_color:     #21B39F
+dependency_line_required_for_color: #279B8C
+dependency_line_selected_speed:     1.0
+dependency_line_unselected_speed:   0.0
+dependency_line_thickness:          0.20
+quest_spacing:                      1.0
+pinned_quest_size:                  0.75
+
+checkmark_task_active:   ftblibrary:icons/accept
+checkmark_task_inactive: ftblibrary:icons/accept_gray

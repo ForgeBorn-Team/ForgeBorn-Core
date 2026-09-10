@@ -1,0 +1,70 @@
+{
+  "favorites": [
+    {
+      "stack": "item:occultism:chalk_gray",
+      "recipe": "gtceu:spiritfire_recipes/port_chalk_gray"
+    }
+  ],
+  "lookup_history": [
+    "item:gtceu:bronze_chestplate",
+    "item:undergarden:cloggrum_chestplate{\"undergarden:rogdorium_infusion\":{infusionAmount:3600,infusionMax:3600}}",
+    "item:gtceu:advanced_nanomuscle_chestplate",
+    "item:gtceu:quarktech_chestplate",
+    "item:gtceu:hazmat_chestpiece",
+    "item:gtceu:nanomuscle_chestplate",
+    "item:ars_nouveau:archwood_chest",
+    "item:create:cardboard_chestplate",
+    "item:forgeborncore:spirit_steel_ingot",
+    "item:forgeborncore:spirit_steel_dust",
+    "item:kubejs:omnipetal",
+    "item:kubejs:undergarden_dim",
+    "item:forgeborncore:spiritfire_furnace",
+    "item:gtceu:programmed_circuit{\"gtceu:circuit_config\":0}",
+    "item:malum:ether",
+    "item:malum:spellweaving_pickaxe",
+    "item:botania:gaia_ingot",
+    "item:botania:apothecary_default",
+    "item:botania:dreadthorn",
+    "item:botania:white_mystical_flower",
+    {
+      "type": "item",
+      "id": "gtceu:aluminium_dust",
+      "amount": 64
+    },
+    "item:forgeborncore:rune_1_good_air",
+    "item:forgeborncore:rune_1_symbiotic_base",
+    "item:forgeborncore:rune_1_evil_fire",
+    "item:forgeborncore:forgeporn",
+    "item:occultism:chalk_gray",
+    "item:farmersdelight:bacon_sandwich",
+    {
+      "type": "item",
+      "id": "occultism:spirit_attuned_gem",
+      "amount": 64
+    },
+    "item:occultism:spirit_fire",
+    "item:occultism:gray_paste",
+    "item:minecraft:dark_oak_door",
+    {
+      "type": "item",
+      "id": "occultism:polished_otherstone",
+      "amount": 52
+    },
+    "item:gtceu:hp_steam_solid_boiler",
+    "item:gtceu:lp_steam_solid_boiler",
+    "item:gtceu:charcoal_pile_igniter",
+    "item:gtceu:titanium_large_boiler",
+    "item:gtceu:titanium_firebox_casing",
+    "item:gtceu:iv_alloy_smelter",
+    "item:gtceu:mv_forge_hammer",
+    "item:occultism:spirit_grindstone"
+  ],
+  "craft_history": [],
+  "recipe_defaults": {
+    "added": [],
+    "tags": {},
+    "resolutions": {},
+    "disabled": []
+  },
+  "hidden_stacks": []
+}

@@ -1,0 +1,115 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "base_building"
+	group: "636E307A32BE4F2F"
+	id: "4CC3E9FB50DD46DC"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "3581D30254788475"
+			shape: "hexagon"
+			tasks: [{
+				id: "6368C468B919C2A3"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3581D30254788475"]
+			id: "24FC1A5D84C81142"
+			shape: "circle"
+			tasks: [{
+				id: "4E61E0DB6D927650"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3581D30254788475"]
+			id: "5FC36BE70A8F57E9"
+			shape: "circle"
+			tasks: [{
+				id: "53076A0D69921EEB"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3581D30254788475"]
+			id: "7A7A96D967D2ED76"
+			shape: "circle"
+			tasks: [{
+				id: "460F3983DA94434E"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3581D30254788475"]
+			id: "180ADD6EFB89281C"
+			shape: "circle"
+			tasks: [{
+				id: "3B6ABA7D688BCA0F"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3581D30254788475"]
+			id: "041F2F5E44BA63AA"
+			shape: "circle"
+			tasks: [{
+				id: "63A4C1E6B96CF2C0"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3581D30254788475"]
+			id: "43B79E5B485161CF"
+			shape: "circle"
+			tasks: [{
+				id: "180D4261AD3CB62A"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3581D30254788475"]
+			icon: {
+				components: {
+					"ftbquests:missing_item": "industrialhellscape:inhell_haven_device"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "4E25A387E5966D6D"
+			shape: "circle"
+			tasks: [{
+				id: "669CD27D44AFDC98"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3581D30254788475"]
+			id: "58D1A9C32E4E1493"
+			shape: "circle"
+			tasks: [{
+				id: "6FC7C89CCFF85A73"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+	]
+}
