@@ -1,0 +1,9 @@
+{
+  "flip_v": true,
+  "loader": "neoforge:obj",
+  "model": "forgeborncore:models/obj/star.obj",
+  "textures": {
+    "texture0": "forgeborncore:block/obj/space_layer",
+    "particle":"forgeborncore:block/obj/space_layer"
+  }
+}

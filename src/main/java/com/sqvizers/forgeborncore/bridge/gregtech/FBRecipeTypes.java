@@ -17,9 +17,15 @@ public class FBRecipeTypes {
                     .setItemSlotOverlay(IO.IN, 0, GTGuiTextures.FURNACE_OVERLAY_1))
             .setSound(GTSoundEntries.FURNACE);
 
+    public final static GTRecipeType SANCTUM_WARD_RECIPES = register(ForgeBornCore.id("sanctum_ward_recipes"),
+            MULTIBLOCK)
+            .setMaxIOSize(4, 0, 1, 0).setEUIO(IO.IN)
+            .UI(builder -> builder.setProgressBar(GTGuiTextures.PROGRESS_ARROW))
+            .setSound(GTSoundEntries.FURNACE);
+
     public static void init() {
         for (GTRecipeType type : new GTRecipeType[] {
-                SPIRITFIRE_RECIPES }) {
+                SPIRITFIRE_RECIPES, SANCTUM_WARD_RECIPES }) {
             type.setEUIO(IO.IN);
         }
     }

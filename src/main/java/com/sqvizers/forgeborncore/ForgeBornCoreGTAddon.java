@@ -1,6 +1,7 @@
 package com.sqvizers.forgeborncore;
 
 import com.sqvizers.forgeborncore.api.registries.FBRegistration;
+import com.sqvizers.forgeborncore.bridge.gregtech.SanctumWardRecipes;
 import com.sqvizers.forgeborncore.bridge.occultism.SpiritfireFurnaceRecipes;
 
 import com.gregtechceu.gtceu.api.addon.GTAddon;
@@ -23,6 +24,7 @@ public class ForgeBornCoreGTAddon implements IGTAddon {
     @Override
     public void addRecipes(RecipeOutput provider) {
         SpiritfireFurnaceRecipes.registerSpiritFireFurnaceRecipes(provider);
+        SanctumWardRecipes.registerSanctumWardRecipes(provider);
     }
 
     @Override
