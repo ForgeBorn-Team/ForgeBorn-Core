@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:block/block",
+    "dynamic_renders": [
+        {
+            "type": "forgeborncore:kinetic_hatch"
+        }
+    ],
+    "loader": "gtceu:machine",
+    "machine": "forgeborncore:kinetic_input_hatch",
+    "replaceable_textures": [
+        "bottom",
+        "top",
+        "side"
+    ],
+    "variants": {
+        "steel=false": {
+            "model": {
+                "parent": "forgeborncore:block/machine/part/kinetic_input_hatch",
+                "textures": {
+                    "bottom": "gtceu:block/casings/steam/bronze/bottom",
+                    "side": "gtceu:block/casings/steam/bronze/side",
+                    "top": "gtceu:block/casings/steam/bronze/top"
+                }
+            }
+        },
+        "steel=true": {
+            "model": {
+                "parent": "forgeborncore:block/machine/part/kinetic_input_hatch",
+                "textures": {
+                    "bottom": "gtceu:block/casings/steam/steel/bottom",
+                    "side": "gtceu:block/casings/steam/steel/side",
+                    "top": "gtceu:block/casings/steam/steel/top"
+                }
+            }
+        }
+    }
+}

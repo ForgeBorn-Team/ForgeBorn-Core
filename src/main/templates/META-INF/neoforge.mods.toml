@@ -34,6 +34,13 @@ versionRange = "[${gtceu_version},)"
 ordering = "AFTER"
 side = "BOTH"
 
+[[dependencies.${mod_id}]]
+modId = "create"
+type = "required"
+versionRange = "[6.0.10,)"
+ordering = "AFTER"
+side = "BOTH"
+
 # GTCEu 8.0 dropped LDLib (it moved to ModularUI2), so it no longer brings LDLib transitively.
 # CosmicCore still uses LDLib directly (gui widgets, @Persisted/@DescSynced syncdata, BlockInfo, the
 # IRenderer/IItemRendererProvider item-render API), so CC must require LDLib itself. Load AFTER it.
