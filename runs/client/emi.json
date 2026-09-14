@@ -3,9 +3,78 @@
     {
       "stack": "item:occultism:chalk_gray",
       "recipe": "gtceu:spiritfire_recipes/port_chalk_gray"
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:glowstone_dust",
+        "amount": 4
+      }
+    },
+    {
+      "stack": "item:embers:archaic_circuit"
+    },
+    {
+      "stack": "item:gtceu:basic_electronic_circuit",
+      "recipe": "gtceu:shaped/electronic_circuit_lv"
+    },
+    {
+      "stack": "item:gtceu:resistor"
+    },
+    {
+      "stack": "item:gtceu:resin_printed_circuit_board"
+    },
+    {
+      "stack": "item:gtceu:vacuum_tube"
+    },
+    {
+      "stack": "item:gtceu:red_alloy_single_cable"
+    },
+    {
+      "stack": "item:botania:fertilizer",
+      "recipe": "botania:fertilizer_dye"
     }
   ],
   "lookup_history": [
+    "item:forgeborncore:spirit_steel_ingot",
+    "item:gtceu:steel_brick_casing",
+    {
+      "type": "fluid",
+      "id": "gtceu:glue",
+      "amount": 100
+    },
+    "item:gtceu:resistor",
+    "item:gtceu:coal_dust",
+    "item:gtceu:fine_copper_wire",
+    "item:botania:livingwood_log",
+    "item:botania:livingwood",
+    "item:minecraft:bone_meal",
+    "item:malum:runic_workbench",
+    "item:gtceu:assembly_line",
+    "item:gtceu:large_circuit_assembler",
+    "item:botania:runic_altar",
+    "item:botania:drum_gathering",
+    "item:botania:pure_daisy",
+    "item:simulated:honey_glue",
+    "item:minecraft:honey_bottle",
+    "item:minecraft:glass_bottle",
+    {
+      "type": "item",
+      "id": "minecraft:honeycomb",
+      "amount": 4
+    },
+    "item:minecraft:honeycomb_block",
+    "item:minecraft:bee_nest",
+    "item:minecraft:beehive",
+    "item:rocketnautics:titanium_casing",
+    "item:gtceu:vacuum_tube",
+    "item:embers:archaic_brick",
+    "item:embers:archaic_circuit",
+    "item:gtceu:basic_electronic_circuit",
+    "item:embers:intelligent_apparatus",
+    "item:gtceu:wetware_processor_mainframe",
+    "item:gtceu:wetware_processor_computer",
+    "item:forgeborncore:sanctum_ward",
     "item:gtceu:bronze_chestplate",
     "item:undergarden:cloggrum_chestplate{\"undergarden:rogdorium_infusion\":{infusionAmount:3600,infusionMax:3600}}",
     "item:gtceu:advanced_nanomuscle_chestplate",
@@ -14,7 +83,6 @@
     "item:gtceu:nanomuscle_chestplate",
     "item:ars_nouveau:archwood_chest",
     "item:create:cardboard_chestplate",
-    "item:forgeborncore:spirit_steel_ingot",
     "item:forgeborncore:spirit_steel_dust",
     "item:kubejs:omnipetal",
     "item:kubejs:undergarden_dim",

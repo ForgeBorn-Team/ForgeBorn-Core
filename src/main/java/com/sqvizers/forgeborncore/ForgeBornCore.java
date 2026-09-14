@@ -6,7 +6,7 @@ import com.sqvizers.forgeborncore.common.data.FBBlocks;
 import com.sqvizers.forgeborncore.common.data.FBCreativeModeTabs;
 import com.sqvizers.forgeborncore.common.data.FBDataGen;
 import com.sqvizers.forgeborncore.common.data.FBMachines;
-import com.sqvizers.forgeborncore.common.data.item.FBItems;
+import com.sqvizers.forgeborncore.common.data.FBItems;
 import com.sqvizers.forgeborncore.common.data.materials.FBMaterialSet;
 import com.sqvizers.forgeborncore.common.data.materials.FBOres;
 import com.sqvizers.forgeborncore.common.data.materials.FBProgressionMaterials;
@@ -31,7 +31,6 @@ import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 import net.neoforged.neoforge.common.world.chunk.RegisterTicketControllersEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
-import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.registries.*;
 
 import org.slf4j.Logger;

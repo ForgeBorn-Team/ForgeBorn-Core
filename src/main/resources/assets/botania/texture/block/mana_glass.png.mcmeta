@@ -1,0 +1,12 @@
+{
+  "ctm":{
+    "ctm_version": 1,
+    "type":"CTM",
+    "textures":[
+      "botania:block/mana_glass_ctm"
+    ],
+    "extra":{
+      "ignore_states":"true"
+    }
+  }
+}

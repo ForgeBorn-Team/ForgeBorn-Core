@@ -1,7 +1,6 @@
 package com.sqvizers.forgeborncore.common.data;
 
 import com.sqvizers.forgeborncore.ForgeBornCore;
-import com.sqvizers.forgeborncore.common.data.item.FBItems;
 
 import net.minecraft.world.item.CreativeModeTab;
 

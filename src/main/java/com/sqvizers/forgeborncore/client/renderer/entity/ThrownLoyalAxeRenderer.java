@@ -2,7 +2,7 @@ package com.sqvizers.forgeborncore.client.renderer.entity;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import com.sqvizers.forgeborncore.common.data.item.FBItems;
+import com.sqvizers.forgeborncore.common.data.FBItems;
 import com.sqvizers.forgeborncore.common.data.item.item_properties.ThrownLoyalAxe;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRenderer;
