@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "forgeborncore:block/heat_and_pressure_resistant_machine_casing"
+        }
+    }
+}

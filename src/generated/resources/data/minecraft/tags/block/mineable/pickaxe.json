@@ -1,0 +1,14 @@
+{
+    "values": [
+        "forgeborncore:machine_casing_kinetic",
+        "forgeborncore:heat_and_pressure_resistant_machine_casing",
+        "forgeborncore:acacia_magnalium_casing",
+        "forgeborncore:solid_wrought_iron_casing",
+        "forgeborncore:spruce_zinc_casing",
+        "forgeborncore:manasteel_firebox",
+        "forgeborncore:manasteel_livingrock_casing",
+        "forgeborncore:manasteel_casing",
+        "forgeborncore:terrasteel_firebox",
+        "forgeborncore:terrasteel_livingwood_casing"
+    ]
+}

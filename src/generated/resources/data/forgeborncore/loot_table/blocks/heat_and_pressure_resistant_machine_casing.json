@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "bonus_rolls": 0.0,
+            "conditions": [
+                {
+                    "condition": "minecraft:survives_explosion"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "forgeborncore:heat_and_pressure_resistant_machine_casing"
+                }
+            ],
+            "rolls": 1.0
+        }
+    ],
+    "random_sequence": "forgeborncore:blocks/heat_and_pressure_resistant_machine_casing"
+}
