@@ -39,9 +39,7 @@ public class FBMachines {
                     ForgeBornCore.id("block/machine/part/kinetic_input_hatch"))
                     .andThen(builder -> builder.addDynamicRenderer(() -> KineticHatchRender.INSTANCE)))
             .hasBER(true)
-            .tooltips(
-                    Component.translatable("forgeborncore.machine.kinetic_input_hatch.tooltip"),
-                    Component.translatable("forgeborncore.machine.kinetic_input_hatch.parallel_tooltip"))
+            .tooltips(Component.translatable("forgeborncore.machine.kinetic_input_hatch.parallel_tooltip"))
             .register();
 
     public static final MachineDefinition KINETIC_OUTPUT_HATCH = REGISTRATE
@@ -58,7 +56,6 @@ public class FBMachines {
                     ForgeBornCore.id("block/machine/part/kinetic_output_hatch"))
                     .andThen(builder -> builder.addDynamicRenderer(() -> KineticHatchRender.INSTANCE)))
             .hasBER(true)
-            .tooltips(Component.translatable("forgeborncore.machine.kinetic_output_hatch.tooltip"))
             .register();
 
     public static void init() {}
