@@ -1,0 +1,28 @@
+{
+    "variants": {
+        "facing=down": {
+            "model": "forgeborncore:block/machine/kinetic_output_hatch",
+            "x": 90
+        },
+        "facing=east": {
+            "model": "forgeborncore:block/machine/kinetic_output_hatch",
+            "y": 90
+        },
+        "facing=north": {
+            "model": "forgeborncore:block/machine/kinetic_output_hatch"
+        },
+        "facing=south": {
+            "model": "forgeborncore:block/machine/kinetic_output_hatch",
+            "y": 180
+        },
+        "facing=up": {
+            "gtceu:z": 180,
+            "model": "forgeborncore:block/machine/kinetic_output_hatch",
+            "x": 270
+        },
+        "facing=west": {
+            "model": "forgeborncore:block/machine/kinetic_output_hatch",
+            "y": 270
+        }
+    }
+}

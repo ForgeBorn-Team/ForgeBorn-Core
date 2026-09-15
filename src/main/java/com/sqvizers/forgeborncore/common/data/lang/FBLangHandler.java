@@ -20,5 +20,11 @@ public class FBLangHandler {
 
     public static void init(RegistrateLangProvider provider) {
         provider.add("forgeborncore.machine.spirit_furnace.tooltip.0", "Performs Spiritfire recipes");
+        provider.add("forgeborncore.machine.kinetic_input_hatch.tooltip",
+                "Consumes 32 SU/RPM from a rotational network connected to its front face.");
+        provider.add("forgeborncore.machine.kinetic_input_hatch.parallel_tooltip",
+                "Requires 32 RPM and 1024 SU per parallel, up to 8 parallels.");
+        provider.add("forgeborncore.machine.kinetic_output_hatch.tooltip",
+                "Outputs rotational power through a Kinetic Interface placed against its front face.");
     }
 }
