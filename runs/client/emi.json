@@ -3,9 +3,125 @@
     {
       "stack": "item:occultism:chalk_gray",
       "recipe": "gtceu:spiritfire_recipes/port_chalk_gray"
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:glowstone_dust",
+        "amount": 4
+      }
+    },
+    {
+      "stack": "item:embers:archaic_circuit"
+    },
+    {
+      "stack": "item:gtceu:basic_electronic_circuit",
+      "recipe": "gtceu:shaped/electronic_circuit_lv"
+    },
+    {
+      "stack": "item:gtceu:resistor"
+    },
+    {
+      "stack": "item:gtceu:resin_printed_circuit_board"
+    },
+    {
+      "stack": "item:gtceu:vacuum_tube"
+    },
+    {
+      "stack": "item:gtceu:red_alloy_single_cable"
+    },
+    {
+      "stack": "item:botania:fertilizer",
+      "recipe": "botania:fertilizer_dye"
+    },
+    {
+      "stack": "item:forgeborncore:book_of_calling_foliot_miner",
+      "recipe": "forgeborncore:ritual/summon_foliot_miner"
+    },
+    {
+      "stack": "item:occultism:iesnium_pickaxe"
+    },
+    {
+      "stack": "item:occultism:datura"
+    },
+    {
+      "stack": "item:minecraft:iron_block"
+    },
+    {
+      "stack": "item:minecraft:iron_ingot"
+    },
+    {
+      "stack": "item:occultism:book_of_binding_bound_foliot"
+    },
+    {
+      "stack": "item:occultism:golden_sacrificial_bowl"
+    },
+    {
+      "stack": "item:create:item_vault"
     }
   ],
   "lookup_history": [
+    "item:undergarden:forgotten_sword",
+    "item:occultism:ritual_dummy/familiar_beaver",
+    "item:occultism:ritual_dummy/summon_foliot_sapling_trader",
+    "item:occultism:ritual_dummy/possess_witch",
+    "item:occultism:ritual_dummy/craft_storage_controller_base_dark",
+    "item:create:large_cogwheel",
+    {
+      "type": "item",
+      "id": "minecraft:iron_ingot",
+      "amount": 9
+    },
+    "item:minecraft:iron_block",
+    "item:forgeborncore:book_of_calling_foliot_miner{\"occultism:item_mode\":0,\"occultism:spirit_name\":\"Hyrmirvyrne\"}",
+    "item:occultism:ritual_dummy/craft_miner_foliot_unspecialized",
+    "item:occultism:ritual_dummy/craft_dimensional_mineshaft",
+    "item:occultism:golden_sacrificial_bowl",
+    "item:occultism:book_of_binding_bound_foliot",
+    "item:occultism:ritual_dummy/summon_foliot_crusher",
+    "item:occultism:miner_marid_master",
+    "item:occultism:miner_foliot_unspecialized",
+    "item:occultism:ritual_dummy/summon_djinni_crusher",
+    "item:ae2:nether_quartz_pickaxe",
+    "item:forgeborncore:spirit_steel_ingot",
+    "item:gtceu:steel_brick_casing",
+    {
+      "type": "fluid",
+      "id": "gtceu:glue",
+      "amount": 100
+    },
+    "item:gtceu:resistor",
+    "item:gtceu:coal_dust",
+    "item:gtceu:fine_copper_wire",
+    "item:botania:livingwood_log",
+    "item:botania:livingwood",
+    "item:minecraft:bone_meal",
+    "item:malum:runic_workbench",
+    "item:gtceu:assembly_line",
+    "item:gtceu:large_circuit_assembler",
+    "item:botania:runic_altar",
+    "item:botania:drum_gathering",
+    "item:botania:pure_daisy",
+    "item:simulated:honey_glue",
+    "item:minecraft:honey_bottle",
+    "item:minecraft:glass_bottle",
+    {
+      "type": "item",
+      "id": "minecraft:honeycomb",
+      "amount": 4
+    },
+    "item:minecraft:honeycomb_block",
+    "item:minecraft:bee_nest",
+    "item:minecraft:beehive",
+    "item:rocketnautics:titanium_casing",
+    "item:gtceu:vacuum_tube",
+    "item:embers:archaic_brick",
+    "item:embers:archaic_circuit",
+    "item:gtceu:basic_electronic_circuit",
+    "item:embers:intelligent_apparatus",
+    "item:gtceu:wetware_processor_mainframe",
+    "item:gtceu:wetware_processor_computer",
+    "item:forgeborncore:sanctum_ward",
     "item:gtceu:bronze_chestplate",
     "item:undergarden:cloggrum_chestplate{\"undergarden:rogdorium_infusion\":{infusionAmount:3600,infusionMax:3600}}",
     "item:gtceu:advanced_nanomuscle_chestplate",
@@ -14,7 +130,6 @@
     "item:gtceu:nanomuscle_chestplate",
     "item:ars_nouveau:archwood_chest",
     "item:create:cardboard_chestplate",
-    "item:forgeborncore:spirit_steel_ingot",
     "item:forgeborncore:spirit_steel_dust",
     "item:kubejs:omnipetal",
     "item:kubejs:undergarden_dim",

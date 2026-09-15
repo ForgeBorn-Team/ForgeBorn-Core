@@ -1,7 +1,8 @@
 package com.sqvizers.forgeborncore.common.data.item.item_properties;
 
-import com.sqvizers.forgeborncore.common.data.item.FBItems;
+import com.sqvizers.forgeborncore.common.data.FBItems;
 import com.sqvizers.forgeborncore.common.entity.FBEntityTypes;
+
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -16,19 +17,19 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.Vec3;
 
-import javax.annotation.Nullable;
 import java.util.HashSet;
 import java.util.Set;
 
 public class ThrownLoyalAxe extends AbstractArrow {
-    private static final EntityDataAccessor<Boolean> ID_FOIL = SynchedEntityData.defineId(ThrownLoyalAxe.class, EntityDataSerializers.BOOLEAN);
+
+    private static final EntityDataAccessor<Boolean> ID_FOIL = SynchedEntityData.defineId(ThrownLoyalAxe.class,
+            EntityDataSerializers.BOOLEAN);
     private static final float MAX_DISTANCE_SQUARED = 100.0F; // 10 blocks squared
 
     private Vec3 spawnPos;
@@ -120,7 +121,8 @@ public class ThrownLoyalAxe extends AbstractArrow {
 
         if (entity.hurt(damageSource, damage)) {
             if (level instanceof ServerLevel serverLevel) {
-                EnchantmentHelper.doPostAttackEffectsWithItemSource(serverLevel, entity, damageSource, this.getWeaponItem());
+                EnchantmentHelper.doPostAttackEffectsWithItemSource(serverLevel, entity, damageSource,
+                        this.getWeaponItem());
             }
             if (entity instanceof LivingEntity livingEntity) {
                 this.doKnockback(livingEntity, damageSource);
@@ -162,7 +164,8 @@ public class ThrownLoyalAxe extends AbstractArrow {
 
     @Override
     protected boolean tryPickup(Player player) {
-        return super.tryPickup(player) || (this.isNoPhysics() && this.ownedBy(player) && player.getInventory().add(this.getPickupItem()));
+        return super.tryPickup(player) ||
+                (this.isNoPhysics() && this.ownedBy(player) && player.getInventory().add(this.getPickupItem()));
     }
 
     @Override

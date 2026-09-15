@@ -3,7 +3,6 @@ package com.sqvizers.forgeborncore.common.machine.multiblock.ward;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.level.Level;
-
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.entity.EntityJoinLevelEvent;
 import net.neoforged.neoforge.event.entity.living.MobSpawnEvent;
@@ -18,7 +17,6 @@ public final class SanctumWardEventHandler {
     }
 
     private static void onPositionCheck(MobSpawnEvent.PositionCheck event) {
-        
         Mob mob = event.getEntity();
 
         Level level = event.getLevel().getLevel();

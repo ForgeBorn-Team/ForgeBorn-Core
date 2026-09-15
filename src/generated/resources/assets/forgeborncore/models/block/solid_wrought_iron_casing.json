@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cube_all",
+    "textures": {
+        "all": "forgeborncore:block/casings/solid_wrought_iron_casing"
+    }
+}

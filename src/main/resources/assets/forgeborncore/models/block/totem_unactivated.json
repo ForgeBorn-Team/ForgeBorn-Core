@@ -1,4 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": { "all": "forgeborncore:block/totem_unactivated" }
-}
