@@ -1,31 +1,22 @@
 package com.sqvizers.forgeborncore.common.data;
 
-import com.gregtechceu.gtceu.api.GTCEuAPI;
-import com.gregtechceu.gtceu.api.block.IFilterType;
-import com.gregtechceu.gtceu.common.block.CoilBlock;
-import com.gregtechceu.gtceu.common.data.models.GTModels;
+import com.sqvizers.forgeborncore.ForgeBornCore;
+
 import com.gregtechceu.gtceu.data.recipe.CustomTags;
 
-import com.sqvizers.forgeborncore.ForgeBornCore;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.FlowerBlock;
-import net.minecraft.world.level.block.SoundType;
 
 import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.nullness.NonNullBiFunction;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.UnknownNullability;
 
 import static com.sqvizers.forgeborncore.api.registries.FBRegistration.REGISTRATE;
 
 public class FBBlocks {
-
 
     private FBBlocks() {}
 
@@ -53,14 +44,11 @@ public class FBBlocks {
             .blockstate((ctx, prov) -> prov.simpleBlock(
                     ctx.get(),
                     prov.models().getExistingFile(
-                            prov.modLoc("block/runic_altar_unfinished")
-                    )
-            ))
+                            prov.modLoc("block/runic_altar_unfinished"))))
             .item()
             .model((ctx, prov) -> prov.withExistingParent(
                     ctx.getName(),
-                    prov.modLoc("block/runic_altar_unfinished")
-            ))
+                    prov.modLoc("block/runic_altar_unfinished")))
             .build()
             .register();
 
@@ -70,23 +58,15 @@ public class FBBlocks {
             .blockstate((ctx, prov) -> prov.simpleBlock(
                     ctx.get(),
                     prov.models().getExistingFile(
-                            prov.modLoc("block/runic_altar_unfinished2")
-                    )
-            ))
+                            prov.modLoc("block/runic_altar_unfinished2"))))
             .item()
             .model((ctx, prov) -> prov.withExistingParent(
                     ctx.getName(),
-                    prov.modLoc("block/runic_altar_unfinished2")
-            ))
+                    prov.modLoc("block/runic_altar_unfinished2")))
             .build()
             .register();
 
-
-
-
-
-
-    //Casings GTM
+    // Casings GTM
     public static BlockEntry<Block> MACHINE_CASING_KINETIC = registerSimpleBlock(
             "Kinetic Machine Casing", "machine_casing_kinetic",
             "casings/machine_casing_kinetic", BlockItem::new);
@@ -103,7 +83,7 @@ public class FBBlocks {
             "Spruce-Zinc Casing", "spruce_zinc_casing",
             "casings/spruce_zinc_casing", BlockItem::new);
 
-    //Casings Botania
+    // Casings Botania
     public static BlockEntry<Block> MANASTEEL_FIREBOX = registerSimpleBlock(
             "Manasteel Firebox", "manasteel_firebox",
             "casings/manasteel_firebox", BlockItem::new);
@@ -119,16 +99,11 @@ public class FBBlocks {
     public static BlockEntry<Block> TERRASTEEL_LIVINGWOOD_CASING = registerSimpleBlock(
             "Terrasteel Plated Livingwood Casing", "terrasteel_livingwood_casing",
             "casings/terrasteel_livingwood_casing", BlockItem::new);
-    /*public static BlockEntry<Block> MANASTEEL_LIVINGWOOD_CASING = registerSimpleBlock(
-            "Manasteel Plated Livingwood Casing", "manasteel_livingwood_casing",
-            "casings/manasteel_livingwood_casing", BlockItem::new);*/
-
-
-
-
-
-
-
+    /*
+     * public static BlockEntry<Block> MANASTEEL_LIVINGWOOD_CASING = registerSimpleBlock(
+     * "Manasteel Plated Livingwood Casing", "manasteel_livingwood_casing",
+     * "casings/manasteel_livingwood_casing", BlockItem::new);
+     */
 
     public static void init() {}
 }

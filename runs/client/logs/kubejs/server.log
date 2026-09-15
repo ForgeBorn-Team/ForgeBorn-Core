@@ -1,12 +1,12 @@
-[16:56:00] [INIT] KubeJS 2101.7.2-build.368; MC 2101 NeoForge
-[16:56:00] [INIT] Loaded plugins:
-[16:56:00] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSPlugin
-[16:56:00] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSClientPlugin
-[16:56:00] [INIT] - dev.latvian.mods.kubejs.integration.architectury.ArchitecturyIntegration
-[16:56:00] [INIT] - com.lowdragmc.lowdraglib.kjs.LDLibKubeJSPlugin
-[16:56:00] [INIT] - com.gregtechceu.gtceu.integration.kjs.GregTechKubeJSPlugin
-[16:56:00] [INIT] - com.sammy.malum.compat.kubejs.MalumJSPlugin
-[16:56:00] [INFO] server_scripts:main.js#2: Hello, World! (Loaded server example script)
-[16:56:00] [INFO] Loaded script server_scripts:main.js in 0.001 s
-[16:56:00] [INFO] Loaded 1/1 KubeJS server scripts in 0.049 s with 0 errors and 0 warnings
-[16:56:19] [INFO] Server resource reload complete!
+[14:41:26] [INIT] KubeJS 2101.7.2-build.368; MC 2101 NeoForge
+[14:41:26] [INIT] Loaded plugins:
+[14:41:26] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSPlugin
+[14:41:26] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSClientPlugin
+[14:41:26] [INIT] - dev.latvian.mods.kubejs.integration.architectury.ArchitecturyIntegration
+[14:41:26] [INIT] - com.lowdragmc.lowdraglib.kjs.LDLibKubeJSPlugin
+[14:41:26] [INIT] - com.gregtechceu.gtceu.integration.kjs.GregTechKubeJSPlugin
+[14:41:26] [INIT] - com.sammy.malum.compat.kubejs.MalumJSPlugin
+[14:41:26] [INFO] server_scripts:main.js#2: Hello, World! (Loaded server example script)
+[14:41:26] [INFO] Loaded script server_scripts:main.js in 0.0 s
+[14:41:26] [INFO] Loaded 1/1 KubeJS server scripts in 0.057 s with 0 errors and 0 warnings
+[14:41:44] [INFO] Server resource reload complete!

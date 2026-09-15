@@ -7,6 +7,7 @@ import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.monster.Monster;
 
 public enum WardMode {
+
     NONE,
     HOSTILE,
     PASSIVE,

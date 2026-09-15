@@ -27,6 +27,7 @@ import net.neoforged.neoforge.common.ItemAbilities;
 import net.neoforged.neoforge.common.ItemAbility;
 
 public class LoyalAxeItem extends Item implements ProjectileItem {
+
     public static final int THROW_THRESHOLD_TIME = 6;
     public static final float SHOOT_POWER = 4.0F;
 
@@ -36,8 +37,12 @@ public class LoyalAxeItem extends Item implements ProjectileItem {
 
     public static ItemAttributeModifiers createAttributes() {
         return ItemAttributeModifiers.builder()
-                .add(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_ID, 9.0F, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
-                .add(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_ID, -3.0F, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
+                .add(Attributes.ATTACK_DAMAGE,
+                        new AttributeModifier(BASE_ATTACK_DAMAGE_ID, 9.0F, AttributeModifier.Operation.ADD_VALUE),
+                        EquipmentSlotGroup.MAINHAND)
+                .add(Attributes.ATTACK_SPEED,
+                        new AttributeModifier(BASE_ATTACK_SPEED_ID, -3.0F, AttributeModifier.Operation.ADD_VALUE),
+                        EquipmentSlotGroup.MAINHAND)
                 .build();
     }
 
@@ -58,7 +63,8 @@ public class LoyalAxeItem extends Item implements ProjectileItem {
 
     @Override
     public boolean canPerformAction(ItemStack stack, ItemAbility itemAbility) {
-        return ItemAbilities.DEFAULT_AXE_ACTIONS.contains(itemAbility) || ItemAbilities.DEFAULT_TRIDENT_ACTIONS.contains(itemAbility);
+        return ItemAbilities.DEFAULT_AXE_ACTIONS.contains(itemAbility) ||
+                ItemAbilities.DEFAULT_TRIDENT_ACTIONS.contains(itemAbility);
     }
 
     @Override
@@ -93,7 +99,8 @@ public class LoyalAxeItem extends Item implements ProjectileItem {
                     thrownAxe.pickup = AbstractArrow.Pickup.DISALLOWED;
 
                     level.addFreshEntity(thrownAxe);
-                    level.playSound(null, thrownAxe, (SoundEvent) SoundEvents.TRIDENT_THROW, SoundSource.PLAYERS, 1.0F, 1.0F);
+                    level.playSound(null, thrownAxe, (SoundEvent) SoundEvents.TRIDENT_THROW, SoundSource.PLAYERS, 1.0F,
+                            1.0F);
                 }
 
                 // Apply cooldown and stats only if a successful throw happens

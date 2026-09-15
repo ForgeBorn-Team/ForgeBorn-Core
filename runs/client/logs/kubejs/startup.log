@@ -1,14 +1,14 @@
-[16:55:01] [INIT] KubeJS 2101.7.2-build.368; MC 2101 NeoForge
-[16:55:01] [INIT] Loaded plugins:
-[16:55:01] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSPlugin
-[16:55:01] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSClientPlugin
-[16:55:01] [INIT] - dev.latvian.mods.kubejs.integration.architectury.ArchitecturyIntegration
-[16:55:01] [INIT] - com.lowdragmc.lowdraglib.kjs.LDLibKubeJSPlugin
-[16:55:01] [INIT] - com.gregtechceu.gtceu.integration.kjs.GregTechKubeJSPlugin
-[16:55:01] [INIT] - com.sammy.malum.compat.kubejs.MalumJSPlugin
-[16:55:04] [INFO] startup_scripts:main.js#3: Hello, World! (Loaded startup example script)
-[16:55:04] [INFO] Loaded script startup_scripts:main.js in 0.067 s
-[16:55:04] [INFO] Loaded script startup_scripts:registry/item.js in 0.025 s
-[16:55:04] [INFO] Loaded 2/2 KubeJS startup scripts in 2.605 s with 0 errors and 0 warnings
-[16:55:04] [INFO] Validated 418 files in kubejs/assets/ in 118ms
-[16:55:04] [INFO] Validated 1 files in kubejs/data/ in 2ms
+[14:37:16] [INIT] KubeJS 2101.7.2-build.368; MC 2101 NeoForge
+[14:37:16] [INIT] Loaded plugins:
+[14:37:16] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSPlugin
+[14:37:16] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSClientPlugin
+[14:37:16] [INIT] - dev.latvian.mods.kubejs.integration.architectury.ArchitecturyIntegration
+[14:37:16] [INIT] - com.lowdragmc.lowdraglib.kjs.LDLibKubeJSPlugin
+[14:37:16] [INIT] - com.gregtechceu.gtceu.integration.kjs.GregTechKubeJSPlugin
+[14:37:16] [INIT] - com.sammy.malum.compat.kubejs.MalumJSPlugin
+[14:37:19] [INFO] startup_scripts:main.js#3: Hello, World! (Loaded startup example script)
+[14:37:19] [INFO] Loaded script startup_scripts:main.js in 0.062 s
+[14:37:19] [INFO] Loaded script startup_scripts:registry/item.js in 0.039 s
+[14:37:19] [INFO] Loaded 2/2 KubeJS startup scripts in 2.505 s with 0 errors and 0 warnings
+[14:37:20] [INFO] Validated 418 files in kubejs/assets/ in 1015ms
+[14:37:20] [INFO] Validated 1 files in kubejs/data/ in 13ms

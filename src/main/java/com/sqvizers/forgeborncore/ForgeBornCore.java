@@ -2,21 +2,24 @@ package com.sqvizers.forgeborncore;
 
 import com.sqvizers.forgeborncore.api.registries.FBRegistration;
 import com.sqvizers.forgeborncore.bridge.gregtech.FBRecipeTypes;
+import com.sqvizers.forgeborncore.bridge.gregtech.GTVeinRewriteListener;
 import com.sqvizers.forgeborncore.common.data.FBBlocks;
 import com.sqvizers.forgeborncore.common.data.FBCreativeModeTabs;
 import com.sqvizers.forgeborncore.common.data.FBDataGen;
-import com.sqvizers.forgeborncore.common.data.FBMachines;
 import com.sqvizers.forgeborncore.common.data.FBItems;
+import com.sqvizers.forgeborncore.common.data.FBMachines;
 import com.sqvizers.forgeborncore.common.data.materials.FBMaterialSet;
 import com.sqvizers.forgeborncore.common.data.materials.FBOres;
 import com.sqvizers.forgeborncore.common.data.materials.FBProgressionMaterials;
 import com.sqvizers.forgeborncore.common.entity.FBEntityTypes;
 import com.sqvizers.forgeborncore.common.entity.entities.SpiritEntity;
 import com.sqvizers.forgeborncore.common.machine.MultiblockInit;
+import com.sqvizers.forgeborncore.bridge.occultism.OccultismMinerIntegration;
 
 import com.gregtechceu.gtceu.api.GTCEuAPI;
 import com.gregtechceu.gtceu.api.data.chemical.material.event.PostMaterialEvent;
 import com.gregtechceu.gtceu.common.block.CoilBlock;
+import com.gregtechceu.gtceu.config.ConfigHolder;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.SpawnPlacementTypes;
@@ -29,6 +32,7 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 import net.neoforged.neoforge.common.world.chunk.RegisterTicketControllersEvent;
+import net.neoforged.neoforge.event.AddReloadListenerEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.registries.*;
@@ -54,7 +58,14 @@ public class ForgeBornCore {
 
     public ForgeBornCore(IEventBus modBus, ModContainer modContainer) {
         modBus.register(this);
+        modBus.addListener(OccultismMinerIntegration::registerJob);
+        net.neoforged.neoforge.common.NeoForge.EVENT_BUS.register(OccultismMinerIntegration.class);
         FBRegistration.REGISTRATE.registerEventListeners(modBus);
+        net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(this::registerReloadListeners);
+    }
+
+    private void registerReloadListeners(AddReloadListenerEvent event) {
+        event.addListener(GTVeinRewriteListener.INSTANCE);
     }
 
     @SubscribeEvent
@@ -75,7 +86,6 @@ public class ForgeBornCore {
         FBMachines.init();
         MultiblockInit.init();
         FBDataGen.init();
-
     }
 
     @SubscribeEvent
@@ -98,7 +108,12 @@ public class ForgeBornCore {
 
     @SubscribeEvent
     public void commonSetup(FMLCommonSetupEvent event) {
-        event.enqueueWork(() -> {});
+        event.enqueueWork(() -> {
+            // GTCEu places one candidate vein per grid intersection. Eight chunks gives the pack
+            // noticeably rarer deposits while still allowing the random offset to vary their centers.
+            ConfigHolder.INSTANCE.worldgen.oreVeins.oreVeinGridSize = Math.max(
+                    ConfigHolder.INSTANCE.worldgen.oreVeins.oreVeinGridSize, 8);
+        });
     }
 
     @SubscribeEvent

@@ -15,3 +15,12 @@
 /gamerule keepInventory true
 /kill
 /kubejs hand
+/effect give Dev minecraft:night_vision infinite
+/gtceu place_vein gtceu:apatite
+/gtceu place_vein gtceu:copper_tin
+/tp ~ ~ 2000
+/tp ~ ~ 5000
+/tp 140.26 78.31 5983.00
+/tp ~ ~ 10000
+/summon occultism:foliot
+/effect clear

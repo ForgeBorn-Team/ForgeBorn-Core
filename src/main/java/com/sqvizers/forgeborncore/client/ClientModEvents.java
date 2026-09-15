@@ -20,8 +20,6 @@ public class ClientModEvents {
 
     @SubscribeEvent
     public static void registerAdditionalModels(ModelEvent.RegisterAdditional event) {
-
         event.register(ModelResourceLocation.standalone(SanctumWardRender.SPHERE_MODEL_RL));
     }
-
 }

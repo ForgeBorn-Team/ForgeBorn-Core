@@ -10,9 +10,8 @@ public class FBMaterialSet {
     public static final MaterialIconSet SPIRIT_STEEL = new MaterialIconSet("spirit_steel",
             METALLIC);
 
-    //Later add reinforced plate
+    // Later add reinforced plate
     public static final MaterialIconType NANITES = new MaterialIconType("nanites");
 
     public static void init() {}
-
 }

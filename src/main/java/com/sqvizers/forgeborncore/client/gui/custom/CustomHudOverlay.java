@@ -6,14 +6,13 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RenderGuiEvent;
 import net.neoforged.neoforge.client.event.RenderGuiLayerEvent;
 import net.neoforged.neoforge.client.gui.VanillaGuiLayers;
+
 import sfiomn.legendarysurvivaloverhaul.LegendarySurvivalOverhaul;
 import sfiomn.legendarysurvivaloverhaul.common.attachments.thirst.ThirstAttachment;
 import sfiomn.legendarysurvivaloverhaul.util.AttachmentUtil;
@@ -22,27 +21,24 @@ import sfiomn.legendarysurvivaloverhaul.util.AttachmentUtil;
  * Hides the vanilla health, armor, food, and air (breathing) HUD elements
  * and replaces them with a compact vertical list in the bottom-left corner:
  *
- *   [armor icon] 12
- *   [food icon]  18/20
- *   [heart icon] 16/20
+ * [armor icon] 12
+ * [food icon] 18/20
+ * [heart icon] 16/20
  */
 @EventBusSubscriber(modid = "forgeborncore", value = Dist.CLIENT)
 public final class CustomHudOverlay {
 
     // These reuse the same sprite paths vanilla uses internally
     // (textures/gui/sprites/hud/...), so no custom texture is required.
-    private static final ResourceLocation HEART_ICON =
-            ResourceLocation.withDefaultNamespace("hud/heart/full");
-    private static final ResourceLocation ARMOR_ICON =
-            ResourceLocation.withDefaultNamespace("hud/armor_full");
-    private static final ResourceLocation FOOD_ICON =
-            ResourceLocation.withDefaultNamespace("hud/food_full");
+    private static final ResourceLocation HEART_ICON = ResourceLocation.withDefaultNamespace("hud/heart/full");
+    private static final ResourceLocation ARMOR_ICON = ResourceLocation.withDefaultNamespace("hud/armor_full");
+    private static final ResourceLocation FOOD_ICON = ResourceLocation.withDefaultNamespace("hud/food_full");
 
     // The vanilla experience orb texture is a raw 64x64 sheet of 16x16 cells
     // (11 orb-value variants + 5 unused slots). Cell (0,0) is the smallest/
     // default orb and reads fine as a generic "XP" icon at any size.
-    private static final ResourceLocation XP_ORB_TEXTURE =
-            ResourceLocation.withDefaultNamespace("textures/entity/experience_orb.png");
+    private static final ResourceLocation XP_ORB_TEXTURE = ResourceLocation
+            .withDefaultNamespace("textures/entity/experience_orb.png");
     private static final int XP_ORB_CELL_SIZE = 16;
     private static final int XP_ORB_SHEET_SIZE = 64;
 
@@ -50,21 +46,21 @@ public final class CustomHudOverlay {
     // instead of reusing the hunger sprite. Full hydration droplet icon is
     // at u=9,v=0 (see RenderThirstGui.ThirstEffect#getXTextureOffset with
     // isHalfIcon=false, isContainer=false). Sheet is 256x256.
-    private static final ResourceLocation LSO_ICONS =
-            ResourceLocation.fromNamespaceAndPath(LegendarySurvivalOverhaul.MOD_ID, "textures/gui/overlay.png");
+    private static final ResourceLocation LSO_ICONS = ResourceLocation
+            .fromNamespaceAndPath(LegendarySurvivalOverhaul.MOD_ID, "textures/gui/overlay.png");
     private static final int THIRST_ICON_U = 9;
     private static final int THIRST_ICON_V = 0;
 
     // The exact GUI layer names LSO registers (see ClientModBusEvents#registerGuiOverlays).
-    private static final ResourceLocation LSO_THIRST_LAYER =
-            ResourceLocation.fromNamespaceAndPath(LegendarySurvivalOverhaul.MOD_ID, "thirst");
-    private static final ResourceLocation LSO_HEALTH_OVERHAUL_LAYER =
-            ResourceLocation.fromNamespaceAndPath(LegendarySurvivalOverhaul.MOD_ID, "health_overhaul");
+    private static final ResourceLocation LSO_THIRST_LAYER = ResourceLocation
+            .fromNamespaceAndPath(LegendarySurvivalOverhaul.MOD_ID, "thirst");
+    private static final ResourceLocation LSO_HEALTH_OVERHAUL_LAYER = ResourceLocation
+            .fromNamespaceAndPath(LegendarySurvivalOverhaul.MOD_ID, "health_overhaul");
 
     // Vanilla's own absorption/shield heart sprite - reused so the golden
     // heart in our list matches what players already recognize.
-    private static final ResourceLocation SHIELD_HEART_ICON =
-            ResourceLocation.withDefaultNamespace("hud/heart/absorbing_full");
+    private static final ResourceLocation SHIELD_HEART_ICON = ResourceLocation
+            .withDefaultNamespace("hud/heart/absorbing_full");
 
     private static final int ICON_SIZE = 9;
     private static final int LINE_HEIGHT = 12;
@@ -77,14 +73,10 @@ public final class CustomHudOverlay {
     @SubscribeEvent
     public static void onRenderLayer(RenderGuiLayerEvent.Pre event) {
         ResourceLocation name = event.getName();
-        if (name.equals(VanillaGuiLayers.PLAYER_HEALTH)
-                || name.equals(VanillaGuiLayers.ARMOR_LEVEL)
-                || name.equals(VanillaGuiLayers.FOOD_LEVEL)
-                || name.equals(VanillaGuiLayers.AIR_LEVEL)
-                || name.equals(VanillaGuiLayers.EXPERIENCE_BAR)
-                || name.equals(VanillaGuiLayers.EXPERIENCE_LEVEL)
-                || name.equals(LSO_THIRST_LAYER)
-                || name.equals(LSO_HEALTH_OVERHAUL_LAYER)) {
+        if (name.equals(VanillaGuiLayers.PLAYER_HEALTH) || name.equals(VanillaGuiLayers.ARMOR_LEVEL) ||
+                name.equals(VanillaGuiLayers.FOOD_LEVEL) || name.equals(VanillaGuiLayers.AIR_LEVEL) ||
+                name.equals(VanillaGuiLayers.EXPERIENCE_BAR) || name.equals(VanillaGuiLayers.EXPERIENCE_LEVEL) ||
+                name.equals(LSO_THIRST_LAYER) || name.equals(LSO_HEALTH_OVERHAUL_LAYER)) {
             event.setCanceled(true);
         }
     }
@@ -176,5 +168,3 @@ public final class CustomHudOverlay {
         graphics.drawString(font, thirst + "/" + maxThirst, x + ICON_SIZE + 4, y + 1, 0xFFFFFF, true);
     }
 }
-
-

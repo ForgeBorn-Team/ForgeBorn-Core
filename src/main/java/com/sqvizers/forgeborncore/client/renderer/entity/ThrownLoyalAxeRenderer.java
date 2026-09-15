@@ -1,9 +1,8 @@
 package com.sqvizers.forgeborncore.client.renderer.entity;
 
-import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.math.Axis;
 import com.sqvizers.forgeborncore.common.data.FBItems;
 import com.sqvizers.forgeborncore.common.data.item.item_properties.ThrownLoyalAxe;
+
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
@@ -14,7 +13,11 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.math.Axis;
+
 public class ThrownLoyalAxeRenderer extends EntityRenderer<ThrownLoyalAxe> {
+
     private final ItemRenderer itemRenderer;
 
     public ThrownLoyalAxeRenderer(EntityRendererProvider.Context context) {
@@ -23,7 +26,8 @@ public class ThrownLoyalAxeRenderer extends EntityRenderer<ThrownLoyalAxe> {
     }
 
     @Override
-    public void render(ThrownLoyalAxe entity, float entityYaw, float partialTicks, PoseStack poseStack, MultiBufferSource buffer, int packedLight) {
+    public void render(ThrownLoyalAxe entity, float entityYaw, float partialTicks, PoseStack poseStack,
+                       MultiBufferSource buffer, int packedLight) {
         poseStack.pushPose();
 
         // Direction orientation
@@ -40,7 +44,8 @@ public class ThrownLoyalAxeRenderer extends EntityRenderer<ThrownLoyalAxe> {
         }
 
         BakedModel bakedModel = this.itemRenderer.getModel(itemStack, entity.level(), null, entity.getId());
-        this.itemRenderer.render(itemStack, ItemDisplayContext.THIRD_PERSON_RIGHT_HAND, false, poseStack, buffer, packedLight, OverlayTexture.NO_OVERLAY, bakedModel);
+        this.itemRenderer.render(itemStack, ItemDisplayContext.THIRD_PERSON_RIGHT_HAND, false, poseStack, buffer,
+                packedLight, OverlayTexture.NO_OVERLAY, bakedModel);
 
         poseStack.popPose();
         super.render(entity, entityYaw, partialTicks, poseStack, buffer, packedLight);

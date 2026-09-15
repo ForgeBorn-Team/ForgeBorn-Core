@@ -1,28 +1,28 @@
 package com.sqvizers.forgeborncore.common.data.materials;
 
+import com.sqvizers.forgeborncore.ForgeBornCore;
+
 import com.gregtechceu.gtceu.api.data.chemical.material.Material;
 import com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialIconSet;
-import com.sqvizers.forgeborncore.ForgeBornCore;
 
 public class FBOres {
 
-    //ForgeBorn
+    // ForgeBorn
 
-    //GregTech
+    // GregTech
 
-    //Malum
+    // Malum
 
-    //Thaumlarp
+    // Thaumlarp
 
-    //Spectrum
+    // Spectrum
 
-    //Aether
+    // Aether
 
-    //Undergarden
+    // Undergarden
     public static Material CLOGGRUM;
 
-    //Botania
-
+    // Botania
 
     public static void register() {
         CLOGGRUM = new Material.Builder(ForgeBornCore.id("cloggrum"))

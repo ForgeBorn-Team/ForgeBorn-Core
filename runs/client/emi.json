@@ -33,9 +33,56 @@
     {
       "stack": "item:botania:fertilizer",
       "recipe": "botania:fertilizer_dye"
+    },
+    {
+      "stack": "item:forgeborncore:book_of_calling_foliot_miner",
+      "recipe": "forgeborncore:ritual/summon_foliot_miner"
+    },
+    {
+      "stack": "item:occultism:iesnium_pickaxe"
+    },
+    {
+      "stack": "item:occultism:datura"
+    },
+    {
+      "stack": "item:minecraft:iron_block"
+    },
+    {
+      "stack": "item:minecraft:iron_ingot"
+    },
+    {
+      "stack": "item:occultism:book_of_binding_bound_foliot"
+    },
+    {
+      "stack": "item:occultism:golden_sacrificial_bowl"
+    },
+    {
+      "stack": "item:create:item_vault"
     }
   ],
   "lookup_history": [
+    "item:undergarden:forgotten_sword",
+    "item:occultism:ritual_dummy/familiar_beaver",
+    "item:occultism:ritual_dummy/summon_foliot_sapling_trader",
+    "item:occultism:ritual_dummy/possess_witch",
+    "item:occultism:ritual_dummy/craft_storage_controller_base_dark",
+    "item:create:large_cogwheel",
+    {
+      "type": "item",
+      "id": "minecraft:iron_ingot",
+      "amount": 9
+    },
+    "item:minecraft:iron_block",
+    "item:forgeborncore:book_of_calling_foliot_miner{\"occultism:item_mode\":0,\"occultism:spirit_name\":\"Hyrmirvyrne\"}",
+    "item:occultism:ritual_dummy/craft_miner_foliot_unspecialized",
+    "item:occultism:ritual_dummy/craft_dimensional_mineshaft",
+    "item:occultism:golden_sacrificial_bowl",
+    "item:occultism:book_of_binding_bound_foliot",
+    "item:occultism:ritual_dummy/summon_foliot_crusher",
+    "item:occultism:miner_marid_master",
+    "item:occultism:miner_foliot_unspecialized",
+    "item:occultism:ritual_dummy/summon_djinni_crusher",
+    "item:ae2:nether_quartz_pickaxe",
     "item:forgeborncore:spirit_steel_ingot",
     "item:gtceu:steel_brick_casing",
     {

@@ -1,8 +1,8 @@
 package com.sqvizers.forgeborncore.common.data.materials;
 
-import com.gregtechceu.gtceu.api.data.chemical.material.Material;
-import com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialIconSet;
 import com.sqvizers.forgeborncore.ForgeBornCore;
+
+import com.gregtechceu.gtceu.api.data.chemical.material.Material;
 
 public class FBProgressionMaterials {
 
@@ -15,5 +15,4 @@ public class FBProgressionMaterials {
                 .iconSet(FBMaterialSet.SPIRIT_STEEL)
                 .buildAndRegister();
     }
-
 }

@@ -6,13 +6,15 @@ import com.sqvizers.forgeborncore.client.renderer.entity.ThrownLoyalAxeRenderer;
 import com.sqvizers.forgeborncore.common.data.item.item_properties.ThrownLoyalAxe;
 import com.sqvizers.forgeborncore.common.entity.entities.BrawlerSkeleton;
 import com.sqvizers.forgeborncore.common.entity.entities.SpiritEntity;
-import com.tterrag.registrate.util.entry.EntityEntry;
+
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
+
+import com.tterrag.registrate.util.entry.EntityEntry;
 
 public class FBEntityTypes {
 
@@ -26,8 +28,7 @@ public class FBEntityTypes {
             .loot((tables, entityType) -> tables.add(entityType, LootTable.lootTable()
                     .withPool(LootPool.lootPool()
                             .setRolls(ConstantValue.exactly(1.0F))
-                            .add(LootItem.lootTableItem(Items.BONE))
-                    )))
+                            .add(LootItem.lootTableItem(Items.BONE)))))
             .register();
 
     public static final EntityEntry<BrawlerSkeleton> BRAWLER_SKELETON = FBRegistration.REGISTRATE
@@ -39,8 +40,7 @@ public class FBEntityTypes {
             .loot((tables, entityType) -> tables.add(entityType, LootTable.lootTable()
                     .withPool(LootPool.lootPool()
                             .setRolls(ConstantValue.exactly(1.0F))
-                            .add(LootItem.lootTableItem(Items.BONE))
-                    )))
+                            .add(LootItem.lootTableItem(Items.BONE)))))
             .register();
 
     public static final EntityEntry<ThrownLoyalAxe> LOYAL_AXE = FBRegistration.REGISTRATE

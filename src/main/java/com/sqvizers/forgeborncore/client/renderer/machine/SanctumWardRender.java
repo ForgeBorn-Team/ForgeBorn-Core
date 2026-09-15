@@ -12,9 +12,8 @@ import net.minecraft.client.renderer.LightTexture;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.block.model.BakedQuad;
-import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.client.renderer.texture.TextureAtlas;
-import net.minecraft.core.Direction;
+import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.phys.AABB;
@@ -29,9 +28,10 @@ import java.util.List;
 public class SanctumWardRender extends DynamicRender<WorkableMultiblockMachine, SanctumWardRender> {
 
     public static final SanctumWardRender INSTANCE = new SanctumWardRender();
-    
+
     public static final MapCodec<SanctumWardRender> CODEC = MapCodec.unit(SanctumWardRender::new);
-    public static final DynamicRenderType<WorkableMultiblockMachine, SanctumWardRender> TYPE = new DynamicRenderType<>(SanctumWardRender.CODEC);
+    public static final DynamicRenderType<WorkableMultiblockMachine, SanctumWardRender> TYPE = new DynamicRenderType<>(
+            SanctumWardRender.CODEC);
 
     public static final ResourceLocation SPHERE_MODEL_RL = ForgeBornCore.id("obj/blue_star");
 
