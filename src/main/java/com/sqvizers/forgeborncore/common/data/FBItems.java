@@ -255,14 +255,58 @@ public class FBItems {
             .defaultModel()
             .register();
 
-    public static final ItemEntry<BookOfCallingMinerItem> BOOK_OF_CALLING_FOLIOT_MINER = REGISTRATE
+
+
+
+    public static final ItemEntry<ComponentItem> PEELED_SOURCEBERRY = REGISTRATE.item("peeled_sourceberry", ComponentItem::new)
+            .lang("Peeled Sourceberry")
+            .properties(p -> p.stacksTo(64))
+            .tag()
+            .defaultModel()
+            .register();
+
+    public static final ItemEntry<ComponentItem> PEELED_MENDOSTEEN = REGISTRATE.item("peeled_mendosteen", ComponentItem::new)
+            .lang("Peeled Mendosteen")
+            .properties(p -> p.stacksTo(64))
+            .tag()
+            .defaultModel()
+            .register();
+    public static final ItemEntry<ComponentItem> PEELED_BOMBEGRANATE = REGISTRATE.item("peeled_bombegranate", ComponentItem::new)
+            .lang("Peeled Bombegranate")
+            .properties(p -> p.stacksTo(64))
+            .tag()
+            .defaultModel()
+            .register();
+
+    public static final ItemEntry<ComponentItem> PEELED_FROSTAYA = REGISTRATE.item("peeled_frostaya", ComponentItem::new)
+            .lang("Peeled Frostaya")
+            .properties(p -> p.stacksTo(64))
+            .tag()
+            .defaultModel()
+            .register();
+
+    public static final ItemEntry<ComponentItem> PEELED_MAGEBLOOM = REGISTRATE.item("peeled_magebloom", ComponentItem::new)
+            .lang("Peeled Magebloom")
+            .properties(p -> p.stacksTo(64))
+            .tag()
+            .defaultModel()
+            .register();
+
+    public static final ItemEntry<ComponentItem> MAGEBLOOM_FABRIC = REGISTRATE.item("magebloom_fabric", ComponentItem::new)
+            .lang("Magebloom Fabric")
+            .properties(p -> p.stacksTo(64))
+            .tag()
+            .defaultModel()
+            .register();
+
+    /*public static final ItemEntry<BookOfCallingMinerItem> BOOK_OF_CALLING_FOLIOT_MINER = REGISTRATE
             .item("book_of_calling_foliot_miner", BookOfCallingMinerItem::new)
             .lang("Book of Calling: Miner Foliot")
             .properties(p -> p.stacksTo(1))
             .model((ctx, prov) -> prov.generated(ctx::getEntry)
                     .texture("layer0", net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(
                             "occultism", "item/book_of_calling_farmer")))
-            .register();
+            .register();*/
 
     public static void init() {}
 }

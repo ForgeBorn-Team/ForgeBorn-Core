@@ -26,6 +26,7 @@
 #0657F7 gtceu:chalcopyrite_indicator
 #E9734A gtceu:chalcopyrite_ore
 #F522F4 minecraft:chest
+#82DBA6 ae2:chiseled_quartz_slab
 #7FDE54 minecraft:clay
 #CACC15 gtceu:clean_machine_casing
 #84EDE1 gtceu:coal_indicator
@@ -34,8 +35,11 @@
 #058353 minecraft:cobblestone
 #F9D6E3 gtceu:copper_indicator
 #CC07F6 minecraft:cornflower
+#E952EB gtceu:creative_chest
 #1CE592 gtceu:creative_energy
+#714BF4 gtceu:creative_tank
 #2CC54F gtceu:ctm_test
+#05EFD1 gtceu:cupronickel_coil_block
 #3C3897 minecraft:cut_sandstone
 #B2A2E1 minecraft:dandelion
 #040CFD gtceu:dark_concrete_bricks
@@ -56,6 +60,9 @@
 #3B0AD1 minecraft:dripstone_block
 #9FD84A malum:earthen_varnished_terracotta
 #4576E9 gtceu:electric_blast_furnace
+#61EBFE gtceu:ev_macerator
+#813329 gtceu:ev_super_chest
+#009B14 minecraft:farmland
 #B9B269 minecraft:fire_coral_block
 #0C3C48 gtceu:garnet_sand_indicator
 #080513 gtceu:goethite_indicator
@@ -73,9 +80,12 @@
 #FD73EA gtceu:gypsum_ore
 #9D79AA gtceu:heatproof_machine_casing
 #9D2636 minecraft:horn_coral_block
+#520345 forgeborncore:hv_peeling_chamber
+#1A9006 gtceu:hv_super_chest
 #6CDA3C gtceu:industrial_steam_casing
 #C1E251 minecraft:jungle_leaves
 #6B68B5 minecraft:jungle_log
+#7E5464 forgeborncore:kinetic_interface
 #706606 gtceu:laminated_glass
 #AB42CF gtceu:lapis_indicator
 #83CED3 minecraft:lava
@@ -83,8 +93,12 @@
 #7482E4 minecraft:lilac
 #492157 botania:livingrock_bricks
 #62120A botania:livingwood
+#311F72 gtceu:lp_steam_rock_crusher
 #EB0240 gtceu:luv_energy_input_hatch
+#E95F47 forgeborncore:lv_loom
+#C0858E gtceu:lv_mixer
 #EB15B7 gtceu:lv_muffler_hatch
+#998BC1 forgeborncore:lv_peeling_chamber
 #CF9090 forgeborncore:machine_casing_kinetic
 #DE9468 minecraft:magma_block
 #846DFA gtceu:magnetite_indicator
@@ -95,6 +109,8 @@
 #80CAA6 minecraft:melon
 #6631EF gtceu:mv_input_bus
 #F60B12 gtceu:mv_output_bus
+#2B6DE0 forgeborncore:mv_peeling_chamber
+#96AF3C forgeborncore:nefrountium_machinery_casing
 #454322 minecraft:netherrack
 #EB53D4 gtceu:nickel_indicator
 #AD9EB5 minecraft:oak_leaves
@@ -137,6 +153,7 @@
 #764CDB occultism:silver_ore
 #468B47 ae2:sky_stone_block
 #8638B9 minecraft:smooth_basalt
+#926E0C ae2:smooth_quartz_block
 #F92785 malum:soulstone_ore
 #6E45D1 forgeborncore:spiritfire_furnace
 #A9622E gtceu:steam_machine_casing
@@ -144,6 +161,7 @@
 #3E7273 gtceu:steel_frame
 #BEFC53 gtceu:steel_machine_casing
 #DC3458 minecraft:stone
+#467770 minecraft:stripped_warped_hyphae
 #5CF3F1 minecraft:sugar_cane
 #A24C19 minecraft:suspicious_sand
 #ACC8AE gtceu:talc_indicator
@@ -154,6 +172,7 @@
 #C9235D gtceu:tricalcium_phosphate_ore
 #2035B7 minecraft:tube_coral_block
 #87BAF4 minecraft:tuff
+#FBFECE gtceu:tungsten_steel_crate
 #3DF04E gtceu:ulv_energy_input_hatch
 #6DB687 create:veridium
 #88779D minecraft:vine

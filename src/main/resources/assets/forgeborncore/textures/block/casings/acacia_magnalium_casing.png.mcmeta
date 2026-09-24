@@ -1,5 +1,5 @@
 {
     "ldlib": {
-        "connection": "forgebornmachinery:block/casings/acacia_magnalium_casing_ctm"
+        "connection": "forgeborncore:block/casings/acacia_magnalium_casing_ctm"
     }
 }

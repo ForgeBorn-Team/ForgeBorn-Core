@@ -64,7 +64,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: -1.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["505D2486787E18F5"]
@@ -75,7 +75,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -88,7 +88,7 @@
 				type: "checkmark"
 			}]
 			x: -7.0d
-			y: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["505D2486787E18F5"]
@@ -98,7 +98,7 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: 2.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["7E8540E4AE46AC6A"]
@@ -119,7 +119,7 @@
 				item: { components: { "ftbquests:missing_item": "ftbfiltersystem:smart_filter" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: -2.0d
 			y: -9.5d
 		}
 		{
@@ -129,7 +129,7 @@
 				id: "1724D85F8130F90A"
 				type: "custom"
 			}]
-			x: 2.0d
+			x: -2.0d
 			y: -7.5d
 		}
 		{
@@ -152,7 +152,7 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
+			x: -4.5d
 			y: -7.5d
 		}
 		{
@@ -162,7 +162,7 @@
 				id: "4D6C77E562D50D25"
 				type: "custom"
 			}]
-			x: 2.0d
+			x: -2.0d
 			y: -6.0d
 		}
 		{
@@ -172,7 +172,7 @@
 				id: "1B38D42D8109A357"
 				type: "custom"
 			}]
-			x: -2.0d
+			x: 2.0d
 			y: -8.5d
 		}
 		{
@@ -183,13 +183,14 @@
 				"351350B816718595"
 			]
 			id: "5FA616AEDFA13089"
+			size: 2.0d
 			tasks: [{
 				id: "0AFF19446E87F3D8"
 				item: { count: 1, id: "gtceu:basic_electronic_circuit" }
 				type: "item"
 			}]
-			x: 17.5d
-			y: 0.0d
+			x: 12.799999999999999d
+			y: 11.5d
 		}
 		{
 			id: "351350B816718595"
@@ -212,6 +213,7 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["06055223810657BE"]
 			id: "6224DA2FA77767FD"
 			tasks: [{
 				id: "07BCD354C8B357A9"
@@ -219,7 +221,7 @@
 				type: "item"
 			}]
 			x: 14.0d
-			y: 9.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["0D4D302012BF573F"]
@@ -230,7 +232,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 4.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["505D2486787E18F5"]
@@ -241,7 +243,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -1.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5F9F8F945C00EAE4"]
@@ -252,17 +254,18 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: -1.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["05EE864A2E5DB4CF"]
 			id: "00A087DE854D3E9D"
+			shape: "circle"
 			tasks: [{
 				id: "3881F311A074989F"
 				type: "checkmark"
 			}]
 			x: -4.5d
-			y: -3.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3C7DC88A45FAA711"]
@@ -272,7 +275,7 @@
 				type: "custom"
 			}]
 			x: 6.5d
-			y: 4.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["5C3F2930CAC4D716"]
@@ -283,7 +286,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 4.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["111D7A4B58922CC5"]
@@ -293,7 +296,7 @@
 				type: "custom"
 			}]
 			x: 9.0d
-			y: 2.0d
+			y: 5.5d
 		}
 		{
 			id: "2E396F6F8452794A"
@@ -302,7 +305,7 @@
 				type: "custom"
 			}]
 			x: 4.0d
-			y: 9.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["2E396F6F8452794A"]
@@ -317,7 +320,7 @@
 				type: "checkmark"
 			}]
 			x: 4.0d
-			y: 8.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["2BA338D0F57ECF69"]
@@ -328,7 +331,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 7.5d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -349,7 +352,7 @@
 				}
 			]
 			x: 2.0d
-			y: 9.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["50617148B918A738"]
@@ -360,7 +363,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 2.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["2B2593DECEE55E13"]
@@ -371,7 +374,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 2.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["3C7DC88A45FAA711"]
@@ -382,7 +385,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 4.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["3C7DC88A45FAA711"]
@@ -393,7 +396,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 7.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["2CD359A9999D38C6"]
@@ -402,8 +405,8 @@
 				id: "51ACEDD6E539CAA7"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 9.5d
+			x: 2.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["2BA338D0F57ECF69"]
@@ -414,7 +417,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 7.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["53B59E7F7E46798B"]
@@ -425,7 +428,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 9.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["53B59E7F7E46798B"]
@@ -436,7 +439,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 7.5d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -450,18 +453,19 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 11.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["7D5C8E3ED9051CA6"]
 			id: "3C77EE7D982D3250"
+			shape: "circle"
 			tasks: [{
 				id: "7558F2126AE71232"
 				item: { count: 1, id: "botania:mana_spreader" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.5d
+			x: 2.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["327BFE41EB289581"]
@@ -471,7 +475,7 @@
 				type: "custom"
 			}]
 			x: 9.0d
-			y: 9.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["75BE0FD654F7D1D0"]
@@ -482,7 +486,219 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 6.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["12E8087A265767A1"]
+			id: "06055223810657BE"
+			tasks: [
+				{
+					id: "49C442EBA1D10F1D"
+					type: "custom"
+				}
+				{
+					id: "6823E650A8D92608"
+					item: { count: 1, id: "ars_nouveau:blue_archwood_log" }
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["505D2486787E18F5"]
+			id: "719A52897036C91F"
+			tasks: [{
+				id: "309E1A10E6CFFC17"
+				item: { count: 1, id: "gtceu:steel_frame" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5AF94C1430B596B4"]
+			id: "6DAD54F4843871D2"
+			tasks: [{
+				id: "09E0F55C88572905"
+				type: "custom"
+			}]
+			x: 6.5d
+			y: 15.0d
+		}
+		{
+			id: "40669A8B772CFCBA"
+			tasks: [{
+				id: "2704C3667F61BB0D"
+				item: { count: 1, id: "embers:dawnstone_ingot" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -7.5d
+		}
+		{
+			id: "04C29AF252F170BB"
+			tasks: [{
+				id: "497AB76CD8204B68"
+				type: "custom"
+			}]
+			x: -11.5d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"719A52897036C91F"
+				"399CD524C991B3D8"
+				"1FFEA6C4C5414DCF"
+			]
+			id: "08FA31B9DCFDB76D"
+			size: 2.0d
+			tasks: [{
+				id: "6DD9352B9C183140"
+				item: { count: 1, id: "gtceu:lv_machine_casing" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["505D2486787E18F5"]
+			id: "27CF511CD27FF621"
+			tasks: [{
+				id: "383EEC0F8044D581"
+				item: { count: 1, id: "ars_nouveau:sourceberry_bush" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			id: "399CD524C991B3D8"
+			tasks: [{
+				id: "11C9FBC72B40EC30"
+				type: "custom"
+			}]
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["399CD524C991B3D8"]
+			id: "3DDDDABD7225BFAF"
+			tasks: [{
+				id: "37628E3E5CABFAE0"
+				type: "custom"
+			}]
+			x: -10.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["399CD524C991B3D8"]
+			id: "2A10F6AEC3F4B68A"
+			tasks: [{
+				id: "0A26D960288DE3BE"
+				type: "custom"
+			}]
+			x: -10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["399CD524C991B3D8"]
+			id: "2415AAB7B88A21E3"
+			tasks: [{
+				id: "58F702AE35A29A53"
+				type: "custom"
+			}]
+			x: -10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["08FA31B9DCFDB76D"]
+			id: "63153FFA208728BE"
+			size: 1.0d
+			tasks: [{
+				id: "7BA3B4CC3B802BC3"
+				item: { count: 1, id: "gtceu:lv_machine_hull" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: 2.0d
+		}
+		{
+			id: "1155E26264B844A7"
+			tasks: [{
+				id: "39CED4CDF6420840"
+				item: { count: 1, id: "gtceu:lv_battery_hull" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			id: "730379285A003592"
+			tasks: [{
+				id: "3AA46CB3ACDE61B1"
+				item: { count: 1, id: "gtceu:salt_dust" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"1155E26264B844A7"
+				"730379285A003592"
+				"27CF511CD27FF621"
+			]
+			id: "531877D237093D5E"
+			tasks: [{
+				id: "0ECC5AFDB56DD5C9"
+				type: "custom"
+			}]
+			x: -3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"531877D237093D5E"
+				"56F3D70059AB9077"
+				"453B0A6A70F7E2D1"
+			]
+			id: "1FFEA6C4C5414DCF"
+			tasks: [{
+				id: "79371D235A125206"
+				type: "custom"
+			}]
+			x: -4.5d
+			y: 2.0d
+		}
+		{
+			id: "56F3D70059AB9077"
+			tasks: [{
+				id: "739B8E7D03D481D6"
+				type: "custom"
+			}]
+			x: -4.5d
+			y: 5.5d
+		}
+		{
+			id: "453B0A6A70F7E2D1"
+			tasks: [{
+				id: "253D95EB3EFEDCD8"
+				type: "custom"
+			}]
+			x: -6.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["63153FFA208728BE"]
+			id: "2CB5DFA6EF96C043"
+			shape: "circle"
+			tasks: [{
+				id: "1D0263AFCA06AFD2"
+				type: "custom"
+			}]
+			x: -10.5d
+			y: 2.0d
 		}
 	]
 }

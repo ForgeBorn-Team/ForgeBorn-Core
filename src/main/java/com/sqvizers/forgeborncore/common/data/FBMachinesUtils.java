@@ -89,7 +89,7 @@ public class FBMachinesUtils {
                                                                                    BiFunction<Boolean, MachineBuilder<MachineDefinition, MetaMachine, ?>, MachineDefinition> builder) {
         MachineDefinition lowTier = builder.apply(false,
                 REGISTRATE.machine("lp_%s".formatted(name), info -> factory.apply(info, false))
-                        .langValue("I DO NOT EXIST")
+                        .langValue("Steam "+ FormattingUtil.toEnglishName(name))
                         .tier(0));
         MachineDefinition highTier = builder.apply(true,
                 REGISTRATE.machine("hp_%s".formatted(name), info -> factory.apply(info, true))

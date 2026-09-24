@@ -29,15 +29,15 @@ colors:
     - -:0.0:2.0:stretch:FF00FF
 
   # Named color codes using bracket syntax: '[name]:hex'
-  # Use as &[name] or ง[name] in text.
+  # Use as &[name] or ยง[name] in text.
   # Example: '[phoenix]:BF00FF'  ->  use as &[phoenix] in chat
-  # Named codes are completely separate from single-char codes — no overlap ever.
+  # Named codes are completely separate from single-char codes โ€” no overlap ever.
   namedColors:
     - [phoenix]:BF00FF
 
   # Named gradient/effect codes using bracket syntax.
   # Format: '[name]:colorSpeed:moveSpeed:movementId:hex1,hex2...'
-  # Use as &[name] or ง[name] in text.
+  # Use as &[name] or ยง[name] in text.
   # Movement IDs: wave, shake, pulse, static_rainbow, glitch, discord, breath, stretch, none, mirror, vertical, spacing, slant, rainbow_wave, chroma, shear, chroma_wave, wobble, compress, fade, 3d, matrix_rain, 3d_spin, liquid_plasma
   # SPECIAL MODIFIERS GUIDE:
   #  - 'size': 'moveSpeed' acts as a text scaling multiplier. (e.g., [big]:0.0:1.5:size:FFFFFF)

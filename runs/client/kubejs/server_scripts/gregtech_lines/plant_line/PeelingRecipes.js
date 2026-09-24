@@ -1,0 +1,52 @@
+ServerEvents.recipes(event => {
+
+event.recipes.forgeborncore.peeling_chamber('forgeborn:plant_line/peeling/sourceberry_peeling')
+        .itemInputs('4x ars_nouveau:sourceberry_bush')
+        .inputFluids('500x minecraft:water')
+        .itemOutputs('2x forgeborncore:peeled_sourceberry')
+        .duration(10*20)
+        .EUt(GTValues.V[GTValues.LV], 1)
+
+event.recipes.forgeborncore.peeling_chamber('forgeborn:plant_line/peeling/mendosteen_peeling')
+        .itemInputs('4x ars_nouveau:mendosteen_pod')
+        .inputFluids('500x minecraft:water')
+        .itemOutputs('4x forgeborncore:peeled_mendosteen')
+        .duration(10*20)
+        .EUt(GTValues.V[GTValues.LV], 1)
+
+event.recipes.forgeborncore.peeling_chamber('forgeborn:plant_line/peeling/frostaya_peeling')
+        .itemInputs('4x ars_nouveau:frostaya_pod')
+        .inputFluids('500x minecraft:water')
+        .itemOutputs('2x forgeborncore:peeled_frostaya')
+        .duration(10*20)
+        .EUt(GTValues.V[GTValues.LV], 1)
+
+event.recipes.forgeborncore.peeling_chamber('forgeborn:plant_line/peeling/bombegranate_peeling')
+        .itemInputs('4x ars_nouveau:bombegranate_pod')
+        .inputFluids('500x minecraft:water')
+        .itemOutputs('4x forgeborncore:peeled_bombegranate')
+        .duration(10*20)
+        .EUt(GTValues.V[GTValues.LV], 1)
+
+event.recipes.forgeborncore.peeling_chamber('forgeborn:plant_line/peeling/magebloom_peeling')
+        .itemInputs('4x ars_nouveau:magebloom')
+        .inputFluids('500x minecraft:water')
+        .itemOutputs('8x forgeborncore:peeled_magebloom', 'ars_nouveau:magebloom_crop')
+        .duration(10*20)
+        .EUt(GTValues.V[GTValues.LV], 1)
+
+//Sorting (if needed)
+event.recipes.forgeborncore.sorting('forgeborn:plant_line/sorting/magebloom_sorting_fiber')
+        .itemInputs('1x forgeborncore:peeled_magebloom')
+        .itemOutputs('3x ars_nouveau:magebloom_fiber')
+        .duration(3*20)
+        .EUt(GTValues.V[GTValues.LV], 1)
+
+// Loom (if needed)
+event.recipes.forgeborncore.loom('forgeborn:plant_line/loom/magebloom_fiber_loom_fabric')
+        .itemInputs('8x ars_nouveau:magebloom_fiber')
+        .itemOutputs('forgeborncore:magebloom_fabric')
+        .duration(5*20)
+        .EUt(GTValues.V[GTValues.LV], 1)
+
+})

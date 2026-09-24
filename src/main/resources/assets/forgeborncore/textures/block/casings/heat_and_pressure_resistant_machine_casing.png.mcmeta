@@ -1,5 +1,5 @@
 {
     "ldlib": {
-        "connection": "forgebornmachinery:block/casings/heat_and_pressure_resistant_machine_casing_ctm"
+        "connection": "forgeborncore:block/casings/heat_and_pressure_resistant_machine_casing_ctm"
     }
 }

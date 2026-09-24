@@ -1,6 +1,7 @@
 package com.sqvizers.forgeborncore;
 
 import com.sqvizers.forgeborncore.api.registries.FBRegistration;
+import com.sqvizers.forgeborncore.bridge.FBRecipes;
 import com.sqvizers.forgeborncore.bridge.gregtech.SanctumWardRecipes;
 import com.sqvizers.forgeborncore.bridge.gregtech.SphericalVeinGenerator;
 import com.sqvizers.forgeborncore.bridge.occultism.SpiritfireFurnaceRecipes;

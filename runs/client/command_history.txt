@@ -24,3 +24,13 @@
 /tp ~ ~ 10000
 /summon occultism:foliot
 /effect clear
+/kubejs hand
+/reload
+/kubejs hand
+/reload
+/kubejs hand
+/reload
+/kubejs hand
+/reload
+/kubejs hand
+/reload

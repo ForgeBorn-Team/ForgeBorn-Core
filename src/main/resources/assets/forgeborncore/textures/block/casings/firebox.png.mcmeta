@@ -1,5 +1,5 @@
 {
     "ldlib": {
-        "connection": "forgebornmachinery:block/casings/firebox_ctm"
+        "connection": "forgeborncore:block/casings/firebox_ctm"
     }
 }

@@ -1,14 +1,14 @@
-[14:37:19] [INIT] KubeJS 2101.7.2-build.368; MC 2101 NeoForge
-[14:37:19] [INIT] Loaded plugins:
-[14:37:19] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSPlugin
-[14:37:19] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSClientPlugin
-[14:37:19] [INIT] - dev.latvian.mods.kubejs.integration.architectury.ArchitecturyIntegration
-[14:37:19] [INIT] - com.lowdragmc.lowdraglib.kjs.LDLibKubeJSPlugin
-[14:37:19] [INIT] - com.gregtechceu.gtceu.integration.kjs.GregTechKubeJSPlugin
-[14:37:19] [INIT] - com.sammy.malum.compat.kubejs.MalumJSPlugin
-[14:37:19] [INFO] client_scripts:example.js#5: Hello, World! (Loaded client scripts)
-[14:37:19] [INFO] Loaded script client_scripts:example.js in 0.002 s
-[14:37:19] [INFO] client_scripts:main.js#2: Hello, World! (Loaded client example script)
-[14:37:19] [INFO] Loaded script client_scripts:main.js in 0.026 s
-[14:37:19] [INFO] Loaded 2/2 KubeJS client scripts in 0.126 s with 0 errors and 0 warnings
-[14:37:36] [INFO] Client resource reload complete!
+[22:17:33] [INIT] KubeJS 2101.7.2-build.368; MC 2101 NeoForge
+[22:17:33] [INIT] Loaded plugins:
+[22:17:33] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSPlugin
+[22:17:33] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSClientPlugin
+[22:17:33] [INIT] - dev.latvian.mods.kubejs.integration.architectury.ArchitecturyIntegration
+[22:17:33] [INIT] - com.lowdragmc.lowdraglib.kjs.LDLibKubeJSPlugin
+[22:17:33] [INIT] - com.gregtechceu.gtceu.integration.kjs.GregTechKubeJSPlugin
+[22:17:33] [INIT] - com.sammy.malum.compat.kubejs.MalumJSPlugin
+[22:17:33] [INFO] client_scripts:example.js#5: Hello, World! (Loaded client scripts)
+[22:17:33] [INFO] Loaded script client_scripts:example.js in 0.001 s
+[22:17:33] [INFO] client_scripts:main.js#2: Hello, World! (Loaded client example script)
+[22:17:33] [INFO] Loaded script client_scripts:main.js in 0.001 s
+[22:17:33] [INFO] Loaded 2/2 KubeJS client scripts in 0.023 s with 0 errors and 0 warnings
+[22:17:50] [INFO] Client resource reload complete!

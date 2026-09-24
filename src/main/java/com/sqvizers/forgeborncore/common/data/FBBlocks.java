@@ -113,6 +113,10 @@ public class FBBlocks {
             "Spruce-Zinc Casing", "spruce_zinc_casing",
             "casings/spruce_zinc_casing", BlockItem::new);
 
+    public static BlockEntry<Block> NEFROUNTIUM_CASING = registerSimpleBlock(
+            "Nefrountium Heavy Machinery Casing", "nefrountium_machinery_casing",
+            "casings/nefrountium_machinery_casing", BlockItem::new);
+
     // Casings Botania
     public static BlockEntry<Block> MANASTEEL_FIREBOX = registerSimpleBlock(
             "Manasteel Firebox", "manasteel_firebox",

@@ -1,5 +1,5 @@
 {
   "ldlib": {
-    "connection": "forgebornmachinery:block/casings/machine_casing_kinetic_ctm"
+    "connection": "forgeborncore:block/casings/machine_casing_kinetic_ctm"
   }
 }

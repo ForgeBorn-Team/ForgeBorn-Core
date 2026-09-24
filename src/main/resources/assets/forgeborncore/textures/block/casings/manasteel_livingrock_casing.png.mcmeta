@@ -1,5 +1,5 @@
 {
     "ldlib": {
-        "connection": "forgebornmachinery:block/casings/manasteel_livingrock_casing_ctm"
+        "connection": "forgeborncore:block/casings/manasteel_livingrock_casing_ctm"
     }
 }

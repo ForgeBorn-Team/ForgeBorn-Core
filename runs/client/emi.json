@@ -35,10 +35,6 @@
       "recipe": "botania:fertilizer_dye"
     },
     {
-      "stack": "item:forgeborncore:book_of_calling_foliot_miner",
-      "recipe": "forgeborncore:ritual/summon_foliot_miner"
-    },
-    {
       "stack": "item:occultism:iesnium_pickaxe"
     },
     {
@@ -58,9 +54,135 @@
     },
     {
       "stack": "item:create:item_vault"
+    },
+    {
+      "stack": "item:undergarden:spear"
+    },
+    {
+      "stack": "item:gtceu:inert_machine_casing",
+      "recipe": "gtceu:assembler/casing_ptfe_inert"
+    },
+    {
+      "stack": "item:gtceu:lv_battery_hull",
+      "recipe": "gtceu:shaped/battery_hull_lv"
+    },
+    {
+      "stack": "item:forgeborncore:lv_peeling_chamber"
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "forgeborncore:peeled_magebloom",
+        "amount": 8
+      }
     }
   ],
   "lookup_history": [
+    "item:ars_nouveau:magebloom",
+    {
+      "type": "item",
+      "id": "ars_nouveau:magebloom_fiber",
+      "amount": 3
+    },
+    {
+      "type": "item",
+      "id": "forgeborncore:peeled_magebloom",
+      "amount": 64
+    },
+    "item:forgeborncore:magebloom_fabric",
+    "item:forgeborncore:peeled_frostaya",
+    "item:forgeborncore:peeled_bombegranate",
+    "item:forgeborncore:peeled_mendosteen",
+    "item:forgeborncore:peeled_sourceberry",
+    "item:undergarden:cloggrum_bucket{\"undergarden:stored_fluid\":{amount:1000,id:\"gtceu:butyraldehyde\"}}",
+    {
+      "type": "fluid",
+      "id": "gtceu:formaldehyde",
+      "amount": 0
+    },
+    "item:forgeborncore:lv_peeling_chamber",
+    "item:farmersdelight:wild_tomatoes",
+    "item:undergarden:roasted_underbeans",
+    "item:undergarden:shimmerweed",
+    "item:malum:rotting_essence",
+    "item:undergarden:blood_globule",
+    "item:minecraft:wheat",
+    "item:farmersdelight:wild_cabbages",
+    "item:minecraft:pitcher_pod",
+    "item:ars_nouveau:decor_blossom",
+    "item:ars_nouveau:mendosteen_pod",
+    "item:forgeborncore:kinetic_interface",
+    "item:forgeborncore:spirit_steel_ingot",
+    "item:gtceu:opv_macerator",
+    "item:gtceu:hv_super_chest",
+    {
+      "type": "item",
+      "id": "ars_nouveau:sourceberry_bush",
+      "amount": 64
+    },
+    "item:forgeborncore:hv_peeling_chamber",
+    "item:gtceu:nand_chip",
+    "item:gtceu:programmed_circuit{\"gtceu:circuit_config\":0}",
+    "item:gtceu:lv_machine_hull",
+    "item:gtceu:lv_energy_input_hatch",
+    "item:gtceu:ulv_voltage_coil",
+    "item:gtceu:ulv_energy_input_hatch",
+    "item:gtceu:lv_voltage_coil",
+    "item:gtceu:pure_basaltic_mineral_sand_dust",
+    "item:create:cinder_flour",
+    "item:rocketnautics:lunar_aged_basalt",
+    "item:gtceu:small_rock_salt_dust",
+    {
+      "type": "item",
+      "id": "gtceu:chipped_rock_salt_gem",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "gtceu:flawed_rock_salt_gem",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "gtceu:rock_salt_gem",
+      "amount": 2
+    },
+    "item:gtceu:salt_dust",
+    "item:occultism:iesnium_pickaxe",
+    {
+      "type": "item",
+      "id": "gtceu:inert_machine_casing",
+      "amount": 22
+    },
+    "item:gtceu:large_chemical_reactor",
+    {
+      "type": "item",
+      "id": "gtceu:sodium_dust",
+      "amount": 2
+    },
+    "item:gtceu:battery_alloy_ingot",
+    "item:gtceu:battery_alloy_plate",
+    {
+      "type": "fluid",
+      "id": "embers:molten_dawnstone",
+      "amount": 90
+    },
+    "item:embers:dawnstone_ingot",
+    "item:ae2:fluix_crystal",
+    "item:ae2:fluix_block",
+    "item:ae2:charged_certus_quartz_crystal",
+    "item:ae2:certus_quartz_crystal",
+    "item:gtceu:certus_quartz_gem",
+    "item:ae2:chiseled_quartz_slab",
+    "item:ae2:smooth_quartz_block",
+    "item:ars_nouveau:repository_controller",
+    "item:ars_nouveau:planarium",
+    "item:ars_nouveau:bastion_pod",
+    "item:malum:warp_flux",
+    "item:undergarden:droopvine_item",
+    "item:undergarden:underbean_on_a_stick",
+    "item:undergarden:rogdorium",
+    "item:undergarden:spear",
     "item:undergarden:forgotten_sword",
     "item:occultism:ritual_dummy/familiar_beaver",
     "item:occultism:ritual_dummy/summon_foliot_sapling_trader",
@@ -73,7 +195,6 @@
       "amount": 9
     },
     "item:minecraft:iron_block",
-    "item:forgeborncore:book_of_calling_foliot_miner{\"occultism:item_mode\":0,\"occultism:spirit_name\":\"Hyrmirvyrne\"}",
     "item:occultism:ritual_dummy/craft_miner_foliot_unspecialized",
     "item:occultism:ritual_dummy/craft_dimensional_mineshaft",
     "item:occultism:golden_sacrificial_bowl",
@@ -83,7 +204,6 @@
     "item:occultism:miner_foliot_unspecialized",
     "item:occultism:ritual_dummy/summon_djinni_crusher",
     "item:ae2:nether_quartz_pickaxe",
-    "item:forgeborncore:spirit_steel_ingot",
     "item:gtceu:steel_brick_casing",
     {
       "type": "fluid",
@@ -134,7 +254,6 @@
     "item:kubejs:omnipetal",
     "item:kubejs:undergarden_dim",
     "item:forgeborncore:spiritfire_furnace",
-    "item:gtceu:programmed_circuit{\"gtceu:circuit_config\":0}",
     "item:malum:ether",
     "item:malum:spellweaving_pickaxe",
     "item:botania:gaia_ingot",
