@@ -1,8 +1,10 @@
 package com.sqvizers.forgeborncore.client;
 
 import com.sqvizers.forgeborncore.ForgeBornCore;
+import com.sqvizers.forgeborncore.client.cutscene.CutsceneManager;
 import com.sqvizers.forgeborncore.client.renderer.machine.KineticHatchRender;
 import com.sqvizers.forgeborncore.client.renderer.machine.SanctumWardRender;
+import com.sqvizers.forgeborncore.common.cutscene.Cutscenes;
 
 import com.gregtechceu.gtceu.client.renderer.machine.DynamicRenderManager;
 
@@ -17,5 +19,6 @@ public class ForgeBornCoreClient {
     public ForgeBornCoreClient(IEventBus modBus, ModContainer modContainer) {
         DynamicRenderManager.register(ForgeBornCore.id("kinetic_hatch"), KineticHatchRender.TYPE);
         DynamicRenderManager.register(ForgeBornCore.id("sanctum_ward"), SanctumWardRender.TYPE);
+        Cutscenes.knownCutscenes = CutsceneManager.INSTANCE::ids;
     }
 }

@@ -3,6 +3,7 @@ package com.sqvizers.forgeborncore;
 import com.sqvizers.forgeborncore.api.registries.FBRegistration;
 import com.sqvizers.forgeborncore.bridge.gregtech.FBRecipeTypes;
 import com.sqvizers.forgeborncore.bridge.gregtech.GTVeinRewriteListener;
+import com.sqvizers.forgeborncore.common.cutscene.Cutscenes;
 import com.sqvizers.forgeborncore.common.data.FBBlocks;
 import com.sqvizers.forgeborncore.common.data.FBCreativeModeTabs;
 import com.sqvizers.forgeborncore.common.data.FBDataGen;
@@ -33,6 +34,7 @@ import net.neoforged.neoforge.common.world.chunk.RegisterTicketControllersEvent;
 import net.neoforged.neoforge.event.AddReloadListenerEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
+import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.registries.*;
 
 import org.slf4j.Logger;
@@ -127,4 +129,9 @@ public class ForgeBornCore {
 
     @SubscribeEvent
     public void registerCapabilities(RegisterCapabilitiesEvent event) {}
+
+    @SubscribeEvent
+    public void registerPayloads(RegisterPayloadHandlersEvent event) {
+        Cutscenes.registerPayloads(event);
+    }
 }
