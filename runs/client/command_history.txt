@@ -34,3 +34,6 @@
 /reload
 /kubejs hand
 /reload
+/kubejs hand
+/reload
+/kubejs hand

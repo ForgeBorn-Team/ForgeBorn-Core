@@ -116,6 +116,9 @@ public class FBBlocks {
     public static BlockEntry<Block> NEFROUNTIUM_CASING = registerSimpleBlock(
             "Nefrountium Heavy Machinery Casing", "nefrountium_machinery_casing",
             "casings/nefrountium_machinery_casing", BlockItem::new);
+    public static BlockEntry<Block> BISMUTH_BRONZE_CASING = registerSimpleBlock(
+            "Bismuth Bronze Casing", "bismuth_bronze_casing",
+            "casings/bismuth_bronze_casing", BlockItem::new);
 
     // Casings Botania
     public static BlockEntry<Block> MANASTEEL_FIREBOX = registerSimpleBlock(

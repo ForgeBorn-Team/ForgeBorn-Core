@@ -1295,5 +1295,15 @@
 			x: 13.0d
 			y: 12.0d
 		}
+		{
+			id: "4BA64A22C741EC78"
+			tasks: [{
+				id: "6E6769235815A2F2"
+				item: { count: 1, id: "minecraft:stripped_oak_wood" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
 	]
 }

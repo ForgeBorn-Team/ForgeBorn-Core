@@ -549,7 +549,6 @@
 			dependencies: [
 				"719A52897036C91F"
 				"399CD524C991B3D8"
-				"1FFEA6C4C5414DCF"
 			]
 			id: "08FA31B9DCFDB76D"
 			size: 2.0d
@@ -575,8 +574,9 @@
 		{
 			id: "399CD524C991B3D8"
 			tasks: [{
-				id: "11C9FBC72B40EC30"
-				type: "custom"
+				id: "7326DD3EE5DC43DE"
+				item: { count: 1, id: "forgeborncore:nefrountium_ingot" }
+				type: "item"
 			}]
 			x: -9.0d
 			y: 0.0d
@@ -585,8 +585,9 @@
 			dependencies: ["399CD524C991B3D8"]
 			id: "3DDDDABD7225BFAF"
 			tasks: [{
-				id: "37628E3E5CABFAE0"
-				type: "custom"
+				id: "44DD7EE5FCA48CB1"
+				item: { count: 1, id: "forgeborncore:nefrountium_machinery_casing" }
+				type: "item"
 			}]
 			x: -10.5d
 			y: -1.0d
@@ -612,7 +613,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["08FA31B9DCFDB76D"]
+			dependencies: [
+				"08FA31B9DCFDB76D"
+				"1FFEA6C4C5414DCF"
+			]
 			id: "63153FFA208728BE"
 			size: 1.0d
 			tasks: [{

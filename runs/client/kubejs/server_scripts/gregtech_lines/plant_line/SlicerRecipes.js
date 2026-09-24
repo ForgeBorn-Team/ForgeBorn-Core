@@ -1,0 +1,62 @@
+ServerEvents.recipes(event => {
+
+event.recipes.forgeborncore.slicer('forgeborn:cooking/slicer/cabbage_leaf')
+        .itemInputs('farmersdelight:cabbage')
+        .itemOutputs('6x farmersdelight:cabbage_leaf')
+        .duration(4*20)
+        .EUt(GTValues.V[GTValues.LV], 1)
+
+event.recipes.forgeborncore.slicer('forgeborn:cooking/slicer/raw_bacon')
+        .itemInputs('minecraft:porkchop')
+        .itemOutputs('4x farmersdelight:bacon')
+        .duration(4*20)
+        .EUt(GTValues.V[GTValues.LV], 1)
+
+event.recipes.forgeborncore.slicer('forgeborn:cooking/slicer/cod_slices')
+        .itemInputs('minecraft:cod')
+        .itemOutputs('4x farmersdelight:cod_slice', '2x minecraft:bone_meal')
+        .duration(4*20)
+        .EUt(GTValues.V[GTValues.LV], 1)
+
+event.recipes.forgeborncore.slicer('forgeborn:cooking/slicer/salmon_slices')
+        .itemInputs('minecraft:salmon')
+        .itemOutputs('4x farmersdelight:salmon_slice', '2x minecraft:bone_meal')
+        .duration(4*20)
+        .EUt(GTValues.V[GTValues.LV], 1)
+
+event.recipes.forgeborncore.slicer('forgeborn:cooking/slicer/mutton_chops')
+        .itemInputs('minecraft:mutton')
+        .itemOutputs('4x farmersdelight:mutton_chops')
+        .duration(4*20)
+        .EUt(GTValues.V[GTValues.LV], 1)
+
+event.recipes.forgeborncore.slicer('forgeborn:cooking/slicer/pumpkin_slices')
+        .itemInputs('minecraft:pumpkin')
+        .itemOutputs('8x farmersdelight:pumpkin_slice')
+        .duration(4*20)
+        .EUt(GTValues.V[GTValues.LV], 1)
+
+event.recipes.forgeborncore.slicer('forgeborn:cooking/slicer/cake_slices')
+        .itemInputs('minecraft:cake')
+        .itemOutputs('8x farmersdelight:cake_slice')
+        .duration(4*20)
+        .EUt(GTValues.V[GTValues.LV], 1)
+
+event.recipes.forgeborncore.slicer('forgeborn:cooking/slicer/apple_pie_slices')
+        .itemInputs('farmersdelight:apple_pie')
+        .itemOutputs('6x farmersdelight:apple_pie_slice')
+        .duration(4*20)
+        .EUt(GTValues.V[GTValues.LV], 1)
+
+event.recipes.forgeborncore.slicer('forgeborn:cooking/slicer/sweet_berry_slices')
+        .itemInputs('farmersdelight:sweet_berry_cheesecake')
+        .itemOutputs('6x farmersdelight:sweet_berry_cheesecake_slice')
+        .duration(4*20)
+        .EUt(GTValues.V[GTValues.LV], 1)
+
+event.recipes.forgeborncore.slicer('forgeborn:cooking/slicer/chocolate_pie_slices')
+        .itemInputs('farmersdelight:chocolate_pie')
+        .itemOutputs('6x farmersdelight:chocolate_pie_slice')
+        .duration(4*20)
+        .EUt(GTValues.V[GTValues.LV], 1)
+})

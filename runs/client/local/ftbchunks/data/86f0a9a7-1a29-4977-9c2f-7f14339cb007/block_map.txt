@@ -11,6 +11,7 @@
 #161AE7 minecraft:bamboo
 #F03BD3 gtceu:basaltic_mineral_sand_indicator
 #926C26 gtceu:basaltic_mineral_sand_ore
+#F2EEA4 farmersdelight:birch_cabinet
 #3DE8FE minecraft:birch_leaves
 #3BA928 minecraft:birch_log
 #C9CBB9 minecraft:blackstone
@@ -38,6 +39,7 @@
 #E952EB gtceu:creative_chest
 #1CE592 gtceu:creative_energy
 #714BF4 gtceu:creative_tank
+#13ECEA gtceu:crushing_wheels
 #2CC54F gtceu:ctm_test
 #05EFD1 gtceu:cupronickel_coil_block
 #3C3897 minecraft:cut_sandstone
@@ -95,6 +97,8 @@
 #62120A botania:livingwood
 #311F72 gtceu:lp_steam_rock_crusher
 #EB0240 gtceu:luv_energy_input_hatch
+#E32993 forgeborncore:luv_squeezer
+#2B7D7D gtceu:lv_autoclave
 #E95F47 forgeborncore:lv_loom
 #C0858E gtceu:lv_mixer
 #EB15B7 gtceu:lv_muffler_hatch
@@ -110,6 +114,7 @@
 #6631EF gtceu:mv_input_bus
 #F60B12 gtceu:mv_output_bus
 #2B6DE0 forgeborncore:mv_peeling_chamber
+#BD6B87 forgeborncore:mv_slicer
 #96AF3C forgeborncore:nefrountium_machinery_casing
 #454322 minecraft:netherrack
 #EB53D4 gtceu:nickel_indicator

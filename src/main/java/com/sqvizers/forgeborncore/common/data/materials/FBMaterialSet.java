@@ -3,6 +3,7 @@ package com.sqvizers.forgeborncore.common.data.materials;
 import com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialIconSet;
 import com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialIconType;
 
+import static com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialIconSet.DULL;
 import static com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialIconSet.METALLIC;
 
 public class FBMaterialSet {
@@ -10,8 +11,18 @@ public class FBMaterialSet {
     public static final MaterialIconSet SPIRIT_STEEL = new MaterialIconSet("spirit_steel",
             METALLIC);
 
+
+
+    //Botania
+    public static final MaterialIconSet MANASTEEL = new MaterialIconSet("manasteel",
+            METALLIC);
+    public static final MaterialIconSet ELEMENTIUM = new MaterialIconSet("elementium",
+            METALLIC);
+
     // Later add reinforced plate
     public static final MaterialIconType NANITES = new MaterialIconType("nanites");
+
+    public static final MaterialIconType JUICE = new MaterialIconType("juice");
 
     public static void init() {}
 }

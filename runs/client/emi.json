@@ -1,89 +1,86 @@
 {
   "favorites": [
     {
-      "stack": "item:occultism:chalk_gray",
-      "recipe": "gtceu:spiritfire_recipes/port_chalk_gray"
-    },
-    {
       "stack": {
-        "type": "item",
-        "id": "minecraft:glowstone_dust",
-        "amount": 4
+        "type": "fluid",
+        "id": "forgeborncore:sourceberry_juice",
+        "amount": 0
       }
     },
     {
-      "stack": "item:embers:archaic_circuit"
-    },
-    {
-      "stack": "item:gtceu:basic_electronic_circuit",
-      "recipe": "gtceu:shaped/electronic_circuit_lv"
-    },
-    {
-      "stack": "item:gtceu:resistor"
-    },
-    {
-      "stack": "item:gtceu:resin_printed_circuit_board"
-    },
-    {
-      "stack": "item:gtceu:vacuum_tube"
-    },
-    {
-      "stack": "item:gtceu:red_alloy_single_cable"
-    },
-    {
-      "stack": "item:botania:fertilizer",
-      "recipe": "botania:fertilizer_dye"
-    },
-    {
-      "stack": "item:occultism:iesnium_pickaxe"
-    },
-    {
-      "stack": "item:occultism:datura"
-    },
-    {
-      "stack": "item:minecraft:iron_block"
-    },
-    {
-      "stack": "item:minecraft:iron_ingot"
-    },
-    {
-      "stack": "item:occultism:book_of_binding_bound_foliot"
-    },
-    {
-      "stack": "item:occultism:golden_sacrificial_bowl"
-    },
-    {
-      "stack": "item:create:item_vault"
-    },
-    {
-      "stack": "item:undergarden:spear"
-    },
-    {
-      "stack": "item:gtceu:inert_machine_casing",
-      "recipe": "gtceu:assembler/casing_ptfe_inert"
-    },
-    {
-      "stack": "item:gtceu:lv_battery_hull",
-      "recipe": "gtceu:shaped/battery_hull_lv"
-    },
-    {
-      "stack": "item:forgeborncore:lv_peeling_chamber"
-    },
-    {
-      "stack": {
-        "type": "item",
-        "id": "forgeborncore:peeled_magebloom",
-        "amount": 8
-      }
+      "stack": "item:legendarysurvivaloverhaul:water_plant_bag"
     }
   ],
   "lookup_history": [
-    "item:ars_nouveau:magebloom",
+    "item:gtceu:basic_electronic_circuit",
     {
       "type": "item",
-      "id": "ars_nouveau:magebloom_fiber",
-      "amount": 3
+      "id": "gtceu:data_stick",
+      "amount": 4
     },
+    "item:gtceu:basic_data_access_hatch",
+    "item:gtceu:steel_ingot",
+    "item:gtceu:crushing_wheels",
+    {
+      "type": "fluid",
+      "id": "forgeborncore:sourceberry_juice",
+      "amount": 0
+    },
+    "item:forgeborncore:nefrountium_ingot",
+    "item:undergarden:rogdorium",
+    "item:minecraft:oak_fence",
+    "item:embers:mithril_plate",
+    "item:embers:mithril_ingot",
+    {
+      "type": "item",
+      "id": "embers:lead_ingot",
+      "amount": 4
+    },
+    "item:embers:lead_ingot",
+    "item:embers:archaic_brick",
+    "item:rocketnautics:titanium_alloy",
+    {
+      "type": "item",
+      "id": "botania:manasteel_ingot",
+      "amount": 9
+    },
+    "item:forgeborncore:dense_manasteel_plate",
+    "item:botania:manasteel_pick",
+    "item:botania:elementium_ingot",
+    "item:embers:dynamic_crystal_seed{\"minecraft:custom_data\":{color:8903312,metal:\"elementium\"}}",
+    "item:undergarden:raw_cloggrum",
+    "#item:c:raw_materials/cloggrum",
+    "item:forgeborncore:cloggrum_ingot",
+    "item:forgeborncore:cloggrum_dust",
+    "item:ars_nouveau:source_berry_pie",
+    "item:minecraft:pumpkin_pie",
+    "item:farmersdelight:chocolate_pie_slice",
+    "item:farmersdelight:apple_pie_slice",
+    "item:farmersdelight:sweet_berry_cheesecake_slice",
+    "item:farmersdelight:cake_slice",
+    "item:farmersdelight:pumpkin_slice",
+    "item:farmersdelight:mutton_chops",
+    "item:farmersdelight:salmon_slice",
+    "item:farmersdelight:cod_slice",
+    "item:minecraft:cod",
+    "item:farmersdelight:bacon",
+    "item:minecraft:porkchop",
+    "item:forgeborncore:lv_slicer",
+    {
+      "type": "item",
+      "id": "farmersdelight:cabbage_leaf",
+      "amount": 2
+    },
+    "item:farmersdelight:cabbage",
+    "item:farmersdelight:ham",
+    "item:farmersdelight:straw",
+    "item:farmersdelight:minced_beef",
+    "item:gtceu:luv_chemical_reactor",
+    "item:kubejs:wither_heart",
+    "item:forgeborncore:uev_peeling_chamber",
+    "item:forgeborncore:lv_loom",
+    "item:ars_nouveau:magebloom_fiber",
+    "item:ars_nouveau:magebloom",
     {
       "type": "item",
       "id": "forgeborncore:peeled_magebloom",
@@ -181,7 +178,6 @@
     "item:malum:warp_flux",
     "item:undergarden:droopvine_item",
     "item:undergarden:underbean_on_a_stick",
-    "item:undergarden:rogdorium",
     "item:undergarden:spear",
     "item:undergarden:forgotten_sword",
     "item:occultism:ritual_dummy/familiar_beaver",
@@ -235,9 +231,7 @@
     "item:minecraft:beehive",
     "item:rocketnautics:titanium_casing",
     "item:gtceu:vacuum_tube",
-    "item:embers:archaic_brick",
     "item:embers:archaic_circuit",
-    "item:gtceu:basic_electronic_circuit",
     "item:embers:intelligent_apparatus",
     "item:gtceu:wetware_processor_mainframe",
     "item:gtceu:wetware_processor_computer",

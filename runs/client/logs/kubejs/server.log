@@ -1,22 +1,25 @@
-[22:19:59] [INIT] KubeJS 2101.7.2-build.368; MC 2101 NeoForge
-[22:19:59] [INIT] Loaded plugins:
-[22:19:59] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSPlugin
-[22:19:59] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSClientPlugin
-[22:19:59] [INIT] - dev.latvian.mods.kubejs.integration.architectury.ArchitecturyIntegration
-[22:19:59] [INIT] - com.lowdragmc.lowdraglib.kjs.LDLibKubeJSPlugin
-[22:19:59] [INIT] - com.gregtechceu.gtceu.integration.kjs.GregTechKubeJSPlugin
-[22:19:59] [INIT] - com.sammy.malum.compat.kubejs.MalumJSPlugin
-[22:19:59] [INFO] Loaded script server_scripts:gregtech_lines/plant_line/PeelingRecipes.js in 0.007 s
-[22:19:59] [INFO] server_scripts:main.js#2: Hello, World! (Loaded server example script)
-[22:19:59] [INFO] Loaded script server_scripts:main.js in 0.001 s
-[22:19:59] [INFO] Loaded 2/2 KubeJS server scripts in 0.061 s with 0 errors and 0 warnings
-[22:20:10] [INFO] Processing recipes...
-[22:20:10] [INFO] Initializing recipe event...
-[22:20:10] [WARN] KubeRecipe.java#90: Failed to parse recipe 'malum:malum/spirit_repair/undergarden/slingshot[malum:spirit_repair]'! Falling back to vanilla: Failed to read required component 'spirits: spirit_ingredient[]' - java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / malum:spirit_types]: minecraft:earthen
-[22:20:11] [WARN] KubeRecipe.java#90: Failed to parse recipe 'malum:malum/spirit_repair/botania/elementium[malum:spirit_repair]'! Falling back to vanilla: Failed to read required component 'spirits: spirit_ingredient[]' - java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / malum:spirit_types]: minecraft:arcane
-[22:20:11] [WARN] KubeRecipe.java#90: Failed to parse recipe 'malum:malum/spirit_repair/botania/manasteel[malum:spirit_repair]'! Falling back to vanilla: Failed to read required component 'spirits: spirit_ingredient[]' - java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / malum:spirit_types]: minecraft:arcane
-[22:20:11] [INFO] Found 44,310 recipes (skipped 871) in 1.883 s
-[22:20:12] [INFO] Posted recipe events in 51 ms
-[22:20:12] [INFO] KubeJS modifications to recipe manager finished in 70.20 ms
-[22:20:14] [INFO] Added 7 recipes, removed 0 recipes, modified 167 recipes, with 0 failed recipes taking 4.656 s in total
-[22:20:21] [INFO] Server resource reload complete!
+[21:09:49] [INIT] KubeJS 2101.7.2-build.368; MC 2101 NeoForge
+[21:09:49] [INIT] Loaded plugins:
+[21:09:49] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSPlugin
+[21:09:49] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSClientPlugin
+[21:09:49] [INIT] - dev.latvian.mods.kubejs.integration.architectury.ArchitecturyIntegration
+[21:09:49] [INIT] - com.lowdragmc.lowdraglib.kjs.LDLibKubeJSPlugin
+[21:09:49] [INIT] - com.gregtechceu.gtceu.integration.kjs.GregTechKubeJSPlugin
+[21:09:49] [INIT] - com.sammy.malum.compat.kubejs.MalumJSPlugin
+[21:09:49] [INFO] Loaded script server_scripts:gregtech_lines/plant_line/PeelingRecipes.js in 0.002 s
+[21:09:49] [INFO] Loaded script server_scripts:gregtech_lines/plant_line/SlicerRecipes.js in 0.001 s
+[21:09:49] [INFO] Loaded script server_scripts:gregtech_lines/plant_line/SortingRecipes.js in 0.0 s
+[21:09:49] [INFO] Loaded script server_scripts:gregtech_lines/plant_line/SqueezingRecipes.js in 0.0 s
+[21:09:49] [INFO] server_scripts:main.js#2: Hello, World! (Loaded server example script)
+[21:09:49] [INFO] Loaded script server_scripts:main.js in 0.0 s
+[21:09:49] [INFO] Loaded 5/5 KubeJS server scripts in 0.021 s with 0 errors and 0 warnings
+[21:09:55] [INFO] Processing recipes...
+[21:09:55] [INFO] Initializing recipe event...
+[21:09:55] [WARN] KubeRecipe.java#90: Failed to parse recipe 'malum:malum/spirit_repair/undergarden/slingshot[malum:spirit_repair]'! Falling back to vanilla: Failed to read required component 'spirits: spirit_ingredient[]' - java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / malum:spirit_types]: minecraft:earthen
+[21:09:55] [WARN] KubeRecipe.java#90: Failed to parse recipe 'malum:malum/spirit_repair/botania/elementium[malum:spirit_repair]'! Falling back to vanilla: Failed to read required component 'spirits: spirit_ingredient[]' - java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / malum:spirit_types]: minecraft:arcane
+[21:09:56] [WARN] KubeRecipe.java#90: Failed to parse recipe 'malum:malum/spirit_repair/botania/manasteel[malum:spirit_repair]'! Falling back to vanilla: Failed to read required component 'spirits: spirit_ingredient[]' - java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / malum:spirit_types]: minecraft:arcane
+[21:09:56] [INFO] Found 44,536 recipes (skipped 871) in 1.283 s
+[21:09:56] [INFO] Posted recipe events in 33 ms
+[21:09:56] [INFO] KubeJS modifications to recipe manager finished in 44.50 ms
+[21:09:57] [INFO] Added 17 recipes, removed 0 recipes, modified 167 recipes, with 0 failed recipes taking 2.458 s in total
+[21:10:01] [INFO] Server resource reload complete!
